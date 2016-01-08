@@ -18,6 +18,11 @@
 		71EB0B521C3F50A800290797 /* InputAccessoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EB0B511C3F50A800290797 /* InputAccessoryTableViewCell.m */; };
 		71EB0B551C3F512000290797 /* InputAccessoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EB0B541C3F512000290797 /* InputAccessoryTableViewController.m */; };
 		71EB0B581C3F527D00290797 /* UIImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EB0B571C3F527D00290797 /* UIImagePickerViewController.m */; };
+		71EB0B5F1C3FA73000290797 /* DelaysContentTouchesTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EB0B5E1C3FA73000290797 /* DelaysContentTouchesTableView.m */; };
+		71EB0B631C3FA89D00290797 /* DelaysContentTouchesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EB0B611C3FA89D00290797 /* DelaysContentTouchesTableViewCell.m */; };
+		71EB0B641C3FA89D00290797 /* DelaysContentTouchesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71EB0B621C3FA89D00290797 /* DelaysContentTouchesTableViewCell.xib */; };
+		71EB0B681C3FA93F00290797 /* DelaysContentTouchesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EB0B661C3FA93F00290797 /* DelaysContentTouchesTableViewController.m */; };
+		71EB0B691C3FA93F00290797 /* DelaysContentTouchesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71EB0B671C3FA93F00290797 /* DelaysContentTouchesTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +45,14 @@
 		71EB0B541C3F512000290797 /* InputAccessoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputAccessoryTableViewController.m; sourceTree = "<group>"; };
 		71EB0B561C3F527D00290797 /* UIImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImagePickerViewController.h; sourceTree = "<group>"; };
 		71EB0B571C3F527D00290797 /* UIImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImagePickerViewController.m; sourceTree = "<group>"; };
+		71EB0B5D1C3FA73000290797 /* DelaysContentTouchesTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelaysContentTouchesTableView.h; sourceTree = "<group>"; };
+		71EB0B5E1C3FA73000290797 /* DelaysContentTouchesTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelaysContentTouchesTableView.m; sourceTree = "<group>"; };
+		71EB0B601C3FA89D00290797 /* DelaysContentTouchesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelaysContentTouchesTableViewCell.h; sourceTree = "<group>"; };
+		71EB0B611C3FA89D00290797 /* DelaysContentTouchesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelaysContentTouchesTableViewCell.m; sourceTree = "<group>"; };
+		71EB0B621C3FA89D00290797 /* DelaysContentTouchesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DelaysContentTouchesTableViewCell.xib; sourceTree = "<group>"; };
+		71EB0B651C3FA93F00290797 /* DelaysContentTouchesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelaysContentTouchesTableViewController.h; sourceTree = "<group>"; };
+		71EB0B661C3FA93F00290797 /* DelaysContentTouchesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelaysContentTouchesTableViewController.m; sourceTree = "<group>"; };
+		71EB0B671C3FA93F00290797 /* DelaysContentTouchesTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DelaysContentTouchesTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +85,10 @@
 		71EB0B271C3F4DC000290797 /* CodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
-				71EB0B4B1C3F501B00290797 /* InputAccessoryView */,
-				71EB0B4C1C3F501B00290797 /* UIImagePickerController */,
+				71EB0B591C3FA5C100290797 /* DelaysContentTouches */,
 				71EB0B451C3F4FAD00290797 /* UIImageViewMode */,
+				71EB0B4C1C3F501B00290797 /* UIImagePickerController */,
+				71EB0B4B1C3F501B00290797 /* InputAccessoryView */,
 				71EB0B2B1C3F4DC000290797 /* AppDelegate.h */,
 				71EB0B2C1C3F4DC000290797 /* AppDelegate.m */,
 				71EB0B2E1C3F4DC000290797 /* ViewController.h */,
@@ -124,6 +138,21 @@
 				71EB0B571C3F527D00290797 /* UIImagePickerViewController.m */,
 			);
 			path = UIImagePickerController;
+			sourceTree = "<group>";
+		};
+		71EB0B591C3FA5C100290797 /* DelaysContentTouches */ = {
+			isa = PBXGroup;
+			children = (
+				71EB0B5D1C3FA73000290797 /* DelaysContentTouchesTableView.h */,
+				71EB0B5E1C3FA73000290797 /* DelaysContentTouchesTableView.m */,
+				71EB0B601C3FA89D00290797 /* DelaysContentTouchesTableViewCell.h */,
+				71EB0B611C3FA89D00290797 /* DelaysContentTouchesTableViewCell.m */,
+				71EB0B621C3FA89D00290797 /* DelaysContentTouchesTableViewCell.xib */,
+				71EB0B651C3FA93F00290797 /* DelaysContentTouchesTableViewController.h */,
+				71EB0B661C3FA93F00290797 /* DelaysContentTouchesTableViewController.m */,
+				71EB0B671C3FA93F00290797 /* DelaysContentTouchesTableViewController.xib */,
+			);
+			path = DelaysContentTouches;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +217,8 @@
 				71EB0B351C3F4DC000290797 /* Assets.xcassets in Resources */,
 				71EB0B331C3F4DC000290797 /* Main.storyboard in Resources */,
 				71EB0B491C3F4FAD00290797 /* uiimageviewmode.jpg in Resources */,
+				71EB0B641C3FA89D00290797 /* DelaysContentTouchesTableViewCell.xib in Resources */,
+				71EB0B691C3FA93F00290797 /* DelaysContentTouchesTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,10 +230,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				71EB0B301C3F4DC000290797 /* ViewController.m in Sources */,
+				71EB0B681C3FA93F00290797 /* DelaysContentTouchesTableViewController.m in Sources */,
 				71EB0B4A1C3F4FAD00290797 /* UIImageViewModeViewController.m in Sources */,
 				71EB0B2D1C3F4DC000290797 /* AppDelegate.m in Sources */,
 				71EB0B551C3F512000290797 /* InputAccessoryTableViewController.m in Sources */,
+				71EB0B5F1C3FA73000290797 /* DelaysContentTouchesTableView.m in Sources */,
 				71EB0B2A1C3F4DC000290797 /* main.m in Sources */,
+				71EB0B631C3FA89D00290797 /* DelaysContentTouchesTableViewCell.m in Sources */,
 				71EB0B581C3F527D00290797 /* UIImagePickerViewController.m in Sources */,
 				71EB0B521C3F50A800290797 /* InputAccessoryTableViewCell.m in Sources */,
 			);
@@ -361,6 +395,7 @@
 				71EB0B3E1C3F4DC000290797 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

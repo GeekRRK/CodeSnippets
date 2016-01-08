@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DelaysContentTouchesTableViewController.h"
 
 @interface ViewController ()
 
@@ -16,6 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    DelaysContentTouchesTableViewController *ctrl =
+    [[DelaysContentTouchesTableViewController alloc] init];
+    [self.navigationController pushViewController:ctrl animated:YES];
 }
 
 @end
