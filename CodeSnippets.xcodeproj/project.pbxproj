@@ -12,6 +12,7 @@
 		71131D2F1C40A59C00E41DA5 /* scrollImg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 71131D2B1C40A59C00E41DA5 /* scrollImg2.png */; };
 		71131D301C40A59C00E41DA5 /* scrollImg3.png in Resources */ = {isa = PBXBuildFile; fileRef = 71131D2C1C40A59C00E41DA5 /* scrollImg3.png */; };
 		71131D311C40A59C00E41DA5 /* scrollImg4.png in Resources */ = {isa = PBXBuildFile; fileRef = 71131D2D1C40A59C00E41DA5 /* scrollImg4.png */; };
+		71131D351C40BF0D00E41DA5 /* DeleteCookieAndCacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71131D341C40BF0D00E41DA5 /* DeleteCookieAndCacheViewController.m */; };
 		71EB0B2A1C3F4DC000290797 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EB0B291C3F4DC000290797 /* main.m */; };
 		71EB0B2D1C3F4DC000290797 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EB0B2C1C3F4DC000290797 /* AppDelegate.m */; };
 		71EB0B301C3F4DC000290797 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EB0B2F1C3F4DC000290797 /* ViewController.m */; };
@@ -37,6 +38,8 @@
 		71131D2B1C40A59C00E41DA5 /* scrollImg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scrollImg2.png; sourceTree = "<group>"; };
 		71131D2C1C40A59C00E41DA5 /* scrollImg3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scrollImg3.png; sourceTree = "<group>"; };
 		71131D2D1C40A59C00E41DA5 /* scrollImg4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scrollImg4.png; sourceTree = "<group>"; };
+		71131D331C40BF0D00E41DA5 /* DeleteCookieAndCacheViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteCookieAndCacheViewController.h; sourceTree = "<group>"; };
+		71131D341C40BF0D00E41DA5 /* DeleteCookieAndCacheViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteCookieAndCacheViewController.m; sourceTree = "<group>"; };
 		71EB0B251C3F4DC000290797 /* CodeSnippets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeSnippets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71EB0B291C3F4DC000290797 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		71EB0B2B1C3F4DC000290797 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,6 +93,15 @@
 			path = UIScrollView;
 			sourceTree = "<group>";
 		};
+		71131D321C40BE4200E41DA5 /* DeleteCookieAndCache */ = {
+			isa = PBXGroup;
+			children = (
+				71131D331C40BF0D00E41DA5 /* DeleteCookieAndCacheViewController.h */,
+				71131D341C40BF0D00E41DA5 /* DeleteCookieAndCacheViewController.m */,
+			);
+			path = DeleteCookieAndCache;
+			sourceTree = "<group>";
+		};
 		71EB0B1C1C3F4DBF00290797 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +121,7 @@
 		71EB0B271C3F4DC000290797 /* CodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				71131D321C40BE4200E41DA5 /* DeleteCookieAndCache */,
 				71131D261C40A26600E41DA5 /* UIScrollView */,
 				71EB0B591C3FA5C100290797 /* DelaysContentTouches */,
 				71EB0B451C3F4FAD00290797 /* UIImageViewMode */,
@@ -260,6 +273,7 @@
 			files = (
 				71EB0B301C3F4DC000290797 /* ViewController.m in Sources */,
 				71EB0B681C3FA93F00290797 /* DelaysContentTouchesTableViewController.m in Sources */,
+				71131D351C40BF0D00E41DA5 /* DeleteCookieAndCacheViewController.m in Sources */,
 				71EB0B4A1C3F4FAD00290797 /* UIImageViewModeViewController.m in Sources */,
 				71EB0B2D1C3F4DC000290797 /* AppDelegate.m in Sources */,
 				71131D291C40A29500E41DA5 /* ScrollViewController.m in Sources */,
