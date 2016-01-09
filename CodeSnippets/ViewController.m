@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "CodeAutoLayoutViewController.h"
+#import "CheckNetworkViewController.h"
 
 @interface ViewController ()
 
@@ -18,8 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    CodeAutoLayoutViewController *ctrl =
-    [[CodeAutoLayoutViewController alloc] init];
+    CheckNetworkViewController *ctrl =
+    [[CheckNetworkViewController alloc] init];
     [self.navigationController pushViewController:ctrl animated:YES];
 }
 

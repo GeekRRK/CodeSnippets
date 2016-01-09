@@ -15,6 +15,8 @@
 		71131D351C40BF0D00E41DA5 /* DeleteCookieAndCacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71131D341C40BF0D00E41DA5 /* DeleteCookieAndCacheViewController.m */; };
 		71131D3A1C40C72D00E41DA5 /* CodeAutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71131D381C40C72D00E41DA5 /* CodeAutoLayoutViewController.m */; };
 		71131D3B1C40C72D00E41DA5 /* CodeAutoLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71131D391C40C72D00E41DA5 /* CodeAutoLayoutViewController.xib */; };
+		71131D3F1C40CEEE00E41DA5 /* CheckNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71131D3E1C40CEEE00E41DA5 /* CheckNetworkViewController.m */; };
+		71131D441C40D4B700E41DA5 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 71131D431C40D4B700E41DA5 /* Reachability.m */; };
 		71EB0B2A1C3F4DC000290797 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EB0B291C3F4DC000290797 /* main.m */; };
 		71EB0B2D1C3F4DC000290797 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EB0B2C1C3F4DC000290797 /* AppDelegate.m */; };
 		71EB0B301C3F4DC000290797 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EB0B2F1C3F4DC000290797 /* ViewController.m */; };
@@ -45,6 +47,10 @@
 		71131D371C40C72D00E41DA5 /* CodeAutoLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeAutoLayoutViewController.h; sourceTree = "<group>"; };
 		71131D381C40C72D00E41DA5 /* CodeAutoLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeAutoLayoutViewController.m; sourceTree = "<group>"; };
 		71131D391C40C72D00E41DA5 /* CodeAutoLayoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CodeAutoLayoutViewController.xib; sourceTree = "<group>"; };
+		71131D3D1C40CEEE00E41DA5 /* CheckNetworkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckNetworkViewController.h; sourceTree = "<group>"; };
+		71131D3E1C40CEEE00E41DA5 /* CheckNetworkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckNetworkViewController.m; sourceTree = "<group>"; };
+		71131D421C40D4B700E41DA5 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		71131D431C40D4B700E41DA5 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		71EB0B251C3F4DC000290797 /* CodeSnippets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeSnippets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71EB0B291C3F4DC000290797 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		71EB0B2B1C3F4DC000290797 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,6 +123,17 @@
 			path = CodeAutoLayout;
 			sourceTree = "<group>";
 		};
+		71131D3C1C40CEDD00E41DA5 /* CheckNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				71131D421C40D4B700E41DA5 /* Reachability.h */,
+				71131D431C40D4B700E41DA5 /* Reachability.m */,
+				71131D3D1C40CEEE00E41DA5 /* CheckNetworkViewController.h */,
+				71131D3E1C40CEEE00E41DA5 /* CheckNetworkViewController.m */,
+			);
+			path = CheckNetwork;
+			sourceTree = "<group>";
+		};
 		71EB0B1C1C3F4DBF00290797 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +153,7 @@
 		71EB0B271C3F4DC000290797 /* CodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				71131D3C1C40CEDD00E41DA5 /* CheckNetwork */,
 				71131D361C40C6AC00E41DA5 /* CodeAutoLayout */,
 				71131D321C40BE4200E41DA5 /* DeleteCookieAndCache */,
 				71131D261C40A26600E41DA5 /* UIScrollView */,
@@ -292,6 +310,8 @@
 				71EB0B681C3FA93F00290797 /* DelaysContentTouchesTableViewController.m in Sources */,
 				71131D351C40BF0D00E41DA5 /* DeleteCookieAndCacheViewController.m in Sources */,
 				71EB0B4A1C3F4FAD00290797 /* UIImageViewModeViewController.m in Sources */,
+				71131D441C40D4B700E41DA5 /* Reachability.m in Sources */,
+				71131D3F1C40CEEE00E41DA5 /* CheckNetworkViewController.m in Sources */,
 				71EB0B2D1C3F4DC000290797 /* AppDelegate.m in Sources */,
 				71131D291C40A29500E41DA5 /* ScrollViewController.m in Sources */,
 				71EB0B551C3F512000290797 /* InputAccessoryTableViewController.m in Sources */,
