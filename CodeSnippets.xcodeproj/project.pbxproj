@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71131D291C40A29500E41DA5 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71131D281C40A29500E41DA5 /* ScrollViewController.m */; };
+		71131D2E1C40A59C00E41DA5 /* scrollImg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 71131D2A1C40A59C00E41DA5 /* scrollImg1.png */; };
+		71131D2F1C40A59C00E41DA5 /* scrollImg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 71131D2B1C40A59C00E41DA5 /* scrollImg2.png */; };
+		71131D301C40A59C00E41DA5 /* scrollImg3.png in Resources */ = {isa = PBXBuildFile; fileRef = 71131D2C1C40A59C00E41DA5 /* scrollImg3.png */; };
+		71131D311C40A59C00E41DA5 /* scrollImg4.png in Resources */ = {isa = PBXBuildFile; fileRef = 71131D2D1C40A59C00E41DA5 /* scrollImg4.png */; };
 		71EB0B2A1C3F4DC000290797 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EB0B291C3F4DC000290797 /* main.m */; };
 		71EB0B2D1C3F4DC000290797 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EB0B2C1C3F4DC000290797 /* AppDelegate.m */; };
 		71EB0B301C3F4DC000290797 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EB0B2F1C3F4DC000290797 /* ViewController.m */; };
@@ -26,6 +31,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		71131D271C40A29500E41DA5 /* ScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
+		71131D281C40A29500E41DA5 /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
+		71131D2A1C40A59C00E41DA5 /* scrollImg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scrollImg1.png; sourceTree = "<group>"; };
+		71131D2B1C40A59C00E41DA5 /* scrollImg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scrollImg2.png; sourceTree = "<group>"; };
+		71131D2C1C40A59C00E41DA5 /* scrollImg3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scrollImg3.png; sourceTree = "<group>"; };
+		71131D2D1C40A59C00E41DA5 /* scrollImg4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scrollImg4.png; sourceTree = "<group>"; };
 		71EB0B251C3F4DC000290797 /* CodeSnippets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeSnippets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71EB0B291C3F4DC000290797 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		71EB0B2B1C3F4DC000290797 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -66,6 +77,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71131D261C40A26600E41DA5 /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				71131D2A1C40A59C00E41DA5 /* scrollImg1.png */,
+				71131D2B1C40A59C00E41DA5 /* scrollImg2.png */,
+				71131D2C1C40A59C00E41DA5 /* scrollImg3.png */,
+				71131D2D1C40A59C00E41DA5 /* scrollImg4.png */,
+				71131D271C40A29500E41DA5 /* ScrollViewController.h */,
+				71131D281C40A29500E41DA5 /* ScrollViewController.m */,
+			);
+			path = UIScrollView;
+			sourceTree = "<group>";
+		};
 		71EB0B1C1C3F4DBF00290797 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +109,7 @@
 		71EB0B271C3F4DC000290797 /* CodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				71131D261C40A26600E41DA5 /* UIScrollView */,
 				71EB0B591C3FA5C100290797 /* DelaysContentTouches */,
 				71EB0B451C3F4FAD00290797 /* UIImageViewMode */,
 				71EB0B4C1C3F501B00290797 /* UIImagePickerController */,
@@ -215,10 +240,14 @@
 			files = (
 				71EB0B381C3F4DC000290797 /* LaunchScreen.storyboard in Resources */,
 				71EB0B351C3F4DC000290797 /* Assets.xcassets in Resources */,
+				71131D311C40A59C00E41DA5 /* scrollImg4.png in Resources */,
 				71EB0B331C3F4DC000290797 /* Main.storyboard in Resources */,
 				71EB0B491C3F4FAD00290797 /* uiimageviewmode.jpg in Resources */,
 				71EB0B641C3FA89D00290797 /* DelaysContentTouchesTableViewCell.xib in Resources */,
+				71131D301C40A59C00E41DA5 /* scrollImg3.png in Resources */,
+				71131D2E1C40A59C00E41DA5 /* scrollImg1.png in Resources */,
 				71EB0B691C3FA93F00290797 /* DelaysContentTouchesTableViewController.xib in Resources */,
+				71131D2F1C40A59C00E41DA5 /* scrollImg2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +262,7 @@
 				71EB0B681C3FA93F00290797 /* DelaysContentTouchesTableViewController.m in Sources */,
 				71EB0B4A1C3F4FAD00290797 /* UIImageViewModeViewController.m in Sources */,
 				71EB0B2D1C3F4DC000290797 /* AppDelegate.m in Sources */,
+				71131D291C40A29500E41DA5 /* ScrollViewController.m in Sources */,
 				71EB0B551C3F512000290797 /* InputAccessoryTableViewController.m in Sources */,
 				71EB0B5F1C3FA73000290797 /* DelaysContentTouchesTableView.m in Sources */,
 				71EB0B2A1C3F4DC000290797 /* main.m in Sources */,
