@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "ScrollViewController.h"
+#import "CodeAutoLayoutViewController.h"
 
 @interface ViewController ()
 
@@ -18,8 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    ScrollViewController *ctrl =
-    [[ScrollViewController alloc] init];
+    CodeAutoLayoutViewController *ctrl =
+    [[CodeAutoLayoutViewController alloc] init];
     [self.navigationController pushViewController:ctrl animated:YES];
 }
 
