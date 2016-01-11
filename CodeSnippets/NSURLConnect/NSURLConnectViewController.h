@@ -1,5 +1,5 @@
 //
-//  UINavigationBarViewController.h
+//  NSURLConnectViewController.h
 //  CodeSnippets
 //
 //  Created by GeekRRK on 1/11/16.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UINavigationBarViewController : UIViewController
+@interface NSURLConnectViewController : UIViewController
 
 @end

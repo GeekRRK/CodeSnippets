@@ -2,7 +2,7 @@
 //  CheckNetworkViewController.m
 //  CodeSnippets
 //
-//  Created by suorui on 1/9/16.
+//  Created by GeekRRK on 1/9/16.
 //  Copyright © 2016 GeekRRK. All rights reserved.
 //
 

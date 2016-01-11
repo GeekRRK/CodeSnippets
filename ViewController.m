@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "UINavigationBarViewController.h"
+#import "NSURLConnectViewController.h"
 
 @interface ViewController ()
 
@@ -18,8 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UINavigationBarViewController *ctrl =
-    [[UINavigationBarViewController alloc] init];
+    NSURLConnectViewController *ctrl =
+    [[NSURLConnectViewController alloc] init];
     [self.navigationController pushViewController:ctrl animated:YES];
 }
 
