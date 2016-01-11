@@ -17,6 +17,16 @@
 		71131D3B1C40C72D00E41DA5 /* CodeAutoLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71131D391C40C72D00E41DA5 /* CodeAutoLayoutViewController.xib */; };
 		71131D3F1C40CEEE00E41DA5 /* CheckNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71131D3E1C40CEEE00E41DA5 /* CheckNetworkViewController.m */; };
 		71131D441C40D4B700E41DA5 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 71131D431C40D4B700E41DA5 /* Reachability.m */; };
+		71C765B01C433AD300E6CA12 /* MailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C765AF1C433AD300E6CA12 /* MailViewController.m */; };
+		71C765B41C43450200E6CA12 /* UINavigationBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C765B31C43450200E6CA12 /* UINavigationBarViewController.m */; };
+		71C765BB1C43481200E6CA12 /* nav_bg_ios7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71C765B91C43481200E6CA12 /* nav_bg_ios7@2x.png */; };
+		71C765BC1C43481200E6CA12 /* nav_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71C765BA1C43481200E6CA12 /* nav_bg@2x.png */; };
+		71C765BF1C43484500E6CA12 /* nav_bg_ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 71C765BD1C43484500E6CA12 /* nav_bg_ios7.png */; };
+		71C765C01C43484500E6CA12 /* nav_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 71C765BE1C43484500E6CA12 /* nav_bg.png */; };
+		71C765C31C4348E000E6CA12 /* back_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 71C765C11C4348E000E6CA12 /* back_btn.png */; };
+		71C765C41C4348E000E6CA12 /* back_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71C765C21C4348E000E6CA12 /* back_btn@2x.png */; };
+		71C765C71C4349F100E6CA12 /* appcoda-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 71C765C51C4349F100E6CA12 /* appcoda-logo.png */; };
+		71C765C81C4349F100E6CA12 /* appcoda-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71C765C61C4349F100E6CA12 /* appcoda-logo@2x.png */; };
 		71EB0B2A1C3F4DC000290797 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EB0B291C3F4DC000290797 /* main.m */; };
 		71EB0B2D1C3F4DC000290797 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EB0B2C1C3F4DC000290797 /* AppDelegate.m */; };
 		71EB0B301C3F4DC000290797 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EB0B2F1C3F4DC000290797 /* ViewController.m */; };
@@ -51,6 +61,18 @@
 		71131D3E1C40CEEE00E41DA5 /* CheckNetworkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckNetworkViewController.m; sourceTree = "<group>"; };
 		71131D421C40D4B700E41DA5 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		71131D431C40D4B700E41DA5 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		71C765AE1C433AD300E6CA12 /* MailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailViewController.h; sourceTree = "<group>"; };
+		71C765AF1C433AD300E6CA12 /* MailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailViewController.m; sourceTree = "<group>"; };
+		71C765B21C43450200E6CA12 /* UINavigationBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINavigationBarViewController.h; sourceTree = "<group>"; };
+		71C765B31C43450200E6CA12 /* UINavigationBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINavigationBarViewController.m; sourceTree = "<group>"; };
+		71C765B91C43481200E6CA12 /* nav_bg_ios7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_bg_ios7@2x.png"; sourceTree = "<group>"; };
+		71C765BA1C43481200E6CA12 /* nav_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_bg@2x.png"; sourceTree = "<group>"; };
+		71C765BD1C43484500E6CA12 /* nav_bg_ios7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_bg_ios7.png; sourceTree = "<group>"; };
+		71C765BE1C43484500E6CA12 /* nav_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_bg.png; sourceTree = "<group>"; };
+		71C765C11C4348E000E6CA12 /* back_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_btn.png; sourceTree = "<group>"; };
+		71C765C21C4348E000E6CA12 /* back_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_btn@2x.png"; sourceTree = "<group>"; };
+		71C765C51C4349F100E6CA12 /* appcoda-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appcoda-logo.png"; sourceTree = "<group>"; };
+		71C765C61C4349F100E6CA12 /* appcoda-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appcoda-logo@2x.png"; sourceTree = "<group>"; };
 		71EB0B251C3F4DC000290797 /* CodeSnippets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeSnippets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71EB0B291C3F4DC000290797 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		71EB0B2B1C3F4DC000290797 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -134,6 +156,32 @@
 			path = CheckNetwork;
 			sourceTree = "<group>";
 		};
+		71C765AD1C433AC400E6CA12 /* Mail */ = {
+			isa = PBXGroup;
+			children = (
+				71C765AE1C433AD300E6CA12 /* MailViewController.h */,
+				71C765AF1C433AD300E6CA12 /* MailViewController.m */,
+			);
+			path = Mail;
+			sourceTree = "<group>";
+		};
+		71C765B11C4344E900E6CA12 /* UINavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				71C765C51C4349F100E6CA12 /* appcoda-logo.png */,
+				71C765C61C4349F100E6CA12 /* appcoda-logo@2x.png */,
+				71C765C11C4348E000E6CA12 /* back_btn.png */,
+				71C765C21C4348E000E6CA12 /* back_btn@2x.png */,
+				71C765BE1C43484500E6CA12 /* nav_bg.png */,
+				71C765BA1C43481200E6CA12 /* nav_bg@2x.png */,
+				71C765BD1C43484500E6CA12 /* nav_bg_ios7.png */,
+				71C765B91C43481200E6CA12 /* nav_bg_ios7@2x.png */,
+				71C765B21C43450200E6CA12 /* UINavigationBarViewController.h */,
+				71C765B31C43450200E6CA12 /* UINavigationBarViewController.m */,
+			);
+			path = UINavigationBar;
+			sourceTree = "<group>";
+		};
 		71EB0B1C1C3F4DBF00290797 = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +201,8 @@
 		71EB0B271C3F4DC000290797 /* CodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				71C765B11C4344E900E6CA12 /* UINavigationBar */,
+				71C765AD1C433AC400E6CA12 /* Mail */,
 				71131D3C1C40CEDD00E41DA5 /* CheckNetwork */,
 				71131D361C40C6AC00E41DA5 /* CodeAutoLayout */,
 				71131D321C40BE4200E41DA5 /* DeleteCookieAndCache */,
@@ -288,11 +338,19 @@
 				71EB0B381C3F4DC000290797 /* LaunchScreen.storyboard in Resources */,
 				71EB0B351C3F4DC000290797 /* Assets.xcassets in Resources */,
 				71131D311C40A59C00E41DA5 /* scrollImg4.png in Resources */,
+				71C765C81C4349F100E6CA12 /* appcoda-logo@2x.png in Resources */,
+				71C765C31C4348E000E6CA12 /* back_btn.png in Resources */,
 				71EB0B331C3F4DC000290797 /* Main.storyboard in Resources */,
 				71EB0B491C3F4FAD00290797 /* uiimageviewmode.jpg in Resources */,
 				71131D3B1C40C72D00E41DA5 /* CodeAutoLayoutViewController.xib in Resources */,
 				71EB0B641C3FA89D00290797 /* DelaysContentTouchesTableViewCell.xib in Resources */,
 				71131D301C40A59C00E41DA5 /* scrollImg3.png in Resources */,
+				71C765BF1C43484500E6CA12 /* nav_bg_ios7.png in Resources */,
+				71C765C41C4348E000E6CA12 /* back_btn@2x.png in Resources */,
+				71C765BC1C43481200E6CA12 /* nav_bg@2x.png in Resources */,
+				71C765C01C43484500E6CA12 /* nav_bg.png in Resources */,
+				71C765C71C4349F100E6CA12 /* appcoda-logo.png in Resources */,
+				71C765BB1C43481200E6CA12 /* nav_bg_ios7@2x.png in Resources */,
 				71131D2E1C40A59C00E41DA5 /* scrollImg1.png in Resources */,
 				71EB0B691C3FA93F00290797 /* DelaysContentTouchesTableViewController.xib in Resources */,
 				71131D2F1C40A59C00E41DA5 /* scrollImg2.png in Resources */,
@@ -309,6 +367,7 @@
 				71EB0B301C3F4DC000290797 /* ViewController.m in Sources */,
 				71EB0B681C3FA93F00290797 /* DelaysContentTouchesTableViewController.m in Sources */,
 				71131D351C40BF0D00E41DA5 /* DeleteCookieAndCacheViewController.m in Sources */,
+				71C765B01C433AD300E6CA12 /* MailViewController.m in Sources */,
 				71EB0B4A1C3F4FAD00290797 /* UIImageViewModeViewController.m in Sources */,
 				71131D441C40D4B700E41DA5 /* Reachability.m in Sources */,
 				71131D3F1C40CEEE00E41DA5 /* CheckNetworkViewController.m in Sources */,
@@ -316,6 +375,7 @@
 				71131D291C40A29500E41DA5 /* ScrollViewController.m in Sources */,
 				71EB0B551C3F512000290797 /* InputAccessoryTableViewController.m in Sources */,
 				71EB0B5F1C3FA73000290797 /* DelaysContentTouchesTableView.m in Sources */,
+				71C765B41C43450200E6CA12 /* UINavigationBarViewController.m in Sources */,
 				71EB0B2A1C3F4DC000290797 /* main.m in Sources */,
 				71EB0B631C3FA89D00290797 /* DelaysContentTouchesTableViewCell.m in Sources */,
 				71131D3A1C40C72D00E41DA5 /* CodeAutoLayoutViewController.m in Sources */,

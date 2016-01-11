@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "CheckNetworkViewController.h"
+#import "UINavigationBarViewController.h"
 
 @interface ViewController ()
 
@@ -18,8 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    CheckNetworkViewController *ctrl =
-    [[CheckNetworkViewController alloc] init];
+    UINavigationBarViewController *ctrl =
+    [[UINavigationBarViewController alloc] init];
     [self.navigationController pushViewController:ctrl animated:YES];
 }
 
