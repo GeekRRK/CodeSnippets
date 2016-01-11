@@ -98,6 +98,33 @@
     [request setHTTPBody:data];
     self.connection =
     [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    
+    
+    //Alertnatively, use the following code to omit the NSURLConnectionDelegate
+//    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+//    [NSURLConnection sendAsynchronousRequest:request
+//                                       queue:queue
+//                           completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+//                               if (data) {
+//                                   NSDictionary *dict =
+//                                   [NSJSONSerialization JSONObjectWithData:data
+//                                                                   options:NSJSONReadingMutableLeaves
+//                                                                     error:nil];
+//                                   NSLog(@"%@",dict);
+//                               }
+//    }];
+    
+    //If the http server supports json
+//    NSDictionary *json = @{
+//                           @"username" : @"geekrrk",
+//                           @"password" : @"123"
+//                           };
+//
+//    NSData *jsonData =
+//    [NSJSONSerialization dataWithJSONObject:json
+//                                    options:NSJSONWritingPrettyPrinted
+//                                      error:nil];
+//    request.HTTPBody = jsonData;
 }
 
 #pragma mark - NSURLConnectionDelegate
