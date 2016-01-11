@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NSURLConnectViewController : UIViewController
+@interface NSURLConnectionViewController : UIViewController
 
 @end
