@@ -62,6 +62,10 @@
     NSArray *actionButtonItems = @[shareItem, cameraItem];
     self.navigationItem.rightBarButtonItems = actionButtonItems;
     
+    // Set View controller-based status bar appearance to NO in info.plist then
+    // the following code will work for all.
+    // [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    
     // `preferredStatusBarStyle` only be invoked in navigation controller when view
     // controller in UINavigationController, so use the following code to white the status bar.
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
