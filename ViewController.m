@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "NSURLConnectionViewController.h"
+#import "CoreDataViewController.h"
 
 @interface ViewController ()
 
@@ -18,8 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSURLConnectionViewController *ctrl =
-    [[NSURLConnectionViewController alloc] init];
+    CoreDataViewController *ctrl =
+    [[CoreDataViewController alloc] init];
     [self.navigationController pushViewController:ctrl animated:YES];
 }
 

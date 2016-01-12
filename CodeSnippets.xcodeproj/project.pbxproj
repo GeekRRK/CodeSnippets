@@ -17,6 +17,12 @@
 		71131D3B1C40C72D00E41DA5 /* CodeAutoLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71131D391C40C72D00E41DA5 /* CodeAutoLayoutViewController.xib */; };
 		71131D3F1C40CEEE00E41DA5 /* CheckNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71131D3E1C40CEEE00E41DA5 /* CheckNetworkViewController.m */; };
 		71131D441C40D4B700E41DA5 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 71131D431C40D4B700E41DA5 /* Reachability.m */; };
+		7188A0A51C448C6400027977 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7188A0A31C448C6400027977 /* Model.xcdatamodeld */; };
+		7188A0A81C448E7700027977 /* CoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7188A0A71C448E7700027977 /* CoreDataViewController.m */; };
+		7188A0CB1C44975800027977 /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 7188A0C41C44975800027977 /* Person+CoreDataProperties.m */; };
+		7188A0CC1C44975800027977 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 7188A0C61C44975800027977 /* Person.m */; };
+		7188A0CD1C44975800027977 /* Card+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 7188A0C81C44975800027977 /* Card+CoreDataProperties.m */; };
+		7188A0CE1C44975800027977 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 7188A0CA1C44975800027977 /* Card.m */; };
 		71C765B41C43450200E6CA12 /* UINavigationBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C765B31C43450200E6CA12 /* UINavigationBarViewController.m */; };
 		71C765BB1C43481200E6CA12 /* nav_bg_ios7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71C765B91C43481200E6CA12 /* nav_bg_ios7@2x.png */; };
 		71C765BC1C43481200E6CA12 /* nav_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71C765BA1C43481200E6CA12 /* nav_bg@2x.png */; };
@@ -63,6 +69,17 @@
 		71131D3E1C40CEEE00E41DA5 /* CheckNetworkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckNetworkViewController.m; sourceTree = "<group>"; };
 		71131D421C40D4B700E41DA5 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		71131D431C40D4B700E41DA5 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		7188A0A41C448C6400027977 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		7188A0A61C448E7700027977 /* CoreDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataViewController.h; sourceTree = "<group>"; };
+		7188A0A71C448E7700027977 /* CoreDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataViewController.m; sourceTree = "<group>"; };
+		7188A0C31C44975800027977 /* Person+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataProperties.h"; sourceTree = "<group>"; };
+		7188A0C41C44975800027977 /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataProperties.m"; sourceTree = "<group>"; };
+		7188A0C51C44975800027977 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		7188A0C61C44975800027977 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		7188A0C71C44975800027977 /* Card+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Card+CoreDataProperties.h"; sourceTree = "<group>"; };
+		7188A0C81C44975800027977 /* Card+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Card+CoreDataProperties.m"; sourceTree = "<group>"; };
+		7188A0C91C44975800027977 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		7188A0CA1C44975800027977 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
 		71C765B21C43450200E6CA12 /* UINavigationBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINavigationBarViewController.h; sourceTree = "<group>"; };
 		71C765B31C43450200E6CA12 /* UINavigationBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINavigationBarViewController.m; sourceTree = "<group>"; };
 		71C765B91C43481200E6CA12 /* nav_bg_ios7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_bg_ios7@2x.png"; sourceTree = "<group>"; };
@@ -160,6 +177,24 @@
 			path = CheckNetwork;
 			sourceTree = "<group>";
 		};
+		7188A0A21C448C4600027977 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				7188A0A31C448C6400027977 /* Model.xcdatamodeld */,
+				7188A0A61C448E7700027977 /* CoreDataViewController.h */,
+				7188A0A71C448E7700027977 /* CoreDataViewController.m */,
+				7188A0C31C44975800027977 /* Person+CoreDataProperties.h */,
+				7188A0C41C44975800027977 /* Person+CoreDataProperties.m */,
+				7188A0C51C44975800027977 /* Person.h */,
+				7188A0C61C44975800027977 /* Person.m */,
+				7188A0C71C44975800027977 /* Card+CoreDataProperties.h */,
+				7188A0C81C44975800027977 /* Card+CoreDataProperties.m */,
+				7188A0C91C44975800027977 /* Card.h */,
+				7188A0CA1C44975800027977 /* Card.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		71C765B11C4344E900E6CA12 /* UINavigationBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +266,7 @@
 		71EB0B271C3F4DC000290797 /* CodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				7188A0A21C448C4600027977 /* CoreData */,
 				71C766141C439EBA00E6CA12 /* APNS */,
 				71C7660F1C43920000E6CA12 /* NSURLConnection */,
 				71C765B11C4344E900E6CA12 /* UINavigationBar */,
@@ -381,6 +417,7 @@
 			files = (
 				71C7660E1C43823900E6CA12 /* ViewController.m in Sources */,
 				71EB0B681C3FA93F00290797 /* DelaysContentTouchesTableViewController.m in Sources */,
+				7188A0CC1C44975800027977 /* Person.m in Sources */,
 				71131D351C40BF0D00E41DA5 /* DeleteCookieAndCacheViewController.m in Sources */,
 				71EB0B4A1C3F4FAD00290797 /* UIImageViewModeViewController.m in Sources */,
 				71C766121C43920000E6CA12 /* NSURLConnectionViewController.m in Sources */,
@@ -389,14 +426,19 @@
 				71131D3F1C40CEEE00E41DA5 /* CheckNetworkViewController.m in Sources */,
 				71131D291C40A29500E41DA5 /* ScrollViewController.m in Sources */,
 				71EB0B551C3F512000290797 /* InputAccessoryTableViewController.m in Sources */,
+				7188A0CE1C44975800027977 /* Card.m in Sources */,
 				71C766171C439EC900E6CA12 /* APNSViewController.m in Sources */,
 				71EB0B5F1C3FA73000290797 /* DelaysContentTouchesTableView.m in Sources */,
 				71C765B41C43450200E6CA12 /* UINavigationBarViewController.m in Sources */,
+				7188A0A81C448E7700027977 /* CoreDataViewController.m in Sources */,
 				71C766081C4381FD00E6CA12 /* main.m in Sources */,
 				71EB0B631C3FA89D00290797 /* DelaysContentTouchesTableViewCell.m in Sources */,
 				71131D3A1C40C72D00E41DA5 /* CodeAutoLayoutViewController.m in Sources */,
 				71EB0B581C3F527D00290797 /* UIImagePickerViewController.m in Sources */,
+				7188A0A51C448C6400027977 /* Model.xcdatamodeld in Sources */,
+				7188A0CB1C44975800027977 /* Person+CoreDataProperties.m in Sources */,
 				71EB0B521C3F50A800290797 /* InputAccessoryTableViewCell.m in Sources */,
+				7188A0CD1C44975800027977 /* Card+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +598,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7188A0A31C448C6400027977 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7188A0A41C448C6400027977 /* Model.xcdatamodel */,
+			);
+			currentVersion = 7188A0A41C448C6400027977 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 71EB0B1D1C3F4DBF00290797 /* Project object */;
 }
