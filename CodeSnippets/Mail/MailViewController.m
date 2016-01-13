@@ -18,21 +18,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self sendMailInApp];
+    [self launchMailApp];
 }
 
 -(void)launchMailApp
 {
     NSMutableString *mailUrl = [[NSMutableString alloc] init];
-    NSArray *toRecipients = [NSArray arrayWithObject: @"669672615@qq.com"];
+    NSArray *toRecipients = [NSArray arrayWithObject: @"example@qq.com"];
     [mailUrl appendFormat:@"mailto:%@",
      [toRecipients componentsJoinedByString:@","]];
     NSArray *ccRecipients =
-    [NSArray arrayWithObjects:@"fanfangxiangc@gmail.com", nil];
+    [NSArray arrayWithObjects:@"examplecc@gmail.com", nil];
     [mailUrl appendFormat:@"?cc=%@",
      [ccRecipients componentsJoinedByString:@","]];
     NSArray *bccRecipients =
-    [NSArray arrayWithObjects:@"1719366416@qq.com", nil];
+    [NSArray arrayWithObjects:@"examplebcc@qq.com", nil];
     [mailUrl appendFormat:@"&bcc=%@",
      [bccRecipients componentsJoinedByString:@","]];
     [mailUrl appendString:@"&subject=My Email"];
@@ -66,13 +66,13 @@
     mailPicker.mailComposeDelegate = self;
     
     [mailPicker setSubject: @"Email Subject"];
-    NSArray *toRecipients = [NSArray arrayWithObject: @"669672615@qq.com"];
+    NSArray *toRecipients = [NSArray arrayWithObject: @"example@qq.com"];
     [mailPicker setToRecipients: toRecipients];
     NSArray *ccRecipients =
-    [NSArray arrayWithObjects:@"fanfangxiangc@gmail.com", nil];
+    [NSArray arrayWithObjects:@"examplecc@gmail.com", nil];
     [mailPicker setCcRecipients:ccRecipients];
     NSArray *bccRecipients =
-    [NSArray arrayWithObjects:@"1719366416@qq.com", nil];
+    [NSArray arrayWithObjects:@"examplebcc@qq.com", nil];
     [mailPicker setBccRecipients:bccRecipients];
     
     UIImage *addPic = [UIImage imageNamed: @"addPic.jpg"];
@@ -85,8 +85,8 @@
     [[NSBundle mainBundle] pathForResource:@"serverStartup" ofType:@".pdf"];
     NSData *pdf = [NSData dataWithContentsOfFile:file];
     [mailPicker addAttachmentData: pdf
-                         mimeType: @""
-                         fileName: @"serverStartup"];
+                         mimeType: @"application/pdf"
+                         fileName: @"serverStartup.pdf"];
     
     NSString *emailBody = @"<font color='red'>Email</font> Body";
     [mailPicker setMessageBody:emailBody isHTML:YES];
