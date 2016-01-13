@@ -2,7 +2,7 @@
 //  MainViewController.h
 //  CodeSnippets
 //
-//  Created by suorui on 1/11/16.
+//  Created by GeekRRK on 1/11/16.
 //  Copyright © 2016 GeekRRK. All rights reserved.
 //
 
