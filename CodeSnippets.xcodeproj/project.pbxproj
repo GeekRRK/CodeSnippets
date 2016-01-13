@@ -42,6 +42,9 @@
 		71C766121C43920000E6CA12 /* NSURLConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C766111C43920000E6CA12 /* NSURLConnectionViewController.m */; };
 		71C766171C439EC900E6CA12 /* APNSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C766161C439EC900E6CA12 /* APNSViewController.m */; };
 		71D8F0321C45EC3F00DF7EB5 /* NSXMLParserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D8F0311C45EC3F00DF7EB5 /* NSXMLParserViewController.m */; };
+		71D8F0361C46116C00DF7EB5 /* MailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D8F0351C46116C00DF7EB5 /* MailViewController.m */; };
+		71D8F0381C46144500DF7EB5 /* addPic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71D8F0371C46144500DF7EB5 /* addPic.jpg */; };
+		71D8F03A1C46156500DF7EB5 /* serverStartup.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 71D8F0391C46156500DF7EB5 /* serverStartup.pdf */; };
 		71EB0B491C3F4FAD00290797 /* uiimageviewmode.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71EB0B471C3F4FAD00290797 /* uiimageviewmode.jpg */; };
 		71EB0B4A1C3F4FAD00290797 /* UIImageViewModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EB0B481C3F4FAD00290797 /* UIImageViewModeViewController.m */; };
 		71EB0B521C3F50A800290797 /* InputAccessoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EB0B511C3F50A800290797 /* InputAccessoryTableViewCell.m */; };
@@ -106,6 +109,10 @@
 		71C766161C439EC900E6CA12 /* APNSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APNSViewController.m; sourceTree = "<group>"; };
 		71D8F0301C45EC3F00DF7EB5 /* NSXMLParserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSXMLParserViewController.h; sourceTree = "<group>"; };
 		71D8F0311C45EC3F00DF7EB5 /* NSXMLParserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSXMLParserViewController.m; sourceTree = "<group>"; };
+		71D8F0341C46116C00DF7EB5 /* MailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailViewController.h; sourceTree = "<group>"; };
+		71D8F0351C46116C00DF7EB5 /* MailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailViewController.m; sourceTree = "<group>"; };
+		71D8F0371C46144500DF7EB5 /* addPic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = addPic.jpg; sourceTree = "<group>"; };
+		71D8F0391C46156500DF7EB5 /* serverStartup.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = serverStartup.pdf; sourceTree = "<group>"; };
 		71EB0B251C3F4DC000290797 /* CodeSnippets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeSnippets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71EB0B461C3F4FAD00290797 /* UIImageViewModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageViewModeViewController.h; sourceTree = "<group>"; };
 		71EB0B471C3F4FAD00290797 /* uiimageviewmode.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = uiimageviewmode.jpg; sourceTree = "<group>"; };
@@ -254,6 +261,17 @@
 			path = NSXMLParser;
 			sourceTree = "<group>";
 		};
+		71D8F0331C46116C00DF7EB5 /* Mail */ = {
+			isa = PBXGroup;
+			children = (
+				71D8F0391C46156500DF7EB5 /* serverStartup.pdf */,
+				71D8F0371C46144500DF7EB5 /* addPic.jpg */,
+				71D8F0341C46116C00DF7EB5 /* MailViewController.h */,
+				71D8F0351C46116C00DF7EB5 /* MailViewController.m */,
+			);
+			path = Mail;
+			sourceTree = "<group>";
+		};
 		71EB0B1C1C3F4DBF00290797 = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +296,7 @@
 		71EB0B271C3F4DC000290797 /* CodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				71D8F0331C46116C00DF7EB5 /* Mail */,
 				71D8F02F1C45EC3F00DF7EB5 /* NSXMLParser */,
 				7188A0A21C448C4600027977 /* CoreData */,
 				71C766141C439EBA00E6CA12 /* APNS */,
@@ -403,6 +422,7 @@
 				71C765C31C4348E000E6CA12 /* back_btn.png in Resources */,
 				71EB0B491C3F4FAD00290797 /* uiimageviewmode.jpg in Resources */,
 				71131D3B1C40C72D00E41DA5 /* CodeAutoLayoutViewController.xib in Resources */,
+				71D8F0381C46144500DF7EB5 /* addPic.jpg in Resources */,
 				71EB0B641C3FA89D00290797 /* DelaysContentTouchesTableViewCell.xib in Resources */,
 				71C766041C4381FD00E6CA12 /* Assets.xcassets in Resources */,
 				71131D301C40A59C00E41DA5 /* scrollImg3.png in Resources */,
@@ -412,6 +432,7 @@
 				71C765C41C4348E000E6CA12 /* back_btn@2x.png in Resources */,
 				71C765BC1C43481200E6CA12 /* nav_bg@2x.png in Resources */,
 				71C765C01C43484500E6CA12 /* nav_bg.png in Resources */,
+				71D8F03A1C46156500DF7EB5 /* serverStartup.pdf in Resources */,
 				71C765C71C4349F100E6CA12 /* appcoda-logo.png in Resources */,
 				71C765BB1C43481200E6CA12 /* nav_bg_ios7@2x.png in Resources */,
 				71131D2E1C40A59C00E41DA5 /* scrollImg1.png in Resources */,
@@ -449,6 +470,7 @@
 				71EB0B631C3FA89D00290797 /* DelaysContentTouchesTableViewCell.m in Sources */,
 				71131D3A1C40C72D00E41DA5 /* CodeAutoLayoutViewController.m in Sources */,
 				71EB0B581C3F527D00290797 /* UIImagePickerViewController.m in Sources */,
+				71D8F0361C46116C00DF7EB5 /* MailViewController.m in Sources */,
 				7188A0A51C448C6400027977 /* Model.xcdatamodeld in Sources */,
 				7188A0CB1C44975800027977 /* Person+CoreDataProperties.m in Sources */,
 				71EB0B521C3F50A800290797 /* InputAccessoryTableViewCell.m in Sources */,

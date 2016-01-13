@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "NSXMLParserViewController.h"
+#import "MailViewController.h"
 
 @interface ViewController ()
 
@@ -18,8 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSXMLParserViewController *ctrl =
-    [[NSXMLParserViewController alloc] init];
+    MailViewController *ctrl =
+    [[MailViewController alloc] init];
     [self.navigationController pushViewController:ctrl animated:YES];
 }
 
