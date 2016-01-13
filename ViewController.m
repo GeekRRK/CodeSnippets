@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "CoreDataViewController.h"
+#import "NSXMLParserViewController.h"
 
 @interface ViewController ()
 
@@ -18,8 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    CoreDataViewController *ctrl =
-    [[CoreDataViewController alloc] init];
+    NSXMLParserViewController *ctrl =
+    [[NSXMLParserViewController alloc] init];
     [self.navigationController pushViewController:ctrl animated:YES];
 }
 
