@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "MailViewController.h"
+#import "CALayerViewController.h"
 
 @interface ViewController ()
 
@@ -18,8 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    MailViewController *ctrl =
-    [[MailViewController alloc] init];
+    CALayerViewController *ctrl =
+    [[CALayerViewController alloc] init];
     [self.navigationController pushViewController:ctrl animated:YES];
 }
 
