@@ -41,6 +41,7 @@
 		71C7660E1C43823900E6CA12 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C7660C1C43823900E6CA12 /* ViewController.m */; };
 		71C766121C43920000E6CA12 /* NSURLConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C766111C43920000E6CA12 /* NSURLConnectionViewController.m */; };
 		71C766171C439EC900E6CA12 /* APNSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C766161C439EC900E6CA12 /* APNSViewController.m */; };
+		71CDD4C11C4DD03200C8B3DE /* DeepSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CDD4C01C4DD03200C8B3DE /* DeepSettingViewController.swift */; };
 		71D5D5B51C473D5C00904EA1 /* CALayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D5D5B41C473D5C00904EA1 /* CALayerViewController.m */; };
 		71D5D5B91C473FA700904EA1 /* contentsimg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71D5D5B81C473FA700904EA1 /* contentsimg.jpg */; };
 		71D8F0321C45EC3F00DF7EB5 /* NSXMLParserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D8F0311C45EC3F00DF7EB5 /* NSXMLParserViewController.m */; };
@@ -109,6 +110,8 @@
 		71C766111C43920000E6CA12 /* NSURLConnectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLConnectionViewController.m; sourceTree = "<group>"; };
 		71C766151C439EC900E6CA12 /* APNSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APNSViewController.h; sourceTree = "<group>"; };
 		71C766161C439EC900E6CA12 /* APNSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APNSViewController.m; sourceTree = "<group>"; };
+		71CDD4C01C4DD03200C8B3DE /* DeepSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepSettingViewController.swift; sourceTree = "<group>"; };
+		71CDD4C21C4DD05E00C8B3DE /* CodeSnippets-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CodeSnippets-Bridging-Header.h"; sourceTree = "<group>"; };
 		71D5D5B31C473D5C00904EA1 /* CALayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALayerViewController.h; sourceTree = "<group>"; };
 		71D5D5B41C473D5C00904EA1 /* CALayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALayerViewController.m; sourceTree = "<group>"; };
 		71D5D5B81C473FA700904EA1 /* contentsimg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = contentsimg.jpg; sourceTree = "<group>"; };
@@ -257,6 +260,14 @@
 			path = APNS;
 			sourceTree = "<group>";
 		};
+		71CDD4BE1C4DD01000C8B3DE /* DeepSetting */ = {
+			isa = PBXGroup;
+			children = (
+				71CDD4C01C4DD03200C8B3DE /* DeepSettingViewController.swift */,
+			);
+			path = DeepSetting;
+			sourceTree = "<group>";
+		};
 		71D5D5B21C473D4600904EA1 /* CALayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,6 +305,7 @@
 				71C7660A1C43823900E6CA12 /* AppDelegate.m */,
 				71C7660B1C43823900E6CA12 /* ViewController.h */,
 				71C7660C1C43823900E6CA12 /* ViewController.m */,
+				71CDD4C21C4DD05E00C8B3DE /* CodeSnippets-Bridging-Header.h */,
 				71EB0B271C3F4DC000290797 /* CodeSnippets */,
 				71C765FC1C4381FD00E6CA12 /* Supporting Files */,
 				71EB0B261C3F4DC000290797 /* Products */,
@@ -311,6 +323,7 @@
 		71EB0B271C3F4DC000290797 /* CodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				71CDD4BE1C4DD01000C8B3DE /* DeepSetting */,
 				71D5D5B21C473D4600904EA1 /* CALayer */,
 				71D8F0331C46116C00DF7EB5 /* Mail */,
 				71D8F02F1C45EC3F00DF7EB5 /* NSXMLParser */,
@@ -491,6 +504,7 @@
 				71D5D5B51C473D5C00904EA1 /* CALayerViewController.m in Sources */,
 				7188A0A51C448C6400027977 /* Model.xcdatamodeld in Sources */,
 				7188A0CB1C44975800027977 /* Person+CoreDataProperties.m in Sources */,
+				71CDD4C11C4DD03200C8B3DE /* DeepSettingViewController.swift in Sources */,
 				71EB0B521C3F50A800290797 /* InputAccessoryTableViewCell.m in Sources */,
 				7188A0CD1C44975800027977 /* Card+CoreDataProperties.m in Sources */,
 			);
@@ -604,14 +618,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.GeekRRK.CodeSnippets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "CodeSnippets-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -619,14 +637,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.GeekRRK.CodeSnippets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "CodeSnippets-Bridging-Header.h";
 			};
 			name = Release;
 		};

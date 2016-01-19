@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "CALayerViewController.h"
+#import "CodeSnippets-Swift.h"
 
 @interface ViewController ()
 
@@ -18,8 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    CALayerViewController *ctrl =
-    [[CALayerViewController alloc] init];
+    DeepSettingViewController *ctrl =
+    [[DeepSettingViewController alloc] init];
     [self.navigationController pushViewController:ctrl animated:YES];
 }
 
