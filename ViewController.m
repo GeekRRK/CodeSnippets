@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "CodeSnippets-Swift.h"
+#import "ResponderChainViewController.h"
 
 @interface ViewController ()
 
@@ -18,8 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    DeepSettingViewController *ctrl =
-    [[DeepSettingViewController alloc] init];
+    ResponderChainViewController *ctrl =
+    [[ResponderChainViewController alloc] init];
     [self.navigationController pushViewController:ctrl animated:YES];
 }
 
