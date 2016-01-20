@@ -24,6 +24,7 @@
 		7128D9601C4F516500DDED05 /* DView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7128D95F1C4F516500DDED05 /* DView.m */; };
 		7128D9641C4F519E00DDED05 /* ResponderChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7128D9621C4F519E00DDED05 /* ResponderChainViewController.m */; };
 		7128D9651C4F519E00DDED05 /* ResponderChainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7128D9631C4F519E00DDED05 /* ResponderChainViewController.xib */; };
+		7128D9681C4F7BAC00DDED05 /* GeneratorSequenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7128D9671C4F7BAC00DDED05 /* GeneratorSequenceViewController.swift */; };
 		7188A0A51C448C6400027977 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7188A0A31C448C6400027977 /* Model.xcdatamodeld */; };
 		7188A0A81C448E7700027977 /* CoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7188A0A71C448E7700027977 /* CoreDataViewController.m */; };
 		7188A0CB1C44975800027977 /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 7188A0C41C44975800027977 /* Person+CoreDataProperties.m */; };
@@ -96,6 +97,7 @@
 		7128D9611C4F519E00DDED05 /* ResponderChainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponderChainViewController.h; sourceTree = "<group>"; };
 		7128D9621C4F519E00DDED05 /* ResponderChainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponderChainViewController.m; sourceTree = "<group>"; };
 		7128D9631C4F519E00DDED05 /* ResponderChainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResponderChainViewController.xib; sourceTree = "<group>"; };
+		7128D9671C4F7BAC00DDED05 /* GeneratorSequenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratorSequenceViewController.swift; sourceTree = "<group>"; };
 		7188A0A41C448C6400027977 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		7188A0A61C448E7700027977 /* CoreDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataViewController.h; sourceTree = "<group>"; };
 		7188A0A71C448E7700027977 /* CoreDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataViewController.m; sourceTree = "<group>"; };
@@ -235,6 +237,14 @@
 			path = ResponderChain;
 			sourceTree = "<group>";
 		};
+		7128D9661C4F7B8D00DDED05 /* GeneratorSequence */ = {
+			isa = PBXGroup;
+			children = (
+				7128D9671C4F7BAC00DDED05 /* GeneratorSequenceViewController.swift */,
+			);
+			path = GeneratorSequence;
+			sourceTree = "<group>";
+		};
 		7188A0A21C448C4600027977 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -363,6 +373,7 @@
 		71EB0B271C3F4DC000290797 /* CodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				7128D9661C4F7B8D00DDED05 /* GeneratorSequence */,
 				7128D9511C4F500B00DDED05 /* ResponderChain */,
 				71CDD4BE1C4DD01000C8B3DE /* DeepSetting */,
 				71D5D5B21C473D4600904EA1 /* CALayer */,
@@ -552,6 +563,7 @@
 				7188A0A51C448C6400027977 /* Model.xcdatamodeld in Sources */,
 				7188A0CB1C44975800027977 /* Person+CoreDataProperties.m in Sources */,
 				71CDD4C11C4DD03200C8B3DE /* DeepSettingViewController.swift in Sources */,
+				7128D9681C4F7BAC00DDED05 /* GeneratorSequenceViewController.swift in Sources */,
 				7128D9641C4F519E00DDED05 /* ResponderChainViewController.m in Sources */,
 				71EB0B521C3F50A800290797 /* InputAccessoryTableViewCell.m in Sources */,
 				7188A0CD1C44975800027977 /* Card+CoreDataProperties.m in Sources */,

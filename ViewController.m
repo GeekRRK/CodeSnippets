@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 #import "CodeSnippets-Swift.h"
-#import "ResponderChainViewController.h"
 
 @interface ViewController ()
 
@@ -19,8 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    ResponderChainViewController *ctrl =
-    [[ResponderChainViewController alloc] init];
+    GeneratorSequenceViewController *ctrl =
+    [[GeneratorSequenceViewController alloc] init];
     [self.navigationController pushViewController:ctrl animated:YES];
 }
 
