@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7104A5AC1C505A680080610C /* MethodSwizzlingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7104A5AB1C505A680080610C /* MethodSwizzlingViewController.m */; };
+		7104A5AF1C505A9A0080610C /* UIViewController+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 7104A5AE1C505A9A0080610C /* UIViewController+Tracking.m */; };
 		71131D291C40A29500E41DA5 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71131D281C40A29500E41DA5 /* ScrollViewController.m */; };
 		71131D2E1C40A59C00E41DA5 /* scrollImg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 71131D2A1C40A59C00E41DA5 /* scrollImg1.png */; };
 		71131D2F1C40A59C00E41DA5 /* scrollImg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 71131D2B1C40A59C00E41DA5 /* scrollImg2.png */; };
@@ -69,6 +71,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7104A5AA1C505A680080610C /* MethodSwizzlingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodSwizzlingViewController.h; sourceTree = "<group>"; };
+		7104A5AB1C505A680080610C /* MethodSwizzlingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzlingViewController.m; sourceTree = "<group>"; };
+		7104A5AD1C505A9A0080610C /* UIViewController+Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tracking.h"; sourceTree = "<group>"; };
+		7104A5AE1C505A9A0080610C /* UIViewController+Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tracking.m"; sourceTree = "<group>"; };
 		71131D271C40A29500E41DA5 /* ScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
 		71131D281C40A29500E41DA5 /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
 		71131D2A1C40A59C00E41DA5 /* scrollImg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scrollImg1.png; sourceTree = "<group>"; };
@@ -174,6 +180,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7104A5A91C505A500080610C /* MethodSwizzling */ = {
+			isa = PBXGroup;
+			children = (
+				7104A5AA1C505A680080610C /* MethodSwizzlingViewController.h */,
+				7104A5AB1C505A680080610C /* MethodSwizzlingViewController.m */,
+				7104A5AD1C505A9A0080610C /* UIViewController+Tracking.h */,
+				7104A5AE1C505A9A0080610C /* UIViewController+Tracking.m */,
+			);
+			path = MethodSwizzling;
+			sourceTree = "<group>";
+		};
 		71131D261C40A26600E41DA5 /* UIScrollView */ = {
 			isa = PBXGroup;
 			children = (
@@ -373,6 +390,7 @@
 		71EB0B271C3F4DC000290797 /* CodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				7104A5A91C505A500080610C /* MethodSwizzling */,
 				7128D9661C4F7B8D00DDED05 /* GeneratorSequence */,
 				7128D9511C4F500B00DDED05 /* ResponderChain */,
 				71CDD4BE1C4DD01000C8B3DE /* DeepSetting */,
@@ -543,6 +561,7 @@
 				71C766121C43920000E6CA12 /* NSURLConnectionViewController.m in Sources */,
 				71C7660D1C43823900E6CA12 /* AppDelegate.m in Sources */,
 				71131D441C40D4B700E41DA5 /* Reachability.m in Sources */,
+				7104A5AC1C505A680080610C /* MethodSwizzlingViewController.m in Sources */,
 				71131D3F1C40CEEE00E41DA5 /* CheckNetworkViewController.m in Sources */,
 				71131D291C40A29500E41DA5 /* ScrollViewController.m in Sources */,
 				7128D95A1C4F515300DDED05 /* BView.m in Sources */,
@@ -552,6 +571,7 @@
 				71EB0B5F1C3FA73000290797 /* DelaysContentTouchesTableView.m in Sources */,
 				71C765B41C43450200E6CA12 /* UINavigationBarViewController.m in Sources */,
 				7188A0A81C448E7700027977 /* CoreDataViewController.m in Sources */,
+				7104A5AF1C505A9A0080610C /* UIViewController+Tracking.m in Sources */,
 				71C766081C4381FD00E6CA12 /* main.m in Sources */,
 				7128D9571C4F514300DDED05 /* AView.m in Sources */,
 				7128D9541C4F504100DDED05 /* UIView+ResponderChain.m in Sources */,

@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "CodeSnippets-Swift.h"
+#import "MethodSwizzlingViewController.h"
 
 @interface ViewController ()
 
@@ -18,8 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    GeneratorSequenceViewController *ctrl =
-    [[GeneratorSequenceViewController alloc] init];
+    MethodSwizzlingViewController *ctrl =
+    [[MethodSwizzlingViewController alloc] init];
     [self.navigationController pushViewController:ctrl animated:YES];
 }
 
