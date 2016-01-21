@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "CodeSnippets-Swift.h"
-#import "MethodSwizzlingViewController.h"
+#import "RuntimeViewController.h"
 
 @interface ViewController ()
 
@@ -19,8 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    MethodSwizzlingViewController *ctrl =
-    [[MethodSwizzlingViewController alloc] init];
+    RuntimeViewController *ctrl =
+    [[RuntimeViewController alloc] init];
     [self.navigationController pushViewController:ctrl animated:YES];
 }
 
