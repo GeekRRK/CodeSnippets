@@ -17,10 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self animatedCircle];
+    [self animateCircle];
 }
 
-- (void)animatedCircle {
+- (void)animateCircle {
     CAShapeLayer *bottomShapeLayer = [CAShapeLayer layer];
     bottomShapeLayer.strokeColor = [UIColor colorWithRed:229/255.0 green:229/255.0 blue:229/255.0 alpha:1].CGColor;
     bottomShapeLayer.fillColor = [UIColor clearColor].CGColor;
