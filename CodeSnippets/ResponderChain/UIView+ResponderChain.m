@@ -11,27 +11,27 @@
 
 @implementation UIView (ResponderChain)
 
-+ (void)load {
-    Method origin = class_getInstanceMethod([UIView class], @selector(touchesBegan:withEvent:));
-    Method custom = class_getInstanceMethod([UIView class], @selector(lxd_touchesBegan:withEvent:));
-    method_exchangeImplementations(origin, custom);
-    
-    origin = class_getInstanceMethod([UIView class], @selector(touchesMoved:withEvent:));
-    custom = class_getInstanceMethod([UIView class], @selector(lxd_touchesMoved:withEvent:));
-    method_exchangeImplementations(origin, custom);
-    
-    origin = class_getInstanceMethod([UIView class], @selector(touchesEnded:withEvent:));
-    custom = class_getInstanceMethod([UIView class], @selector(lxd_touchesEnded:withEvent:));
-    method_exchangeImplementations(origin, custom);
-    
-    origin = class_getInstanceMethod([UIView class], @selector(hitTest:withEvent:));
-    custom = class_getInstanceMethod([UIView class], @selector(lxd_hitTest:withEvent:));
-    method_exchangeImplementations(origin, custom);
-    
-    origin = class_getInstanceMethod([UIView class], @selector(pointInside:withEvent:));
-    custom = class_getInstanceMethod([UIView class], @selector(lxd_pointInside:withEvent:));
-    method_exchangeImplementations(origin, custom);
-}
+//+ (void)load {
+//    Method origin = class_getInstanceMethod([UIView class], @selector(touchesBegan:withEvent:));
+//    Method custom = class_getInstanceMethod([UIView class], @selector(lxd_touchesBegan:withEvent:));
+//    method_exchangeImplementations(origin, custom);
+//    
+//    origin = class_getInstanceMethod([UIView class], @selector(touchesMoved:withEvent:));
+//    custom = class_getInstanceMethod([UIView class], @selector(lxd_touchesMoved:withEvent:));
+//    method_exchangeImplementations(origin, custom);
+//    
+//    origin = class_getInstanceMethod([UIView class], @selector(touchesEnded:withEvent:));
+//    custom = class_getInstanceMethod([UIView class], @selector(lxd_touchesEnded:withEvent:));
+//    method_exchangeImplementations(origin, custom);
+//    
+//    origin = class_getInstanceMethod([UIView class], @selector(hitTest:withEvent:));
+//    custom = class_getInstanceMethod([UIView class], @selector(lxd_hitTest:withEvent:));
+//    method_exchangeImplementations(origin, custom);
+//    
+//    origin = class_getInstanceMethod([UIView class], @selector(pointInside:withEvent:));
+//    custom = class_getInstanceMethod([UIView class], @selector(lxd_pointInside:withEvent:));
+//    method_exchangeImplementations(origin, custom);
+//}
 
 - (void)lxd_touchesBegan: (NSSet *)touches withEvent: (UIEvent *)event
 {

@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "CodeSnippets-Swift.h"
-#import "RuntimeViewController.h"
+#import "CAShapeLayerViewController.h"
 
 @interface ViewController ()
 
@@ -19,8 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    RuntimeViewController *ctrl =
-    [[RuntimeViewController alloc] init];
+    CAShapeLayerViewController *ctrl =
+    [[CAShapeLayerViewController alloc] init];
     [self.navigationController pushViewController:ctrl animated:YES];
 }
 

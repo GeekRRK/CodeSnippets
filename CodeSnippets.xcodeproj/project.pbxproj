@@ -29,6 +29,7 @@
 		7128D9641C4F519E00DDED05 /* ResponderChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7128D9621C4F519E00DDED05 /* ResponderChainViewController.m */; };
 		7128D9651C4F519E00DDED05 /* ResponderChainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7128D9631C4F519E00DDED05 /* ResponderChainViewController.xib */; };
 		7128D9681C4F7BAC00DDED05 /* GeneratorSequenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7128D9671C4F7BAC00DDED05 /* GeneratorSequenceViewController.swift */; };
+		717D8EC11C75A6D9007CB655 /* CAShapeLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 717D8EC01C75A6D9007CB655 /* CAShapeLayerViewController.m */; };
 		7188A0A51C448C6400027977 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7188A0A31C448C6400027977 /* Model.xcdatamodeld */; };
 		7188A0A81C448E7700027977 /* CoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7188A0A71C448E7700027977 /* CoreDataViewController.m */; };
 		7188A0CB1C44975800027977 /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 7188A0C41C44975800027977 /* Person+CoreDataProperties.m */; };
@@ -58,7 +59,7 @@
 		71CF7D721C55F3DF008A30BE /* calayer_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71CF7D691C55F3DF008A30BE /* calayer_background.jpg */; };
 		71CF7D731C55F3DF008A30BE /* KCLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CF7D6B1C55F3DF008A30BE /* KCLayer.m */; };
 		71CF7D741C55F3DF008A30BE /* KCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CF7D6D1C55F3DF008A30BE /* KCView.m */; };
-		71CF7D751C55F3DF008A30BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CF7D6F1C55F3DF008A30BE /* ViewController.m */; };
+		71CF7D751C55F3DF008A30BE /* AnimateLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CF7D6F1C55F3DF008A30BE /* AnimateLayerViewController.m */; };
 		71CF7D7A1C5623E9008A30BE /* TcpServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CF7D791C5623E9008A30BE /* TcpServer.m */; };
 		71CF7D7C1C562477008A30BE /* TcpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CF7D7B1C562477008A30BE /* TcpClient.m */; };
 		71CF7D7E1C562510008A30BE /* UdpServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CF7D7D1C562510008A30BE /* UdpServer.m */; };
@@ -119,6 +120,8 @@
 		7128D9621C4F519E00DDED05 /* ResponderChainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponderChainViewController.m; sourceTree = "<group>"; };
 		7128D9631C4F519E00DDED05 /* ResponderChainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResponderChainViewController.xib; sourceTree = "<group>"; };
 		7128D9671C4F7BAC00DDED05 /* GeneratorSequenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratorSequenceViewController.swift; sourceTree = "<group>"; };
+		717D8EBF1C75A6D9007CB655 /* CAShapeLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAShapeLayerViewController.h; sourceTree = "<group>"; };
+		717D8EC01C75A6D9007CB655 /* CAShapeLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAShapeLayerViewController.m; sourceTree = "<group>"; };
 		7188A0A41C448C6400027977 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		7188A0A61C448E7700027977 /* CoreDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataViewController.h; sourceTree = "<group>"; };
 		7188A0A71C448E7700027977 /* CoreDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataViewController.m; sourceTree = "<group>"; };
@@ -161,8 +164,8 @@
 		71CF7D6B1C55F3DF008A30BE /* KCLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCLayer.m; sourceTree = "<group>"; };
 		71CF7D6C1C55F3DF008A30BE /* KCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCView.h; sourceTree = "<group>"; };
 		71CF7D6D1C55F3DF008A30BE /* KCView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCView.m; sourceTree = "<group>"; };
-		71CF7D6E1C55F3DF008A30BE /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		71CF7D6F1C55F3DF008A30BE /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		71CF7D6E1C55F3DF008A30BE /* AnimateLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimateLayerViewController.h; sourceTree = "<group>"; };
+		71CF7D6F1C55F3DF008A30BE /* AnimateLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimateLayerViewController.m; sourceTree = "<group>"; };
 		71CF7D791C5623E9008A30BE /* TcpServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TcpServer.m; sourceTree = "<group>"; };
 		71CF7D7B1C562477008A30BE /* TcpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TcpClient.m; sourceTree = "<group>"; };
 		71CF7D7D1C562510008A30BE /* UdpServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UdpServer.m; sourceTree = "<group>"; };
@@ -300,6 +303,15 @@
 			path = GeneratorSequence;
 			sourceTree = "<group>";
 		};
+		717D8EBE1C75A6B6007CB655 /* CAShapeLayer */ = {
+			isa = PBXGroup;
+			children = (
+				717D8EBF1C75A6D9007CB655 /* CAShapeLayerViewController.h */,
+				717D8EC01C75A6D9007CB655 /* CAShapeLayerViewController.m */,
+			);
+			path = CAShapeLayer;
+			sourceTree = "<group>";
+		};
 		7188A0A21C448C4600027977 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -396,8 +408,8 @@
 				71CF7D6B1C55F3DF008A30BE /* KCLayer.m */,
 				71CF7D6C1C55F3DF008A30BE /* KCView.h */,
 				71CF7D6D1C55F3DF008A30BE /* KCView.m */,
-				71CF7D6E1C55F3DF008A30BE /* ViewController.h */,
-				71CF7D6F1C55F3DF008A30BE /* ViewController.m */,
+				71CF7D6E1C55F3DF008A30BE /* AnimateLayerViewController.h */,
+				71CF7D6F1C55F3DF008A30BE /* AnimateLayerViewController.m */,
 			);
 			path = CALayer;
 			sourceTree = "<group>";
@@ -447,6 +459,7 @@
 		71EB0B271C3F4DC000290797 /* CodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				717D8EBE1C75A6B6007CB655 /* CAShapeLayer */,
 				71CF7D761C56230C008A30BE /* Socket */,
 				7104A5B01C505D090080610C /* Runtime */,
 				7104A5A91C505A500080610C /* MethodSwizzling */,
@@ -643,6 +656,7 @@
 				71CF7D7C1C562477008A30BE /* TcpClient.m in Sources */,
 				71EB0B631C3FA89D00290797 /* DelaysContentTouchesTableViewCell.m in Sources */,
 				71131D3A1C40C72D00E41DA5 /* CodeAutoLayoutViewController.m in Sources */,
+				717D8EC11C75A6D9007CB655 /* CAShapeLayerViewController.m in Sources */,
 				71EB0B581C3F527D00290797 /* UIImagePickerViewController.m in Sources */,
 				7104A5B91C5064BA0080610C /* RuntimeClassVC.m in Sources */,
 				71CF7D741C55F3DF008A30BE /* KCView.m in Sources */,
@@ -653,7 +667,7 @@
 				71CDD4C11C4DD03200C8B3DE /* DeepSettingViewController.swift in Sources */,
 				7128D9681C4F7BAC00DDED05 /* GeneratorSequenceViewController.swift in Sources */,
 				7128D9641C4F519E00DDED05 /* ResponderChainViewController.m in Sources */,
-				71CF7D751C55F3DF008A30BE /* ViewController.m in Sources */,
+				71CF7D751C55F3DF008A30BE /* AnimateLayerViewController.m in Sources */,
 				71CF7D7E1C562510008A30BE /* UdpServer.m in Sources */,
 				71EB0B521C3F50A800290797 /* InputAccessoryTableViewCell.m in Sources */,
 				7188A0CD1C44975800027977 /* Card+CoreDataProperties.m in Sources */,

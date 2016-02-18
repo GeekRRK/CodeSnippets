@@ -6,19 +6,19 @@
 //  Copyright © 2016 GeekRRK. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "AnimateLayerViewController.h"
 #import "KCView.h"
 
 #define WIDTH 50
 #define PHOTO_HEIGHT 150
 
-@interface ViewController () {
+@interface AnimateLayerViewController () {
     CALayer *animateLayer;
 }
 
 @end
 
-@implementation ViewController
+@implementation AnimateLayerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
