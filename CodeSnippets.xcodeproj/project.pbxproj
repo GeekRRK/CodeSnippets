@@ -30,6 +30,7 @@
 		7128D9651C4F519E00DDED05 /* ResponderChainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7128D9631C4F519E00DDED05 /* ResponderChainViewController.xib */; };
 		7128D9681C4F7BAC00DDED05 /* GeneratorSequenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7128D9671C4F7BAC00DDED05 /* GeneratorSequenceViewController.swift */; };
 		717D8EC11C75A6D9007CB655 /* CAShapeLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 717D8EC01C75A6D9007CB655 /* CAShapeLayerViewController.m */; };
+		7186A6741C7701D0009B5E7A /* AlIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7186A6731C7701D0009B5E7A /* AlIndicator.m */; };
 		7188A0A51C448C6400027977 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7188A0A31C448C6400027977 /* Model.xcdatamodeld */; };
 		7188A0A81C448E7700027977 /* CoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7188A0A71C448E7700027977 /* CoreDataViewController.m */; };
 		7188A0CB1C44975800027977 /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 7188A0C41C44975800027977 /* Person+CoreDataProperties.m */; };
@@ -122,6 +123,8 @@
 		7128D9671C4F7BAC00DDED05 /* GeneratorSequenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratorSequenceViewController.swift; sourceTree = "<group>"; };
 		717D8EBF1C75A6D9007CB655 /* CAShapeLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAShapeLayerViewController.h; sourceTree = "<group>"; };
 		717D8EC01C75A6D9007CB655 /* CAShapeLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAShapeLayerViewController.m; sourceTree = "<group>"; };
+		7186A6721C7701D0009B5E7A /* AlIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlIndicator.h; sourceTree = "<group>"; };
+		7186A6731C7701D0009B5E7A /* AlIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlIndicator.m; sourceTree = "<group>"; };
 		7188A0A41C448C6400027977 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		7188A0A61C448E7700027977 /* CoreDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataViewController.h; sourceTree = "<group>"; };
 		7188A0A71C448E7700027977 /* CoreDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataViewController.m; sourceTree = "<group>"; };
@@ -312,6 +315,15 @@
 			path = CAShapeLayer;
 			sourceTree = "<group>";
 		};
+		7186A6711C7701AB009B5E7A /* UIActivityIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				7186A6721C7701D0009B5E7A /* AlIndicator.h */,
+				7186A6731C7701D0009B5E7A /* AlIndicator.m */,
+			);
+			path = UIActivityIndicatorView;
+			sourceTree = "<group>";
+		};
 		7188A0A21C448C4600027977 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -459,6 +471,7 @@
 		71EB0B271C3F4DC000290797 /* CodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				7186A6711C7701AB009B5E7A /* UIActivityIndicatorView */,
 				717D8EBE1C75A6B6007CB655 /* CAShapeLayer */,
 				71CF7D761C56230C008A30BE /* Socket */,
 				7104A5B01C505D090080610C /* Runtime */,
@@ -658,6 +671,7 @@
 				71131D3A1C40C72D00E41DA5 /* CodeAutoLayoutViewController.m in Sources */,
 				717D8EC11C75A6D9007CB655 /* CAShapeLayerViewController.m in Sources */,
 				71EB0B581C3F527D00290797 /* UIImagePickerViewController.m in Sources */,
+				7186A6741C7701D0009B5E7A /* AlIndicator.m in Sources */,
 				7104A5B91C5064BA0080610C /* RuntimeClassVC.m in Sources */,
 				71CF7D741C55F3DF008A30BE /* KCView.m in Sources */,
 				71D8F0361C46116C00DF7EB5 /* MailViewController.m in Sources */,

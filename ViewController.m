@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "CodeSnippets-Swift.h"
-#import "CAShapeLayerViewController.h"
+#import "AlIndicator.h"
 
 @interface ViewController ()
 
@@ -19,9 +19,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    CAShapeLayerViewController *ctrl =
-    [[CAShapeLayerViewController alloc] init];
-    [self.navigationController pushViewController:ctrl animated:YES];
+    [[AlIndicator shareIndicator] showIndicatorWithBlock: ^{
+        sleep(3);
+    } completionBlock:^{
+        UIAlertView *alert =
+        [[UIAlertView alloc] initWithTitle:@"AlIndicator"
+                                   message:@"Welcome to use AlIndicator"
+                                  delegate:nil
+                         cancelButtonTitle:@"Cancel"
+                         otherButtonTitles:@"OK", nil];
+        [alert show];
+    }];
 }
 
 @end
