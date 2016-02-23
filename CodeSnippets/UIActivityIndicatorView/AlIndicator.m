@@ -2,7 +2,7 @@
 //  AlIndicator.m
 //  CodeSnippets
 //
-//  Created by suorui on 2/19/16.
+//  Created by GeekRRK on 2/19/16.
 //  Copyright © 2016 GeekRRK. All rights reserved.
 //
 
