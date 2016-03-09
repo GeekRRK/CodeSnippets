@@ -83,30 +83,32 @@ static char associatedObjectKey;
 
 - (void)getInfoOfClass: (Class) class{
     unsigned int count;
-
-    objc_property_t *propertyList = class_copyPropertyList([class class], &count);
+    
+    objc_property_t *propertyList = class_copyPropertyList(cls, &count);
     for (unsigned int i = 0; i < count; ++i) {
-        const char *propertyName = property_getName(propertyList[i]);
+        objc_property_t property = propertyList[i];
+        const char *propertyName = property_getName(property);
         NSLog(@"property---->%@", [NSString stringWithUTF8String:propertyName]);
     }
-
-    Method *methodList = class_copyMethodList([class class], &count);
-    for (unsigned int i; i < count; ++i) {
+    
+    Method *methodList = class_copyMethodList(cls, &count);
+    for (unsigned int i = 0; i < count; ++i) {
         Method methodName = methodList[i];
-        NSLog(@"method---->%@", NSStringFromSelector(method_getName(methodName)));
+        SEL selector = method_getName(methodName);
+        NSLog(@"method---->%@", NSStringFromSelector(selector));
     }
-
-    Ivar *ivarList = class_copyIvarList([class class], &count);
-    for (unsigned int i; i < count; ++i) {
-        Ivar myivar = ivarList[i];
-        const char *ivarName = ivar_getName(myivar);
+    
+    Ivar *ivarList = class_copyIvarList(cls, &count);
+    for (unsigned int i = 0; i < count; ++i) {
+        Ivar ivar = ivarList[i];
+        const char *ivarName = ivar_getName(ivar);
         NSLog(@"ivar---->%@", [NSString stringWithUTF8String:ivarName]);
     }
-
-    __unsafe_unretained Protocol **protocolList = class_copyProtocolList([class class], &count);
-    for (unsigned int i; i < count; ++i) {
-        Protocol *myprotocal = protocolList[i];
-        const char *protocolName = protocol_getName(myprotocal);
+    
+    __unsafe_unretained Protocol **protocolList = class_copyProtocolList(cls, &count);
+    for (unsigned int i = 0; i < count; ++i) {
+        Protocol *protocol = protocolList[i];
+        const char *protocolName = protocol_getName(protocol);
         NSLog(@"protocol---->%@", [NSString stringWithUTF8String:protocolName]);
     }
 }
