@@ -81,6 +81,7 @@
 		71EB0B641C3FA89D00290797 /* DelaysContentTouchesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71EB0B621C3FA89D00290797 /* DelaysContentTouchesTableViewCell.xib */; };
 		71EB0B681C3FA93F00290797 /* DelaysContentTouchesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EB0B661C3FA93F00290797 /* DelaysContentTouchesTableViewController.m */; };
 		71EB0B691C3FA93F00290797 /* DelaysContentTouchesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71EB0B671C3FA93F00290797 /* DelaysContentTouchesTableViewController.xib */; };
+		AEE818641C9AA6C100FC4E22 /* EqualGap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEE818631C9AA6C100FC4E22 /* EqualGap.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -200,6 +201,7 @@
 		71EB0B651C3FA93F00290797 /* DelaysContentTouchesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelaysContentTouchesTableViewController.h; sourceTree = "<group>"; };
 		71EB0B661C3FA93F00290797 /* DelaysContentTouchesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelaysContentTouchesTableViewController.m; sourceTree = "<group>"; };
 		71EB0B671C3FA93F00290797 /* DelaysContentTouchesTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DelaysContentTouchesTableViewController.xib; sourceTree = "<group>"; };
+		AEE818631C9AA6C100FC4E22 /* EqualGap.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EqualGap.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -471,6 +473,7 @@
 		71EB0B271C3F4DC000290797 /* CodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				AEE818621C9AA6C100FC4E22 /* AutoLayout */,
 				7186A6711C7701AB009B5E7A /* UIActivityIndicatorView */,
 				717D8EBE1C75A6B6007CB655 /* CAShapeLayer */,
 				71CF7D761C56230C008A30BE /* Socket */,
@@ -543,6 +546,14 @@
 			path = DelaysContentTouches;
 			sourceTree = "<group>";
 		};
+		AEE818621C9AA6C100FC4E22 /* AutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				AEE818631C9AA6C100FC4E22 /* EqualGap.storyboard */,
+			);
+			path = AutoLayout;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -607,6 +618,7 @@
 				71C765C31C4348E000E6CA12 /* back_btn.png in Resources */,
 				71EB0B491C3F4FAD00290797 /* uiimageviewmode.jpg in Resources */,
 				71131D3B1C40C72D00E41DA5 /* CodeAutoLayoutViewController.xib in Resources */,
+				AEE818641C9AA6C100FC4E22 /* EqualGap.storyboard in Resources */,
 				71D8F0381C46144500DF7EB5 /* addPic.jpg in Resources */,
 				71EB0B641C3FA89D00290797 /* DelaysContentTouchesTableViewCell.xib in Resources */,
 				71C766041C4381FD00E6CA12 /* Assets.xcassets in Resources */,
