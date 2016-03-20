@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vx8-Q7-C7B">
+                                <rect key="frame" x="148" y="42" width="304" height="50"/>
+                                <color key="backgroundColor" red="0.14991137339999999" green="1" blue="0.92949823629999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="304" id="NjJ-T2-ufY"/>
+                                    <constraint firstAttribute="height" constant="50" id="mDe-It-X2E"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QVe-gA-Gxe">
+                                <rect key="frame" x="148" y="166" width="304" height="50"/>
+                                <color key="backgroundColor" red="0.09329041599" green="1" blue="0.079006816460000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="304" id="Dm1-7K-chh"/>
+                                    <constraint firstAttribute="height" constant="50" id="yNZ-Do-UQQ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hZG-WE-TS4">
+                                <rect key="frame" x="148" y="275" width="304" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.06383669351" blue="0.86669582639999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3yT-RV-OZ7"/>
+                                    <constraint firstAttribute="width" constant="304" id="BUd-Zg-eQG"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2AQ-eb-qzI">
+                                <rect key="frame" x="148" y="382" width="304" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.08576589322" blue="0.076969857720000007" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Gx6-lJ-BAw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2AQ-eb-qzI" firstAttribute="top" secondItem="hZG-WE-TS4" secondAttribute="bottom" constant="57" id="AFP-gI-x8G"/>
+                            <constraint firstAttribute="centerX" secondItem="QVe-gA-Gxe" secondAttribute="centerX" id="J5N-St-77D"/>
+                            <constraint firstItem="2AQ-eb-qzI" firstAttribute="leading" secondItem="hZG-WE-TS4" secondAttribute="leading" id="JTr-ph-boJ"/>
+                            <constraint firstItem="hZG-WE-TS4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WBQ-xp-Kcb"/>
+                            <constraint firstItem="2AQ-eb-qzI" firstAttribute="trailing" secondItem="hZG-WE-TS4" secondAttribute="trailing" id="cbD-y3-Gfe"/>
+                            <constraint firstAttribute="centerX" secondItem="hZG-WE-TS4" secondAttribute="centerX" id="dvG-VH-qnu"/>
+                            <constraint firstItem="hZG-WE-TS4" firstAttribute="top" secondItem="QVe-gA-Gxe" secondAttribute="bottom" constant="59" id="eDk-Zp-8EX"/>
+                            <constraint firstItem="Vx8-Q7-C7B" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="gTW-Cb-ax3"/>
+                            <constraint firstAttribute="centerX" secondItem="Vx8-Q7-C7B" secondAttribute="centerX" id="gbE-cx-ucf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="view1" destination="Vx8-Q7-C7B" id="kHD-th-eEg"/>
+                        <outlet property="view2" destination="QVe-gA-Gxe" id="cdU-id-MkF"/>
+                        <outlet property="view3" destination="hZG-WE-TS4" id="ZPR-X9-XkL"/>
+                        <outlet property="view4" destination="2AQ-eb-qzI" id="3Ia-pH-TeA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
