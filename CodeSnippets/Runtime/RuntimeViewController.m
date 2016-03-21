@@ -81,7 +81,7 @@ static char associatedObjectKey;
     NSLog(@"swizzle");
 }
 
-- (void)getInfoOfClass: (Class) class{
+- (void)getInfoOfClass: (Class) cls{
     unsigned int count;
     
     objc_property_t *propertyList = class_copyPropertyList(cls, &count);

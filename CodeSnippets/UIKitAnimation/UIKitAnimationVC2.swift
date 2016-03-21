@@ -16,7 +16,7 @@ func delay(seconds seconds: Double, completion:()->()) {
     }
 }
 
-class ViewController2: UIViewController {
+class UIKitAnimationVC2: UIViewController {
     let status = UIImageView(image: UIImage(named: "banner"))
     let label = UILabel()
     let message = ["Connecting ...", "Authorizing ...", "Sending credentials ...", "Failed"]

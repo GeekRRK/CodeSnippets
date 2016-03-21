@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class UIKitAnimationVC1: UIViewController {
 
     @IBOutlet weak var view1: UIView!
     @IBOutlet weak var view2: UIView!

@@ -13,7 +13,7 @@ enum AnimationDirection: Int {
     case Negative = -1
 }
 
-class ViewController3: UIViewController {
+class UIKitAnimationVC3: UIViewController {
     @IBOutlet weak var bgImg: UIImageView!
     @IBOutlet weak var label: UILabel!
     

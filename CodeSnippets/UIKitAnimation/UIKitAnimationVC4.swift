@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController4: UIViewController {
+class UIKitAnimationVC4: UIViewController {
 
     @IBOutlet weak var planeImage: UIImageView!
     
