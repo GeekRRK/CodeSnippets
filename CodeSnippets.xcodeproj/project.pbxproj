@@ -81,6 +81,12 @@
 		71EB0B641C3FA89D00290797 /* DelaysContentTouchesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71EB0B621C3FA89D00290797 /* DelaysContentTouchesTableViewCell.xib */; };
 		71EB0B681C3FA93F00290797 /* DelaysContentTouchesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EB0B661C3FA93F00290797 /* DelaysContentTouchesTableViewController.m */; };
 		71EB0B691C3FA93F00290797 /* DelaysContentTouchesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71EB0B671C3FA93F00290797 /* DelaysContentTouchesTableViewController.xib */; };
+		AE02606A1CA00325007C770C /* UIKitAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0260641CA00325007C770C /* UIKitAnimation.storyboard */; };
+		AE02606B1CA00325007C770C /* UIKitAnimation.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0260651CA00325007C770C /* UIKitAnimation.xcassets */; };
+		AE02606C1CA00325007C770C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0260661CA00325007C770C /* ViewController.swift */; };
+		AE02606D1CA00325007C770C /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0260671CA00325007C770C /* ViewController2.swift */; };
+		AE02606E1CA00325007C770C /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0260681CA00325007C770C /* ViewController3.swift */; };
+		AE02606F1CA00325007C770C /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0260691CA00325007C770C /* ViewController4.swift */; };
 		AEE818641C9AA6C100FC4E22 /* EqualGap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEE818631C9AA6C100FC4E22 /* EqualGap.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -201,6 +207,12 @@
 		71EB0B651C3FA93F00290797 /* DelaysContentTouchesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelaysContentTouchesTableViewController.h; sourceTree = "<group>"; };
 		71EB0B661C3FA93F00290797 /* DelaysContentTouchesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelaysContentTouchesTableViewController.m; sourceTree = "<group>"; };
 		71EB0B671C3FA93F00290797 /* DelaysContentTouchesTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DelaysContentTouchesTableViewController.xib; sourceTree = "<group>"; };
+		AE0260641CA00325007C770C /* UIKitAnimation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UIKitAnimation.storyboard; sourceTree = "<group>"; };
+		AE0260651CA00325007C770C /* UIKitAnimation.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = UIKitAnimation.xcassets; sourceTree = "<group>"; };
+		AE0260661CA00325007C770C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE0260671CA00325007C770C /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		AE0260681CA00325007C770C /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		AE0260691CA00325007C770C /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
 		AEE818631C9AA6C100FC4E22 /* EqualGap.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EqualGap.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -473,6 +485,7 @@
 		71EB0B271C3F4DC000290797 /* CodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				AE0260631CA00325007C770C /* UIKitAnimation */,
 				AEE818621C9AA6C100FC4E22 /* AutoLayout */,
 				7186A6711C7701AB009B5E7A /* UIActivityIndicatorView */,
 				717D8EBE1C75A6B6007CB655 /* CAShapeLayer */,
@@ -546,6 +559,19 @@
 			path = DelaysContentTouches;
 			sourceTree = "<group>";
 		};
+		AE0260631CA00325007C770C /* UIKitAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				AE0260641CA00325007C770C /* UIKitAnimation.storyboard */,
+				AE0260651CA00325007C770C /* UIKitAnimation.xcassets */,
+				AE0260661CA00325007C770C /* ViewController.swift */,
+				AE0260671CA00325007C770C /* ViewController2.swift */,
+				AE0260681CA00325007C770C /* ViewController3.swift */,
+				AE0260691CA00325007C770C /* ViewController4.swift */,
+			);
+			path = UIKitAnimation;
+			sourceTree = "<group>";
+		};
 		AEE818621C9AA6C100FC4E22 /* AutoLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -580,6 +606,7 @@
 		71EB0B1D1C3F4DBF00290797 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0720;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = GeekRRK;
 				TargetAttributes = {
@@ -623,9 +650,11 @@
 				71EB0B641C3FA89D00290797 /* DelaysContentTouchesTableViewCell.xib in Resources */,
 				71C766041C4381FD00E6CA12 /* Assets.xcassets in Resources */,
 				71131D301C40A59C00E41DA5 /* scrollImg3.png in Resources */,
+				AE02606B1CA00325007C770C /* UIKitAnimation.xcassets in Resources */,
 				71C766071C4381FD00E6CA12 /* Info.plist in Resources */,
 				71C765BF1C43484500E6CA12 /* nav_bg_ios7.png in Resources */,
 				71CF7D711C55F3DF008A30BE /* calayer_avatar.png in Resources */,
+				AE02606A1CA00325007C770C /* UIKitAnimation.storyboard in Resources */,
 				71C766051C4381FD00E6CA12 /* LaunchScreen.storyboard in Resources */,
 				71C765C41C4348E000E6CA12 /* back_btn@2x.png in Resources */,
 				71C765BC1C43481200E6CA12 /* nav_bg@2x.png in Resources */,
@@ -653,12 +682,14 @@
 				71C7660E1C43823900E6CA12 /* ViewController.m in Sources */,
 				71EB0B681C3FA93F00290797 /* DelaysContentTouchesTableViewController.m in Sources */,
 				71D8F0321C45EC3F00DF7EB5 /* NSXMLParserViewController.m in Sources */,
+				AE02606C1CA00325007C770C /* ViewController.swift in Sources */,
 				7188A0CC1C44975800027977 /* Person.m in Sources */,
 				71131D351C40BF0D00E41DA5 /* DeleteCookieAndCacheViewController.m in Sources */,
 				7128D9601C4F516500DDED05 /* DView.m in Sources */,
 				71EB0B4A1C3F4FAD00290797 /* UIImageViewModeViewController.m in Sources */,
 				71C766121C43920000E6CA12 /* NSURLConnectionViewController.m in Sources */,
 				71CF7D7A1C5623E9008A30BE /* TcpServer.m in Sources */,
+				AE02606F1CA00325007C770C /* ViewController4.swift in Sources */,
 				71CF7D801C562581008A30BE /* UdpClient.m in Sources */,
 				71C7660D1C43823900E6CA12 /* AppDelegate.m in Sources */,
 				71131D441C40D4B700E41DA5 /* Reachability.m in Sources */,
@@ -668,6 +699,7 @@
 				71131D291C40A29500E41DA5 /* ScrollViewController.m in Sources */,
 				7128D95A1C4F515300DDED05 /* BView.m in Sources */,
 				71EB0B551C3F512000290797 /* InputAccessoryTableViewController.m in Sources */,
+				AE02606E1CA00325007C770C /* ViewController3.swift in Sources */,
 				7188A0CE1C44975800027977 /* Card.m in Sources */,
 				7104A5B31C505F2E0080610C /* RuntimeViewController.m in Sources */,
 				71C766171C439EC900E6CA12 /* APNSViewController.m in Sources */,
@@ -693,6 +725,7 @@
 				71CDD4C11C4DD03200C8B3DE /* DeepSettingViewController.swift in Sources */,
 				7128D9681C4F7BAC00DDED05 /* GeneratorSequenceViewController.swift in Sources */,
 				7128D9641C4F519E00DDED05 /* ResponderChainViewController.m in Sources */,
+				AE02606D1CA00325007C770C /* ViewController2.swift in Sources */,
 				71CF7D751C55F3DF008A30BE /* AnimateLayerViewController.m in Sources */,
 				71CF7D7E1C562510008A30BE /* UdpServer.m in Sources */,
 				71EB0B521C3F50A800290797 /* InputAccessoryTableViewCell.m in Sources */,
