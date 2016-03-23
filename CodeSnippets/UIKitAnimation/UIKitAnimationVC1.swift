@@ -16,7 +16,7 @@ class UIKitAnimationVC1: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
         self.view2.alpha = 0;
         self.view3.alpha = 0;
         
@@ -49,12 +49,6 @@ class UIKitAnimationVC1: UIViewController {
             print("view3: complete")
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 

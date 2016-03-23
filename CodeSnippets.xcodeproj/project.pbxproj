@@ -87,6 +87,7 @@
 		AE02606D1CA00325007C770C /* UIKitAnimationVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0260671CA00325007C770C /* UIKitAnimationVC2.swift */; };
 		AE02606E1CA00325007C770C /* UIKitAnimationVC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0260681CA00325007C770C /* UIKitAnimationVC3.swift */; };
 		AE02606F1CA00325007C770C /* UIKitAnimationVC4.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0260691CA00325007C770C /* UIKitAnimationVC4.swift */; };
+		AE2F5C281CA29E9100A01926 /* UILabel+DynamicHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5C271CA29E9100A01926 /* UILabel+DynamicHeight.m */; };
 		AEE818641C9AA6C100FC4E22 /* EqualGap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEE818631C9AA6C100FC4E22 /* EqualGap.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -213,6 +214,8 @@
 		AE0260671CA00325007C770C /* UIKitAnimationVC2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitAnimationVC2.swift; sourceTree = "<group>"; };
 		AE0260681CA00325007C770C /* UIKitAnimationVC3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitAnimationVC3.swift; sourceTree = "<group>"; };
 		AE0260691CA00325007C770C /* UIKitAnimationVC4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitAnimationVC4.swift; sourceTree = "<group>"; };
+		AE2F5C261CA29E9100A01926 /* UILabel+DynamicHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+DynamicHeight.h"; sourceTree = "<group>"; };
+		AE2F5C271CA29E9100A01926 /* UILabel+DynamicHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DynamicHeight.m"; sourceTree = "<group>"; };
 		AEE818631C9AA6C100FC4E22 /* EqualGap.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EqualGap.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -485,6 +488,7 @@
 		71EB0B271C3F4DC000290797 /* CodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				AE2F5C251CA29E7A00A01926 /* UILabel */,
 				AE0260631CA00325007C770C /* UIKitAnimation */,
 				AEE818621C9AA6C100FC4E22 /* AutoLayout */,
 				7186A6711C7701AB009B5E7A /* UIActivityIndicatorView */,
@@ -570,6 +574,15 @@
 				AE0260691CA00325007C770C /* UIKitAnimationVC4.swift */,
 			);
 			path = UIKitAnimation;
+			sourceTree = "<group>";
+		};
+		AE2F5C251CA29E7A00A01926 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				AE2F5C261CA29E9100A01926 /* UILabel+DynamicHeight.h */,
+				AE2F5C271CA29E9100A01926 /* UILabel+DynamicHeight.m */,
+			);
+			path = UILabel;
 			sourceTree = "<group>";
 		};
 		AEE818621C9AA6C100FC4E22 /* AutoLayout */ = {
@@ -682,6 +695,7 @@
 				71C7660E1C43823900E6CA12 /* ViewController.m in Sources */,
 				71EB0B681C3FA93F00290797 /* DelaysContentTouchesTableViewController.m in Sources */,
 				71D8F0321C45EC3F00DF7EB5 /* NSXMLParserViewController.m in Sources */,
+				AE2F5C281CA29E9100A01926 /* UILabel+DynamicHeight.m in Sources */,
 				AE02606C1CA00325007C770C /* UIKitAnimationVC1.swift in Sources */,
 				7188A0CC1C44975800027977 /* Person.m in Sources */,
 				71131D351C40BF0D00E41DA5 /* DeleteCookieAndCacheViewController.m in Sources */,
