@@ -18,135 +18,135 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iK4-zH-d79" userLabel="view12">
-                                <rect key="frame" x="210" y="90" width="50" height="50"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iK4-zH-d79" userLabel="view12">
+                                <rect key="frame" x="211" y="90" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.14991137339999999" green="1" blue="0.92949823629999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="BMO-Jw-4A0"/>
                                     <constraint firstAttribute="width" constant="50" id="uTU-bB-5l1"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ane-ZM-xiv" userLabel="view13">
-                                <rect key="frame" x="340" y="90" width="50" height="50"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ane-ZM-xiv" userLabel="view13">
+                                <rect key="frame" x="339" y="90" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.14991137339999999" green="1" blue="0.92949823629999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="7J0-aH-7dX"/>
                                     <constraint firstAttribute="width" constant="50" id="oBj-Hu-HFW"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vpX-SH-Dxt" userLabel="view14">
-                                <rect key="frame" x="470" y="90" width="50" height="50"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vpX-SH-Dxt" userLabel="view14">
+                                <rect key="frame" x="468" y="90" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.14991137339999999" green="1" blue="0.92949823629999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="4pv-Qi-R4e"/>
                                     <constraint firstAttribute="width" constant="50" id="XMw-Dx-nEF"/>
                                 </constraints>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kGv-Hb-EMk" userLabel="gap11">
-                                <rect key="frame" x="0.0" y="114" width="80" height="1"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kGv-Hb-EMk" userLabel="gap11">
+                                <rect key="frame" x="4" y="114" width="78" height="1"/>
                                 <color key="backgroundColor" red="1" green="0.08576589322" blue="0.076969857720000007" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="u36-dM-9Kz"/>
                                 </constraints>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tfS-xp-XNj" userLabel="gap12">
-                                <rect key="frame" x="130" y="114" width="80" height="1"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tfS-xp-XNj" userLabel="gap12">
+                                <rect key="frame" x="132" y="114" width="79" height="1"/>
                                 <color key="backgroundColor" red="1" green="0.08576589322" blue="0.076969857720000007" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="XZL-nh-FiX"/>
                                 </constraints>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2sf-z4-dsa" userLabel="gap13">
-                                <rect key="frame" x="260" y="114" width="80" height="1"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2sf-z4-dsa" userLabel="gap13">
+                                <rect key="frame" x="261" y="114" width="78" height="1"/>
                                 <color key="backgroundColor" red="1" green="0.08576589322" blue="0.076969857720000007" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="dg8-En-ok9"/>
                                 </constraints>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h9I-ao-2CJ" userLabel="gap14">
-                                <rect key="frame" x="390" y="114" width="80" height="1"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h9I-ao-2CJ" userLabel="gap14">
+                                <rect key="frame" x="389" y="114" width="79" height="1"/>
                                 <color key="backgroundColor" red="1" green="0.08576589322" blue="0.076969857720000007" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="3bU-HG-KNw"/>
                                 </constraints>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="60x-D4-UAR" userLabel="gap15">
-                                <rect key="frame" x="520" y="114" width="80" height="1"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="60x-D4-UAR" userLabel="gap15">
+                                <rect key="frame" x="518" y="114" width="78" height="1"/>
                                 <color key="backgroundColor" red="1" green="0.08576589322" blue="0.076969857720000007" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="evC-56-sbJ"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UZ7-uQ-KPs" userLabel="view21">
-                                <rect key="frame" x="50" y="234" width="50" height="50"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UZ7-uQ-KPs" userLabel="view21">
+                                <rect key="frame" x="53" y="234" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.14991137339999999" green="1" blue="0.92949823629999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="5pk-tD-bUK"/>
                                     <constraint firstAttribute="height" constant="50" id="6d6-XN-rmH"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Okl-LN-drT" userLabel="view22">
-                                <rect key="frame" x="200" y="234" width="50" height="50"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Okl-LN-drT" userLabel="view22">
+                                <rect key="frame" x="201" y="234" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.14991137339999999" green="1" blue="0.92949823629999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="dUp-gC-UYC"/>
                                     <constraint firstAttribute="width" constant="50" id="fvV-Wf-6tB"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iIT-PT-1QK" userLabel="view23">
-                                <rect key="frame" x="350" y="234" width="50" height="50"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iIT-PT-1QK" userLabel="view23">
+                                <rect key="frame" x="349" y="234" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.14991137339999999" green="1" blue="0.92949823629999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="TEQ-RU-0ss"/>
                                     <constraint firstAttribute="height" constant="50" id="wJa-Ck-3YM"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="enC-Q7-Ynp" userLabel="view24">
-                                <rect key="frame" x="500" y="234" width="50" height="50"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="enC-Q7-Ynp" userLabel="view24">
+                                <rect key="frame" x="497" y="234" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.14991137339999999" green="1" blue="0.92949823629999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="da8-8G-lPT"/>
                                     <constraint firstAttribute="width" constant="50" id="t5o-Jv-BLx"/>
                                 </constraints>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ttP-u1-hu9" userLabel="gap21">
-                                <rect key="frame" x="0.0" y="300" width="150" height="1"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ttP-u1-hu9" userLabel="gap21">
+                                <rect key="frame" x="4" y="300" width="148" height="1"/>
                                 <color key="backgroundColor" red="1" green="0.085765893222190415" blue="0.076969857723505175" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="a7M-jg-80Z"/>
                                 </constraints>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ex2-6Q-L6L" userLabel="gap22">
-                                <rect key="frame" x="150" y="300" width="150" height="1"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ex2-6Q-L6L" userLabel="gap22">
+                                <rect key="frame" x="152" y="300" width="148" height="1"/>
                                 <color key="backgroundColor" red="0.093290415987687503" green="1" blue="0.07900681646155383" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="puu-Hp-kYu"/>
                                 </constraints>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XuC-Ze-gWw" userLabel="gap23">
-                                <rect key="frame" x="300" y="300" width="150" height="1"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XuC-Ze-gWw" userLabel="gap23">
+                                <rect key="frame" x="300" y="300" width="148" height="1"/>
                                 <color key="backgroundColor" red="0.44617762018191565" green="0.097493262352014276" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="fJQ-7Q-bNl"/>
                                 </constraints>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ho0-IK-Btd" userLabel="gap24">
-                                <rect key="frame" x="450" y="300" width="150" height="1"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ho0-IK-Btd" userLabel="gap24">
+                                <rect key="frame" x="448" y="300" width="148" height="1"/>
                                 <color key="backgroundColor" red="1" green="0.058670258691183585" blue="0.45550722828924683" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="goO-uO-CrW"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TAk-ue-gLP" userLabel="view11">
-                                <rect key="frame" x="80" y="90" width="50" height="50"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TAk-ue-gLP" userLabel="view11">
+                                <rect key="frame" x="82" y="90" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.14991137339999999" green="1" blue="0.92949823629999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="6FD-72-x8h"/>
                                     <constraint firstAttribute="height" constant="50" id="W2i-ZK-1ob"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="unD-ub-nmn" userLabel="Menu">
-                                <rect key="frame" x="16" y="387" width="568" height="49"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="unD-ub-nmn" userLabel="Menu">
+                                <rect key="frame" x="20" y="387" width="560" height="49"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ma-qW-V5E">
                                         <rect key="frame" x="8" y="10" width="39" height="30"/>
@@ -160,7 +160,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2u-AU-ZjU">
-                                        <rect key="frame" x="160" y="10" width="38" height="30"/>
+                                        <rect key="frame" x="159" y="10" width="38" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="38" id="ZLe-eF-tza"/>
                                             <constraint firstAttribute="height" constant="30" id="hWj-ef-aFr"/>
@@ -170,33 +170,22 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6K-oD-Igw">
-                                        <rect key="frame" x="311" y="10" width="96" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="D6z-Yg-m6e"/>
-                                            <constraint firstAttribute="width" constant="96" id="fm3-xh-14U"/>
-                                        </constraints>
-                                        <state key="normal" title="Entertainment">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DTw-5y-Hfe" userLabel="gap1">
-                                        <rect key="frame" x="47" y="0.0" width="113" height="1"/>
+                                        <rect key="frame" x="47" y="0.0" width="112" height="1"/>
                                         <color key="backgroundColor" red="1" green="0.08576589322" blue="0.076969857720000007" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="CQS-hV-x7K"/>
                                         </constraints>
                                     </view>
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1LQ-gn-XDq" userLabel="gap2">
-                                        <rect key="frame" x="198" y="0.0" width="113" height="1"/>
+                                        <rect key="frame" x="197" y="0.0" width="112" height="1"/>
                                         <color key="backgroundColor" red="1" green="0.08576589322" blue="0.076969857720000007" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="FER-Tk-KTG"/>
                                         </constraints>
                                     </view>
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bN2-rI-N66" userLabel="gap3">
-                                        <rect key="frame" x="407" y="0.0" width="113" height="1"/>
+                                        <rect key="frame" x="406" y="0.0" width="112" height="1"/>
                                         <color key="backgroundColor" red="1" green="0.08576589322" blue="0.076969857720000007" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="mWm-Ip-13k"/>
@@ -211,7 +200,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hRc-Nf-b8J" userLabel="seperator2">
-                                        <rect key="frame" x="254" y="10" width="1" height="30"/>
+                                        <rect key="frame" x="253" y="10" width="1" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="1" id="7tk-k4-Nha"/>
@@ -219,7 +208,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFG-08-Ctq" userLabel="seperator3">
-                                        <rect key="frame" x="463" y="10" width="1" height="30"/>
+                                        <rect key="frame" x="461" y="10" width="1" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="HGE-6a-O8H"/>
@@ -227,12 +216,23 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2D-fu-toj">
-                                        <rect key="frame" x="520" y="10" width="32" height="30"/>
+                                        <rect key="frame" x="518" y="10" width="34" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="gOG-zO-bHF"/>
-                                            <constraint firstAttribute="width" constant="32" id="hTg-cl-KYr"/>
+                                            <constraint firstAttribute="width" constant="34" id="hTg-cl-KYr"/>
                                         </constraints>
                                         <state key="normal" title="Tech">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6K-oD-Igw">
+                                        <rect key="frame" x="309" y="10" width="97" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="D6z-Yg-m6e"/>
+                                            <constraint firstAttribute="width" constant="97" id="fm3-xh-14U"/>
+                                        </constraints>
+                                        <state key="normal" title="Entertainment">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
