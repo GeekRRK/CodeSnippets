@@ -1,3 +1,5 @@
+//Refer to: http://blog.jobbole.com/69019/
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate> {   
     int tickets;   
     int count;   
