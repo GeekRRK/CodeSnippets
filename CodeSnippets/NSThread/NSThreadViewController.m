@@ -1,3 +1,5 @@
+//Refer to: http://blog.jobbole.com/69019/
+
 #define kURL @"http://img02.tooopen.com/images/20160216/tooopen_sy_156324542564.jpg"   
  
 @implementation ViewController   
