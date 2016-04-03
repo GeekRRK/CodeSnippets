@@ -1,25 +1,22 @@
 @implementation AppDelegate   
  
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions   
-{   
- 
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {   
     tickets = 100;   
     count = 0;   
     theLock = [[NSLock alloc] init];   
     ticketsCondition = [[NSCondition alloc] init];   
-    ticketsThreadone = [[NSThread alloc] initWithTarget:self selector:@selector(run) object:nil];   
-    [ticketsThreadone setName:@"Thread-1"];   
-    [ticketsThreadone start];   
+    ticketsThreadOne = [[NSThread alloc] initWithTarget:self selector:@selector(run) object:nil];   
+    [ticketsThreadOne setName:@"Thread-1"];   
+    [ticketsThreadOne start];   
  
-    ticketsThreadtwo = [[NSThread alloc] initWithTarget:self selector:@selector(run) object:nil];   
-    [ticketsThreadtwo setName:@"Thread-2"];   
-    [ticketsThreadtwo start];   
+    ticketsThreadTwo = [[NSThread alloc] initWithTarget:self selector:@selector(run) object:nil];   
+    [ticketsThreadTwo setName:@"Thread-2"];   
+    [ticketsThreadTwo start];   
  
-    NSThread *ticketsThreadthree = [[NSThread alloc] initWithTarget:self selector:@selector(run3) object:nil];   
+    NSThread *ticketsThreadThree = [[NSThread alloc] initWithTarget:self selector:@selector(run3) object:nil];   
     [ticketsThreadthree setName:@"Thread-3"];   
     [ticketsThreadthree start];       
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];   
-    // Override point for customization after application launch.   
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];  
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];   
     self.window.rootViewController = self.viewController;   
     [self.window makeKeyAndVisible];   
@@ -43,7 +40,7 @@
         if(tickets >= 0){   
             [NSThread sleepForTimeInterval:0.09];   
             count = 100 - tickets;   
-            NSLog(@"CurrentTicketNum:%d,Sold:%d,ThreadName:%@",tickets,count,[[NSThread currentThread] name]);   
+            NSLog(@"CurrentTicketNum:%d, Sold:%d, ThreadName:%@", tickets, count, [[NSThread currentThread] name]);   
             --tickets;   
         }else{   
             break;   
