@@ -1,32 +1,30 @@
-@interface AppDelegate : UIResponder <UIApplicationDelegate>   
-{   
+@interface AppDelegate : UIResponder <UIApplicationDelegate> {   
     int tickets;   
     int count;   
-    NSThread* ticketsThreadone;   
-    NSThread* ticketsThreadtwo;   
+    NSThread* ticketsThreadOne;   
+    NSThread* ticketsThreadTwo;   
     NSCondition* ticketsCondition;   
     NSLock *theLock;   
 }   
+
 @property (strong, nonatomic) UIWindow *window;   
  
 @property (strong, nonatomic) ViewController *viewController;   
  
 @end
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions   
-{   
- 
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {   
     tickets = 100;   
     count = 0;   
     theLock = [[NSLock alloc] init];   
     ticketsCondition = [[NSCondition alloc] init];   
-    ticketsThreadone = [[NSThread alloc] initWithTarget:self selector:@selector(run) object:nil];   
-    [ticketsThreadone setName:@"Thread-1"];   
-    [ticketsThreadone start];   
+    ticketsThreadOne = [[NSThread alloc] initWithTarget:self selector:@selector(run) object:nil];   
+    [ticketsThreadOne setName:@"Thread-1"];   
+    [ticketsThreadOne start];   
  
-    ticketsThreadtwo = [[NSThread alloc] initWithTarget:self selector:@selector(run) object:nil];   
-    [ticketsThreadtwo setName:@"Thread-2"];   
-    [ticketsThreadtwo start];   
+    ticketsThreadTwo = [[NSThread alloc] initWithTarget:self selector:@selector(run) object:nil];   
+    [ticketsThreadTwo setName:@"Thread-2"];   
+    [ticketsThreadTwo start];   
  
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];   
 
@@ -43,7 +41,7 @@
         if(tickets >= 0){   
             [NSThread sleepForTimeInterval:0.09];   
             count = 100 - tickets;   
-            NSLog(@"currentTicketNum:%d,SoldNum:%d,ThreadName:%@",tickets,count,[[NSThread currentThread] name]);   
+            NSLog(@"currentTicketNum:%d, SoldNum:%d, ThreadName:%@", tickets, count, [[NSThread currentThread] name]);   
             --tickets;   
         }else{   
             break;   
