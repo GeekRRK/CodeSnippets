@@ -1,3 +1,5 @@
+//Refer to: http://blog.jobbole.com/69019/
+
 @implementation AppDelegate   
  
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {   
