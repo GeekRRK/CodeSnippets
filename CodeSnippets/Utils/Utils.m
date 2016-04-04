@@ -220,3 +220,83 @@
     
     return str;
 }
+
++ (NSString *)base64Img:(UIImage *)img{
+    NSData *imgData = UIImageJPEGRepresentation(img, 0);
+    NSLog(@"The size after compress：%ldKB\n", [imgData length] / 1024);
+    
+    NSString *baseStr = [imgData base64Encoding];
+    NSString *base64Str = (__bridge NSString *) CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
+                                                                                        (CFStringRef)baseStr,
+                                                                                        NULL,
+                                                                                        CFSTR(":/?#[]@!$&’()*+,;="),
+                                                                                        kCFStringEncodingUTF8);
+    return base64Str;
+}
+
++ (UIImage *)image:(UIImage*)image byScalingToSize:(CGSize)targetSize {
+    UIImage *sourceImage = image;
+    UIImage *newImage = nil;
+    
+    UIGraphicsBeginImageContext(targetSize);
+    
+    CGRect thumbnailRect = CGRectZero;
+    thumbnailRect.origin = CGPointZero;
+    thumbnailRect.size.width  = targetSize.width;
+    thumbnailRect.size.height = targetSize.height;
+    
+    [sourceImage drawInRect:thumbnailRect];
+    
+    newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return newImage ;
+}
+
++ (NSString *)reduceImg:(UIImage *)img{
+    UIImage *scaledImg = [SRUtil image:img byScalingToSize:CGSizeMake(150, 150)];
+    
+    NSString *base64Str = [SRUtil base64Img:scaledImg];
+    
+    return base64Str;
+}
+
++ (NSString *)reduceImg:(UIImage *)img scale:(CGSize)size{
+    UIImage *scaledImg = [SRUtil image:img byScalingToSize:size];
+    
+    NSString *base64Str = [SRUtil base64Img:scaledImg];
+    
+    return base64Str;
+}
+
+#define IMAGE_MAX_SIZE_WIDTH 640
+#define IMAGE_MAX_SIZE_GEIGHT 960
++ (CGSize)fitsize:(CGSize)thisSize
+{
+    if(thisSize.width == 0 && thisSize.height ==0)
+        return CGSizeMake(0, 0);
+    CGFloat wscale = thisSize.width/IMAGE_MAX_SIZE_WIDTH;
+    CGFloat hscale = thisSize.height/IMAGE_MAX_SIZE_GEIGHT;
+    CGFloat scale = (wscale>hscale)?wscale:hscale;
+    CGSize newSize = CGSizeMake(thisSize.width/scale, thisSize.height/scale);
+    return newSize;
+}
+
++(UIImage *)fitSmallImage:(UIImage *)image
+{
+    if (nil == image)
+    {
+        return nil;
+    }
+    if (image.size.width<IMAGE_MAX_SIZE_WIDTH && image.size.height<IMAGE_MAX_SIZE_GEIGHT)
+    {
+        return image;
+    }
+    CGSize size = [SRUtil fitsize:image.size];
+    UIGraphicsBeginImageContext(size);
+    CGRect rect = CGRectMake(0, 0, size.width, size.height);
+    [image drawInRect:rect];
+    UIImage *newing = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newing;
+}
