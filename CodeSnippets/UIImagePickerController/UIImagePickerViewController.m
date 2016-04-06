@@ -34,7 +34,6 @@
     UIView *backgroupView = [[UIView alloc] initWithFrame:CGRectMake(0, -20, [UIScreen mainScreen].applicationFrame.size.width, 20)];
     backgroupView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"nav_status_bg"]];
     [picker.navigationBar addSubview:backgroupView];
-    
     [picker.navigationBar setBackgroundImage:[UIImage imageNamed:@"nav_status_bg"] forBarMetrics:UIBarMetricsDefault];
     picker.navigationBar.tintColor = [UIColor whiteColor];
     [picker.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
@@ -59,7 +58,6 @@
     UIView *backgroupView = [[UIView alloc] initWithFrame:CGRectMake(0, -20, [UIScreen mainScreen].applicationFrame.size.width, 20)];
     backgroupView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"nav_status_bg"]];
     [pickerImage.navigationBar addSubview:backgroupView];
-    
     [pickerImage.navigationBar setBackgroundImage:[UIImage imageNamed:@"nav_status_bg"] forBarMetrics:UIBarMetricsDefault];
     pickerImage.navigationBar.tintColor = [UIColor whiteColor];
     [pickerImage.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
