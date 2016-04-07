@@ -88,6 +88,7 @@
 		AE02606E1CA00325007C770C /* UIKitAnimationVC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0260681CA00325007C770C /* UIKitAnimationVC3.swift */; };
 		AE02606F1CA00325007C770C /* UIKitAnimationVC4.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0260691CA00325007C770C /* UIKitAnimationVC4.swift */; };
 		AE2F5C281CA29E9100A01926 /* UILabel+DynamicHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5C271CA29E9100A01926 /* UILabel+DynamicHeight.m */; };
+		AE46AB3C1CB646D800B44091 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = AE46AB3B1CB646D800B44091 /* Utils.m */; };
 		AEE818641C9AA6C100FC4E22 /* EqualGap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEE818631C9AA6C100FC4E22 /* EqualGap.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -216,6 +217,8 @@
 		AE0260691CA00325007C770C /* UIKitAnimationVC4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitAnimationVC4.swift; sourceTree = "<group>"; };
 		AE2F5C261CA29E9100A01926 /* UILabel+DynamicHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+DynamicHeight.h"; sourceTree = "<group>"; };
 		AE2F5C271CA29E9100A01926 /* UILabel+DynamicHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DynamicHeight.m"; sourceTree = "<group>"; };
+		AE46AB3A1CB646D800B44091 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		AE46AB3B1CB646D800B44091 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		AEE818631C9AA6C100FC4E22 /* EqualGap.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EqualGap.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -488,6 +491,7 @@
 		71EB0B271C3F4DC000290797 /* CodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				AE46AB391CB646D800B44091 /* Utils */,
 				AE2F5C251CA29E7A00A01926 /* UILabel */,
 				AE0260631CA00325007C770C /* UIKitAnimation */,
 				AEE818621C9AA6C100FC4E22 /* AutoLayout */,
@@ -583,6 +587,15 @@
 				AE2F5C271CA29E9100A01926 /* UILabel+DynamicHeight.m */,
 			);
 			path = UILabel;
+			sourceTree = "<group>";
+		};
+		AE46AB391CB646D800B44091 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AE46AB3A1CB646D800B44091 /* Common.h */,
+				AE46AB3B1CB646D800B44091 /* Utils.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		AEE818621C9AA6C100FC4E22 /* AutoLayout */ = {
@@ -718,6 +731,7 @@
 				7104A5B31C505F2E0080610C /* RuntimeViewController.m in Sources */,
 				71C766171C439EC900E6CA12 /* APNSViewController.m in Sources */,
 				71EB0B5F1C3FA73000290797 /* DelaysContentTouchesTableView.m in Sources */,
+				AE46AB3C1CB646D800B44091 /* Utils.m in Sources */,
 				71C765B41C43450200E6CA12 /* UINavigationBarViewController.m in Sources */,
 				7188A0A81C448E7700027977 /* CoreDataViewController.m in Sources */,
 				7104A5AF1C505A9A0080610C /* UIViewController+Tracking.m in Sources */,
