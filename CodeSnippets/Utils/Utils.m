@@ -442,4 +442,15 @@
     return newImage;
 }
 
++ (BOOL)isChinese:(NSString *)str {
+    for(int i=0; i < [str length]; i++){
+        int a = [str characterAtIndex:i];
+        if((a > 0x4e00 && a < 0x9fff) == NO) {
+            return NO;
+        }
+    }
+    
+    return YES;
+}
+
 @end
