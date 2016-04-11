@@ -11,7 +11,6 @@
 
 @interface AVCameraViewController : UIViewController
 
-
 @property (weak, nonatomic) IBOutlet AAPLPreviewView *previewView;
 
 @end
