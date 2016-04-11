@@ -87,6 +87,9 @@
 		AE02606D1CA00325007C770C /* UIKitAnimationVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0260671CA00325007C770C /* UIKitAnimationVC2.swift */; };
 		AE02606E1CA00325007C770C /* UIKitAnimationVC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0260681CA00325007C770C /* UIKitAnimationVC3.swift */; };
 		AE02606F1CA00325007C770C /* UIKitAnimationVC4.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0260691CA00325007C770C /* UIKitAnimationVC4.swift */; };
+		AE148B951CBBAAD5002FEF1D /* AAPLPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE148B941CBBAAD5002FEF1D /* AAPLPreviewView.m */; };
+		AE148B981CBBAB02002FEF1D /* AVCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE148B971CBBAB02002FEF1D /* AVCameraViewController.m */; };
+		AE148B9A1CBBAB42002FEF1D /* AVCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE148B991CBBAB42002FEF1D /* AVCameraViewController.xib */; };
 		AE2F5C281CA29E9100A01926 /* UILabel+DynamicHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5C271CA29E9100A01926 /* UILabel+DynamicHeight.m */; };
 		AE46AB3F1CB6498700B44091 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = AE46AB3E1CB6498700B44091 /* Utils.m */; };
 		AEE818641C9AA6C100FC4E22 /* EqualGap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEE818631C9AA6C100FC4E22 /* EqualGap.storyboard */; };
@@ -215,6 +218,11 @@
 		AE0260671CA00325007C770C /* UIKitAnimationVC2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitAnimationVC2.swift; sourceTree = "<group>"; };
 		AE0260681CA00325007C770C /* UIKitAnimationVC3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitAnimationVC3.swift; sourceTree = "<group>"; };
 		AE0260691CA00325007C770C /* UIKitAnimationVC4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitAnimationVC4.swift; sourceTree = "<group>"; };
+		AE148B931CBBAAD5002FEF1D /* AAPLPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLPreviewView.h; sourceTree = "<group>"; };
+		AE148B941CBBAAD5002FEF1D /* AAPLPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLPreviewView.m; sourceTree = "<group>"; };
+		AE148B961CBBAB02002FEF1D /* AVCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCameraViewController.h; sourceTree = "<group>"; };
+		AE148B971CBBAB02002FEF1D /* AVCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCameraViewController.m; sourceTree = "<group>"; };
+		AE148B991CBBAB42002FEF1D /* AVCameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVCameraViewController.xib; sourceTree = "<group>"; };
 		AE2F5C261CA29E9100A01926 /* UILabel+DynamicHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+DynamicHeight.h"; sourceTree = "<group>"; };
 		AE2F5C271CA29E9100A01926 /* UILabel+DynamicHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DynamicHeight.m"; sourceTree = "<group>"; };
 		AE46AB3A1CB646D800B44091 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
@@ -492,6 +500,7 @@
 		71EB0B271C3F4DC000290797 /* CodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				AE148B921CBBAAC7002FEF1D /* AVCamera */,
 				AE46AB391CB646D800B44091 /* Utils */,
 				AE2F5C251CA29E7A00A01926 /* UILabel */,
 				AE0260631CA00325007C770C /* UIKitAnimation */,
@@ -579,6 +588,18 @@
 				AE0260691CA00325007C770C /* UIKitAnimationVC4.swift */,
 			);
 			path = UIKitAnimation;
+			sourceTree = "<group>";
+		};
+		AE148B921CBBAAC7002FEF1D /* AVCamera */ = {
+			isa = PBXGroup;
+			children = (
+				AE148B931CBBAAD5002FEF1D /* AAPLPreviewView.h */,
+				AE148B941CBBAAD5002FEF1D /* AAPLPreviewView.m */,
+				AE148B961CBBAB02002FEF1D /* AVCameraViewController.h */,
+				AE148B971CBBAB02002FEF1D /* AVCameraViewController.m */,
+				AE148B991CBBAB42002FEF1D /* AVCameraViewController.xib */,
+			);
+			path = AVCamera;
 			sourceTree = "<group>";
 		};
 		AE2F5C251CA29E7A00A01926 /* UILabel */ = {
@@ -679,6 +700,7 @@
 				71C766041C4381FD00E6CA12 /* Assets.xcassets in Resources */,
 				71131D301C40A59C00E41DA5 /* scrollImg3.png in Resources */,
 				AE02606B1CA00325007C770C /* UIKitAnimation.xcassets in Resources */,
+				AE148B9A1CBBAB42002FEF1D /* AVCameraViewController.xib in Resources */,
 				71C766071C4381FD00E6CA12 /* Info.plist in Resources */,
 				71C765BF1C43484500E6CA12 /* nav_bg_ios7.png in Resources */,
 				71CF7D711C55F3DF008A30BE /* calayer_avatar.png in Resources */,
@@ -708,6 +730,7 @@
 			files = (
 				7128D95D1C4F515C00DDED05 /* CView.m in Sources */,
 				71C7660E1C43823900E6CA12 /* ViewController.m in Sources */,
+				AE148B951CBBAAD5002FEF1D /* AAPLPreviewView.m in Sources */,
 				71EB0B681C3FA93F00290797 /* DelaysContentTouchesTableViewController.m in Sources */,
 				71D8F0321C45EC3F00DF7EB5 /* NSXMLParserViewController.m in Sources */,
 				AE2F5C281CA29E9100A01926 /* UILabel+DynamicHeight.m in Sources */,
@@ -715,6 +738,7 @@
 				7188A0CC1C44975800027977 /* Person.m in Sources */,
 				71131D351C40BF0D00E41DA5 /* DeleteCookieAndCacheViewController.m in Sources */,
 				7128D9601C4F516500DDED05 /* DView.m in Sources */,
+				AE148B981CBBAB02002FEF1D /* AVCameraViewController.m in Sources */,
 				71EB0B4A1C3F4FAD00290797 /* UIImageViewModeViewController.m in Sources */,
 				71C766121C43920000E6CA12 /* NSURLConnectionViewController.m in Sources */,
 				71CF7D7A1C5623E9008A30BE /* TcpServer.m in Sources */,
