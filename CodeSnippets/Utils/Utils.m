@@ -453,4 +453,16 @@
     return YES;
 }
 
++ (NSString *)getUUID {
+    NSUUID *deviceId;
+    
+#if TARGET_IPHONE_SIMULATOR
+    deviceId = [[NSUUID alloc] initWithUUIDString:@"UUID-STRING-VALUE"];
+#else
+    deviceId = [UIDevice currentDevice].identifierForVendor;
+#endif
+    
+    return [deviceId UUIDString];
+}
+
 @end
