@@ -2,7 +2,7 @@
 //  Utils.m
 //  CodeSnippets
 //
-//  Created by UGOMEDIA on 16/4/7.
+//  Created by GeekRRK on 16/4/7.
 //  Copyright © 2016年 GeekRRK. All rights reserved.
 //
 
