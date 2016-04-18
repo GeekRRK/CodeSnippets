@@ -465,4 +465,52 @@
     return [deviceId UUIDString];
 }
 
+//验证手机号是否有效
++ (BOOL)validateCellPhone:(NSString *)candidate{
+    NSString *phoneRegex = @"((\\d{11})|^((\\d{7,8})|(\\d{4}|\\d{3})-(\\d{7,8})|(\\d{4}|\\d{3})-(\\d{7,8})-(\\d{4}|\\d{3}|\\d{2}|\\d{1})|(\\d{7,8})-(\\d{4}|\\d{3}|\\d{2}|\\d{1}))$)";
+    NSPredicate *phoneTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", phoneRegex];
+    return [phoneTest evaluateWithObject:candidate];
+}
+
+//获取文件的大小。
++ (long)getDocumentSize:(NSString *)folderName
+{
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = paths[0];
+    documentsDirectory = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat: @"/%@/", folderName]];
+    //    NSDictionary *fileAttributes = [fileManager attributesOfFileSystemForPath:documentsDirectory error:nil];
+    NSDictionary *fileAttributes = [fileManager attributesOfItemAtPath:documentsDirectory error:nil];
+    
+    long size = 0;
+    if(fileAttributes != nil)
+    {
+        NSNumber *fileSize = fileAttributes[NSFileSize];
+        size = [fileSize longValue];
+    }
+    return size;
+}
+
+//获取硬盘空闲的空间。
++ (NSString *)getDiskUsed
+{
+    NSDictionary *fsAttr = [[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory() error:nil];
+    float diskSize = [fsAttr[NSFileSystemSize] doubleValue] / 1073741824.f;
+    float diskFreeSize = [fsAttr[NSFileSystemFreeSize] doubleValue] / 1073741824.f;
+    float diskUsedSize = diskSize - diskFreeSize;
+    return [NSString stringWithFormat:@"%0.1f GB of %0.1f GB", diskUsedSize, diskSize];
+}
+
+//得到小写字母。
++ (NSArray *)getLetters
+{
+    return @[@"a",@"b",@"c",@"d",@"e",@"f",@"g",@"h",@"i",@"j",@"k",@"l",@"m",@"n",@"o",@"p",@"q",@"r",@"s",@"t",@"u",@"v",@"w",@"x",@"y",@"z"];
+}
+
+//得到大写字母
++ (NSArray *)getUpperLetters
+{
+    return @[@"A",@"B",@"C",@"D",@"E",@"F",@"G",@"H",@"I",@"J",@"K",@"L",@"M",@"N",@"O",@"P",@"Q",@"R",@"S",@"T",@"U",@"V",@"W",@"X",@"Y",@"Z"];
+}
+
 @end

@@ -10,4 +10,6 @@
 
 @interface Utils : NSObject
 
++ (BOOL)validateCellPhone:(NSString *)candidate;
+
 @end
