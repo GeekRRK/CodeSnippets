@@ -52,4 +52,31 @@
     return nil;
 }
 
++ (void)postJson{
+    NSURL *url = [NSURL URLWithString:@"www.baidu.com"];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    request.HTTPMethod = @"POST";
+
+    [request setValue:@"application/json; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
+
+    NSDictionary *json = @{
+                           @"orgId" : @"33",
+                           @"identityToken" : @"27428ac78435c325bbff4dcdd3629c05"
+                           };
+    
+    NSData *data = [NSJSONSerialization dataWithJSONObject:json options:NSJSONWritingPrettyPrinted error:nil];
+    request.HTTPBody = data;
+    [request setTimeoutInterval:20];
+
+    [NSURLConnection sendAsynchronousRequest:request
+                                       queue:[NSOperationQueue mainQueue]
+                           completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError){
+                               
+                               NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data
+                                                                                    options:NSJSONReadingAllowFragments
+                                                                                      error:nil];
+                               NSLog(@"%@", json);
+                           }];
+}
+
 @end
