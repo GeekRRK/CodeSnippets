@@ -91,6 +91,7 @@
 		AE148B981CBBAB02002FEF1D /* AVCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE148B971CBBAB02002FEF1D /* AVCameraViewController.m */; };
 		AE148B9A1CBBAB42002FEF1D /* AVCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE148B991CBBAB42002FEF1D /* AVCameraViewController.xib */; };
 		AE2F5C281CA29E9100A01926 /* UILabel+DynamicHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5C271CA29E9100A01926 /* UILabel+DynamicHeight.m */; };
+		AE39C00E1CC63A4F00AE80D1 /* NetworkInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = AE39C00D1CC63A4F00AE80D1 /* NetworkInterface.m */; };
 		AE46AB3F1CB6498700B44091 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = AE46AB3E1CB6498700B44091 /* Utils.m */; };
 		AEE818641C9AA6C100FC4E22 /* EqualGap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEE818631C9AA6C100FC4E22 /* EqualGap.storyboard */; };
 /* End PBXBuildFile section */
@@ -225,6 +226,8 @@
 		AE148B991CBBAB42002FEF1D /* AVCameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVCameraViewController.xib; sourceTree = "<group>"; };
 		AE2F5C261CA29E9100A01926 /* UILabel+DynamicHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+DynamicHeight.h"; sourceTree = "<group>"; };
 		AE2F5C271CA29E9100A01926 /* UILabel+DynamicHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DynamicHeight.m"; sourceTree = "<group>"; };
+		AE39C00C1CC63A4F00AE80D1 /* NetworkInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkInterface.h; sourceTree = "<group>"; };
+		AE39C00D1CC63A4F00AE80D1 /* NetworkInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkInterface.m; sourceTree = "<group>"; };
 		AE46AB3A1CB646D800B44091 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		AE46AB3D1CB6498700B44091 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		AE46AB3E1CB6498700B44091 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
@@ -500,6 +503,7 @@
 		71EB0B271C3F4DC000290797 /* CodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				AE39C00B1CC63A3C00AE80D1 /* NetworkInterface */,
 				AE148B921CBBAAC7002FEF1D /* AVCamera */,
 				AE46AB391CB646D800B44091 /* Utils */,
 				AE2F5C251CA29E7A00A01926 /* UILabel */,
@@ -609,6 +613,15 @@
 				AE2F5C271CA29E9100A01926 /* UILabel+DynamicHeight.m */,
 			);
 			path = UILabel;
+			sourceTree = "<group>";
+		};
+		AE39C00B1CC63A3C00AE80D1 /* NetworkInterface */ = {
+			isa = PBXGroup;
+			children = (
+				AE39C00C1CC63A4F00AE80D1 /* NetworkInterface.h */,
+				AE39C00D1CC63A4F00AE80D1 /* NetworkInterface.m */,
+			);
+			path = NetworkInterface;
 			sourceTree = "<group>";
 		};
 		AE46AB391CB646D800B44091 /* Utils */ = {
@@ -770,6 +783,7 @@
 				717D8EC11C75A6D9007CB655 /* CAShapeLayerViewController.m in Sources */,
 				71EB0B581C3F527D00290797 /* UIImagePickerViewController.m in Sources */,
 				7186A6741C7701D0009B5E7A /* AlIndicator.m in Sources */,
+				AE39C00E1CC63A4F00AE80D1 /* NetworkInterface.m in Sources */,
 				7104A5B91C5064BA0080610C /* RuntimeClassVC.m in Sources */,
 				71CF7D741C55F3DF008A30BE /* KCView.m in Sources */,
 				71D8F0361C46116C00DF7EB5 /* MailViewController.m in Sources */,
