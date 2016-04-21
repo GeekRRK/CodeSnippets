@@ -79,4 +79,25 @@
                            }];
 }
 
+//The following code won't run because lack of AFNetworking
+
+//+ (AFHTTPSessionManager *)shareSessionManager {
+//    static AFHTTPSessionManager *manager;
+//    static dispatch_once_t temp;
+//    dispatch_once(&temp, ^{
+//        manager = [[AFHTTPSessionManager alloc] init];
+//        manager.requestSerializer.timeoutInterval = 20;
+//    });
+//    
+//    return manager;
+//}
+//
+//+ (void)postRequest {
+//    [[NetworkInterface shareSessionManager] POST:apiUrl parameters:dictRequest progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        NSLog(@"Success --- %@", responseObject);
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//        NSLog(@"Failure --- %@", error.localizedDescription);
+//    }];
+//}
+
 @end
