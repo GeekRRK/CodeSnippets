@@ -49,17 +49,10 @@
 }
 
 - (NSString *)pageEventID:(BOOL)bEnterPage {
-    NSDictionary *configDict = [self dictionaryFromUserStatisticsConfigPlist];
+    NSDictionary *configDict = [HookUtility dictionaryFromUserStatisticsConfigPlist];
     NSString *selfClassName = NSStringFromClass([self class]);
     
     return configDict[selfClassName][@"PageEventIDs"][bEnterPage ? @"Enter" : @"Leave"];
-}
-
-- (NSDictionary *)dictionaryFromUserStatisticsConfigPlist {
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"GlobalUserStatisticConfig" ofType:@"plist"];
-    NSDictionary *dic = [NSDictionary dictionaryWithContentsOfFile:filePath];
-    
-    return dic;
 }
 
 @end

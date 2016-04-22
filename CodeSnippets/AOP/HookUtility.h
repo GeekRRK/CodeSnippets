@@ -12,4 +12,6 @@
 
 + (void)swizzlingInClass:(Class)cls originalSelector:(SEL)originalSelector swizzledSelector:(SEL)swizzledSelector;
 
++ (NSDictionary *)dictionaryFromUserStatisticsConfigPlist;
+
 @end
