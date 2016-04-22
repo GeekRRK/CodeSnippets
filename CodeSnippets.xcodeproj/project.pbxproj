@@ -90,6 +90,10 @@
 		AE148B951CBBAAD5002FEF1D /* AAPLPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE148B941CBBAAD5002FEF1D /* AAPLPreviewView.m */; };
 		AE148B981CBBAB02002FEF1D /* AVCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE148B971CBBAB02002FEF1D /* AVCameraViewController.m */; };
 		AE148B9A1CBBAB42002FEF1D /* AVCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE148B991CBBAB42002FEF1D /* AVCameraViewController.xib */; };
+		AE216E1E1CC9F1FE0046FC6C /* GlobalUserStatisticConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE216E191CC9F1FE0046FC6C /* GlobalUserStatisticConfig.plist */; };
+		AE216E1F1CC9F1FE0046FC6C /* UIControl+InjectStatisticMaiDian.m in Sources */ = {isa = PBXBuildFile; fileRef = AE216E1B1CC9F1FE0046FC6C /* UIControl+InjectStatisticMaiDian.m */; };
+		AE216E201CC9F1FE0046FC6C /* UIViewController+InjectStatisticMaiDian.m in Sources */ = {isa = PBXBuildFile; fileRef = AE216E1D1CC9F1FE0046FC6C /* UIViewController+InjectStatisticMaiDian.m */; };
+		AE216E231CC9F23E0046FC6C /* HookUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = AE216E221CC9F23E0046FC6C /* HookUtility.m */; };
 		AE2F5C281CA29E9100A01926 /* UILabel+DynamicHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5C271CA29E9100A01926 /* UILabel+DynamicHeight.m */; };
 		AE39C00E1CC63A4F00AE80D1 /* NetworkInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = AE39C00D1CC63A4F00AE80D1 /* NetworkInterface.m */; };
 		AE46AB3F1CB6498700B44091 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = AE46AB3E1CB6498700B44091 /* Utils.m */; };
@@ -224,6 +228,13 @@
 		AE148B961CBBAB02002FEF1D /* AVCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCameraViewController.h; sourceTree = "<group>"; };
 		AE148B971CBBAB02002FEF1D /* AVCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCameraViewController.m; sourceTree = "<group>"; };
 		AE148B991CBBAB42002FEF1D /* AVCameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVCameraViewController.xib; sourceTree = "<group>"; };
+		AE216E191CC9F1FE0046FC6C /* GlobalUserStatisticConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GlobalUserStatisticConfig.plist; sourceTree = "<group>"; };
+		AE216E1A1CC9F1FE0046FC6C /* UIControl+InjectStatisticMaiDian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+InjectStatisticMaiDian.h"; sourceTree = "<group>"; };
+		AE216E1B1CC9F1FE0046FC6C /* UIControl+InjectStatisticMaiDian.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+InjectStatisticMaiDian.m"; sourceTree = "<group>"; };
+		AE216E1C1CC9F1FE0046FC6C /* UIViewController+InjectStatisticMaiDian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+InjectStatisticMaiDian.h"; sourceTree = "<group>"; };
+		AE216E1D1CC9F1FE0046FC6C /* UIViewController+InjectStatisticMaiDian.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+InjectStatisticMaiDian.m"; sourceTree = "<group>"; };
+		AE216E211CC9F23E0046FC6C /* HookUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HookUtility.h; sourceTree = "<group>"; };
+		AE216E221CC9F23E0046FC6C /* HookUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HookUtility.m; sourceTree = "<group>"; };
 		AE2F5C261CA29E9100A01926 /* UILabel+DynamicHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+DynamicHeight.h"; sourceTree = "<group>"; };
 		AE2F5C271CA29E9100A01926 /* UILabel+DynamicHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DynamicHeight.m"; sourceTree = "<group>"; };
 		AE39C00C1CC63A4F00AE80D1 /* NetworkInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkInterface.h; sourceTree = "<group>"; };
@@ -503,6 +514,7 @@
 		71EB0B271C3F4DC000290797 /* CodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				AE216E181CC9F1A80046FC6C /* AOP */,
 				AE39C00B1CC63A3C00AE80D1 /* NetworkInterface */,
 				AE148B921CBBAAC7002FEF1D /* AVCamera */,
 				AE46AB391CB646D800B44091 /* Utils */,
@@ -606,6 +618,20 @@
 			path = AVCamera;
 			sourceTree = "<group>";
 		};
+		AE216E181CC9F1A80046FC6C /* AOP */ = {
+			isa = PBXGroup;
+			children = (
+				AE216E211CC9F23E0046FC6C /* HookUtility.h */,
+				AE216E221CC9F23E0046FC6C /* HookUtility.m */,
+				AE216E191CC9F1FE0046FC6C /* GlobalUserStatisticConfig.plist */,
+				AE216E1A1CC9F1FE0046FC6C /* UIControl+InjectStatisticMaiDian.h */,
+				AE216E1B1CC9F1FE0046FC6C /* UIControl+InjectStatisticMaiDian.m */,
+				AE216E1C1CC9F1FE0046FC6C /* UIViewController+InjectStatisticMaiDian.h */,
+				AE216E1D1CC9F1FE0046FC6C /* UIViewController+InjectStatisticMaiDian.m */,
+			);
+			path = AOP;
+			sourceTree = "<group>";
+		};
 		AE2F5C251CA29E7A00A01926 /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -703,6 +729,7 @@
 			files = (
 				71131D311C40A59C00E41DA5 /* scrollImg4.png in Resources */,
 				71CF7D721C55F3DF008A30BE /* calayer_background.jpg in Resources */,
+				AE216E1E1CC9F1FE0046FC6C /* GlobalUserStatisticConfig.plist in Resources */,
 				71C765C81C4349F100E6CA12 /* appcoda-logo@2x.png in Resources */,
 				71C765C31C4348E000E6CA12 /* back_btn.png in Resources */,
 				71EB0B491C3F4FAD00290797 /* uiimageviewmode.jpg in Resources */,
@@ -765,6 +792,7 @@
 				71131D291C40A29500E41DA5 /* ScrollViewController.m in Sources */,
 				7128D95A1C4F515300DDED05 /* BView.m in Sources */,
 				71EB0B551C3F512000290797 /* InputAccessoryTableViewController.m in Sources */,
+				AE216E201CC9F1FE0046FC6C /* UIViewController+InjectStatisticMaiDian.m in Sources */,
 				AE02606E1CA00325007C770C /* UIKitAnimationVC3.swift in Sources */,
 				7188A0CE1C44975800027977 /* Card.m in Sources */,
 				7104A5B31C505F2E0080610C /* RuntimeViewController.m in Sources */,
@@ -773,11 +801,13 @@
 				AE46AB3F1CB6498700B44091 /* Utils.m in Sources */,
 				71C765B41C43450200E6CA12 /* UINavigationBarViewController.m in Sources */,
 				7188A0A81C448E7700027977 /* CoreDataViewController.m in Sources */,
+				AE216E231CC9F23E0046FC6C /* HookUtility.m in Sources */,
 				7104A5AF1C505A9A0080610C /* UIViewController+Tracking.m in Sources */,
 				71C766081C4381FD00E6CA12 /* main.m in Sources */,
 				7128D9571C4F514300DDED05 /* AView.m in Sources */,
 				7128D9541C4F504100DDED05 /* UIView+ResponderChain.m in Sources */,
 				71CF7D7C1C562477008A30BE /* TcpClient.m in Sources */,
+				AE216E1F1CC9F1FE0046FC6C /* UIControl+InjectStatisticMaiDian.m in Sources */,
 				71EB0B631C3FA89D00290797 /* DelaysContentTouchesTableViewCell.m in Sources */,
 				71131D3A1C40C72D00E41DA5 /* CodeAutoLayoutViewController.m in Sources */,
 				717D8EC11C75A6D9007CB655 /* CAShapeLayerViewController.m in Sources */,

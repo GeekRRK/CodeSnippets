@@ -2,7 +2,7 @@
 //  NetworkInterface.m
 //  CodeSnippets
 //
-//  Created by UGOMEDIA on 16/4/19.
+//  Created by GeekRRK on 16/4/19.
 //  Copyright © 2016年 GeekRRK. All rights reserved.
 //
 

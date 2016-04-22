@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MaiDianViewController</key>
+	<dict>
+		<key>ControlEventIDs</key>
+		<dict>
+			<key>clickMe:</key>
+			<string>CTRL_EVENT_CLICK_MAIDIANVC</string>
+		</dict>
+		<key>PageEventIDs</key>
+		<dict>
+			<key>Enter</key>
+			<string>PAGE_EVENT_MAIDIAN_ENTER</string>
+			<key>Leave</key>
+			<string>PAGE_EVENT_MAIDIAN_LEAVE</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
