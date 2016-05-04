@@ -10,6 +10,7 @@
 #import "CodeSnippets-Swift.h"
 #import "AlIndicator.h"
 #import "Utils.h"
+#import "KVOViewController.h"
 
 @interface ViewController ()
 
@@ -20,19 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    [[AlIndicator shareIndicator] showIndicatorWithBlock: ^{
-//        sleep(3);
-//    } completionBlock:^{
-//        UIAlertView *alert =
-//        [[UIAlertView alloc] initWithTitle:@"AlIndicator"
-//                                   message:@"Welcome to use AlIndicator"
-//                                  delegate:nil
-//                         cancelButtonTitle:@"Cancel"
-//                         otherButtonTitles:@"OK", nil];
-//        [alert show];
-//    }];
-    
-    BOOL res = [Utils validateCellPhone:@"12345678901"];
+    KVOViewController *kvoVC = [[KVOViewController alloc] init];
+    [self.navigationController pushViewController:kvoVC animated:YES];
 }
 
 @end
