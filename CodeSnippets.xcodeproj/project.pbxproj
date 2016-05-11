@@ -99,6 +99,7 @@
 		AE2F5C281CA29E9100A01926 /* UILabel+DynamicHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5C271CA29E9100A01926 /* UILabel+DynamicHeight.m */; };
 		AE39C00E1CC63A4F00AE80D1 /* NetworkInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = AE39C00D1CC63A4F00AE80D1 /* NetworkInterface.m */; };
 		AE46AB3F1CB6498700B44091 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = AE46AB3E1CB6498700B44091 /* Utils.m */; };
+		AED09E101CE351B2006A9FA4 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED09E0F1CE351B2006A9FA4 /* SwiftViewController.swift */; };
 		AEE818641C9AA6C100FC4E22 /* EqualGap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEE818631C9AA6C100FC4E22 /* EqualGap.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -247,6 +248,7 @@
 		AE46AB3A1CB646D800B44091 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		AE46AB3D1CB6498700B44091 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		AE46AB3E1CB6498700B44091 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		AED09E0F1CE351B2006A9FA4 /* SwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
 		AEE818631C9AA6C100FC4E22 /* EqualGap.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EqualGap.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -519,6 +521,7 @@
 		71EB0B271C3F4DC000290797 /* CodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				AED09E0E1CE35191006A9FA4 /* Swift */,
 				AE0C3D9B1CD9D474004244AF /* KVO */,
 				AE216E181CC9F1A80046FC6C /* AOP */,
 				AE39C00B1CC63A3C00AE80D1 /* NetworkInterface */,
@@ -676,6 +679,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		AED09E0E1CE35191006A9FA4 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				AED09E0F1CE351B2006A9FA4 /* SwiftViewController.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
 		AEE818621C9AA6C100FC4E22 /* AutoLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -827,6 +838,7 @@
 				71CF7D7C1C562477008A30BE /* TcpClient.m in Sources */,
 				AE216E1F1CC9F1FE0046FC6C /* UIControl+InjectStatisticMaiDian.m in Sources */,
 				71EB0B631C3FA89D00290797 /* DelaysContentTouchesTableViewCell.m in Sources */,
+				AED09E101CE351B2006A9FA4 /* SwiftViewController.swift in Sources */,
 				71131D3A1C40C72D00E41DA5 /* CodeAutoLayoutViewController.m in Sources */,
 				717D8EC11C75A6D9007CB655 /* CAShapeLayerViewController.m in Sources */,
 				71EB0B581C3F527D00290797 /* UIImagePickerViewController.m in Sources */,
