@@ -14,6 +14,18 @@ class SwiftViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var total = 0
+        for i in 0 ..< 4 {
+            total += i
+        }
+        print(total)
+        
+        total = 0
+        for i in 0 ... 4 {
+            total += i
+        }
+        print(total)
     }
 
 }

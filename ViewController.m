@@ -10,7 +10,6 @@
 #import "CodeSnippets-Swift.h"
 #import "AlIndicator.h"
 #import "Utils.h"
-#import "KVOViewController.h"
 
 @interface ViewController ()
 
@@ -21,8 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    KVOViewController *kvoVC = [[KVOViewController alloc] init];
-    [self.navigationController pushViewController:kvoVC animated:YES];
+    SwiftViewController *swiftVC = [[SwiftViewController alloc] init];
+    [self.view addSubview:swiftVC.view];
 }
 
 @end
