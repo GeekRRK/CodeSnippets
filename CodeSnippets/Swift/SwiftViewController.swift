@@ -26,6 +26,12 @@ class SwiftViewController: UIViewController {
             total += i
         }
         print(total)
+        
+        print(greet("GeekRRK", day: "Sunday"))
+    }
+    
+    func greet(name: String, day: String) -> String {
+        return "Hello \(name), today is \(day)."
     }
 
 }
