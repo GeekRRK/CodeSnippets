@@ -7,9 +7,6 @@
 //
 
 #import "Utils.h"
-#import <UIKit/UIKit.h>
-#import "Common.h"
-#import <CommonCrypto/CommonCrypto.h>
 
 @implementation Utils
 
@@ -511,6 +508,15 @@
 + (NSArray *)getUpperLetters
 {
     return @[@"A",@"B",@"C",@"D",@"E",@"F",@"G",@"H",@"I",@"J",@"K",@"L",@"M",@"N",@"O",@"P",@"Q",@"R",@"S",@"T",@"U",@"V",@"W",@"X",@"Y",@"Z"];
+}
+
++ (NSInteger)getMinuteFromDate:(NSDate *)fDate toDate:(NSDate *)tDate {
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    unsigned int unitFlags = NSMinuteCalendarUnit;
+    NSDateComponents *comps = [gregorian components:unitFlags fromDate:fDate toDate:tDate options:0];
+    NSInteger minute = [comps minute];
+    
+    return minute;
 }
 
 @end

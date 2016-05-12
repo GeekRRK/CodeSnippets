@@ -20,8 +20,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    SwiftViewController *swiftVC = [[SwiftViewController alloc] init];
-    [self.view addSubview:swiftVC.view];
+    NSDate *fDate = [NSDate date];
+    NSDate *tDate = [NSDate dateWithTimeIntervalSinceNow:60 * 3];
+    NSInteger minute = [Utils getMinuteFromDate:fDate toDate:tDate];
+    NSLog(@"%ld", minute);
 }
 
 @end
