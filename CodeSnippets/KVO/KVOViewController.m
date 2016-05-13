@@ -2,7 +2,7 @@
 //  KVOViewController.m
 //  CodeSnippets
 //
-//  Created by UGOMEDIA on 16/5/4.
+//  Created by GeekRRK on 16/5/4.
 //  Copyright © 2016年 GeekRRK. All rights reserved.
 //
 
