@@ -99,6 +99,8 @@
 		AE2F5C281CA29E9100A01926 /* UILabel+DynamicHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5C271CA29E9100A01926 /* UILabel+DynamicHeight.m */; };
 		AE39C00E1CC63A4F00AE80D1 /* NetworkInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = AE39C00D1CC63A4F00AE80D1 /* NetworkInterface.m */; };
 		AE46AB3F1CB6498700B44091 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = AE46AB3E1CB6498700B44091 /* Utils.m */; };
+		AE61E2BD1CEC561300A4A39C /* AVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE61E2BB1CEC561200A4A39C /* AVPlayerViewController.m */; };
+		AE61E2BE1CEC561300A4A39C /* AVPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE61E2BC1CEC561200A4A39C /* AVPlayerViewController.xib */; };
 		AED09E101CE351B2006A9FA4 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED09E0F1CE351B2006A9FA4 /* SwiftViewController.swift */; };
 		AEE818641C9AA6C100FC4E22 /* EqualGap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEE818631C9AA6C100FC4E22 /* EqualGap.storyboard */; };
 /* End PBXBuildFile section */
@@ -248,6 +250,9 @@
 		AE46AB3A1CB646D800B44091 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		AE46AB3D1CB6498700B44091 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		AE46AB3E1CB6498700B44091 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		AE61E2BA1CEC561200A4A39C /* AVPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayerViewController.h; sourceTree = "<group>"; };
+		AE61E2BB1CEC561200A4A39C /* AVPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerViewController.m; sourceTree = "<group>"; };
+		AE61E2BC1CEC561200A4A39C /* AVPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVPlayerViewController.xib; sourceTree = "<group>"; };
 		AED09E0F1CE351B2006A9FA4 /* SwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
 		AEE818631C9AA6C100FC4E22 /* EqualGap.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EqualGap.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -521,6 +526,7 @@
 		71EB0B271C3F4DC000290797 /* CodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				AE61E2B91CEC55FB00A4A39C /* AVPlayer */,
 				AED09E0E1CE35191006A9FA4 /* Swift */,
 				AE0C3D9B1CD9D474004244AF /* KVO */,
 				AE216E181CC9F1A80046FC6C /* AOP */,
@@ -679,6 +685,16 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		AE61E2B91CEC55FB00A4A39C /* AVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				AE61E2BA1CEC561200A4A39C /* AVPlayerViewController.h */,
+				AE61E2BB1CEC561200A4A39C /* AVPlayerViewController.m */,
+				AE61E2BC1CEC561200A4A39C /* AVPlayerViewController.xib */,
+			);
+			path = AVPlayer;
+			sourceTree = "<group>";
+		};
 		AED09E0E1CE35191006A9FA4 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
@@ -774,6 +790,7 @@
 				AE02606A1CA00325007C770C /* UIKitAnimation.storyboard in Resources */,
 				71C766051C4381FD00E6CA12 /* LaunchScreen.storyboard in Resources */,
 				71C765C41C4348E000E6CA12 /* back_btn@2x.png in Resources */,
+				AE61E2BE1CEC561300A4A39C /* AVPlayerViewController.xib in Resources */,
 				71C765BC1C43481200E6CA12 /* nav_bg@2x.png in Resources */,
 				AE0C3DA01CD9D49B004244AF /* KVOViewController.xib in Resources */,
 				71C765C01C43484500E6CA12 /* nav_bg.png in Resources */,
@@ -810,6 +827,7 @@
 				71EB0B4A1C3F4FAD00290797 /* UIImageViewModeViewController.m in Sources */,
 				71C766121C43920000E6CA12 /* NSURLConnectionViewController.m in Sources */,
 				71CF7D7A1C5623E9008A30BE /* TcpServer.m in Sources */,
+				AE61E2BD1CEC561300A4A39C /* AVPlayerViewController.m in Sources */,
 				AE02606F1CA00325007C770C /* UIKitAnimationVC4.swift in Sources */,
 				71CF7D801C562581008A30BE /* UdpClient.m in Sources */,
 				71C7660D1C43823900E6CA12 /* AppDelegate.m in Sources */,
