@@ -31,7 +31,10 @@
 }
 
 - (void)setupPlayer {
-    _player = [[AVPlayer alloc] init];
+    AVPlayerItem *item = [[AVPlayerItem alloc] initWithURL:[NSURL URLWithString:@""]];
+    _player = [[AVPlayer alloc] initWithPlayerItem:item];
+    
+//    [_player replaceCurrentItemWithPlayerItem:item];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playDidEnd) name:AVPlayerItemDidPlayToEndTimeNotification object:nil];
     [_player addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:nil];
