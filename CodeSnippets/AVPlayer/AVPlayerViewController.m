@@ -7,8 +7,11 @@
 //
 
 #import "AVPlayerViewController.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface AVPlayerViewController ()
+
+@property (strong, nonatomic) AVPlayer *player;
 
 @end
 
@@ -17,6 +20,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context {
+    if ([keyPath isEqualToString:@"status"]) {
+        if (object == _player && _player.status == AVPlayerStatusReadyToPlay) {
+            
+        }
+    }
 }
 
 @end
