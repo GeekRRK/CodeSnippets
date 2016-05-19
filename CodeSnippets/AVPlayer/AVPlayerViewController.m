@@ -30,4 +30,31 @@
     }
 }
 
+- (void)setupPlayer {
+    _player = [[AVPlayer alloc] init];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playDidEnd) name:AVPlayerItemDidPlayToEndTimeNotification object:nil];
+    [_player addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:nil];
+    [_player.currentItem addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:nil];
+    
+    __weak typeof(self) weakSelf = self;
+    __weak AVPlayer *weakPlayer = _player;
+    [_player addPeriodicTimeObserverForInterval:CMTimeMake(1, 1) queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
+        float currentTime = weakPlayer.currentItem.currentTime.value / weakPlayer.currentItem.currentTime.timescale;
+        NSTimeInterval timeInterval = [weakSelf availableDuration];
+        CMTime duration = weakPlayer.currentItem.duration;
+        CGFloat totalDuration = CMTimeGetSeconds(duration);
+    }];
+}
+
+- (NSTimeInterval)availableDuration {
+    NSArray *loadedTimeRanges = [[_player currentItem] loadedTimeRanges];
+    CMTimeRange timeRange = [loadedTimeRanges.firstObject CMTimeRangeValue];
+    float startSeconds = CMTimeGetSeconds(timeRange.start);
+    float durationSeconds = CMTimeGetSeconds(timeRange.duration);
+    NSTimeInterval result = startSeconds + durationSeconds;
+    
+    return result;
+}
+
 @end
