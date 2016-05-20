@@ -81,4 +81,6 @@
 
 + (NSInteger)getMinuteFromDate:(NSDate *)fDate toDate:(NSDate *)tDate;
 
++ (int)getRandomNumber:(int)from to:(int)to;
+
 @end

@@ -515,4 +515,8 @@
     return minute;
 }
 
++ (int)getRandomNumber:(int)from to:(int)to {
+    return (int)(from + (arc4random() % (to - from + 1)));
+}
+
 @end
