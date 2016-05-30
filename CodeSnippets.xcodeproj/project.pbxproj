@@ -101,6 +101,7 @@
 		AE46AB3F1CB6498700B44091 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = AE46AB3E1CB6498700B44091 /* Utils.m */; };
 		AE61E2BD1CEC561300A4A39C /* AVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE61E2BB1CEC561200A4A39C /* AVPlayerViewController.m */; };
 		AE61E2BE1CEC561300A4A39C /* AVPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE61E2BC1CEC561200A4A39C /* AVPlayerViewController.xib */; };
+		AE6EB33E1CFBEE5C00465E07 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6EB33D1CFBEE5C00465E07 /* UIImage+RoundedCorner.m */; };
 		AED09E101CE351B2006A9FA4 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED09E0F1CE351B2006A9FA4 /* SwiftViewController.swift */; };
 		AEE818641C9AA6C100FC4E22 /* EqualGap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEE818631C9AA6C100FC4E22 /* EqualGap.storyboard */; };
 /* End PBXBuildFile section */
@@ -253,6 +254,8 @@
 		AE61E2BA1CEC561200A4A39C /* AVPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayerViewController.h; sourceTree = "<group>"; };
 		AE61E2BB1CEC561200A4A39C /* AVPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerViewController.m; sourceTree = "<group>"; };
 		AE61E2BC1CEC561200A4A39C /* AVPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVPlayerViewController.xib; sourceTree = "<group>"; };
+		AE6EB33C1CFBEE5C00465E07 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		AE6EB33D1CFBEE5C00465E07 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
 		AED09E0F1CE351B2006A9FA4 /* SwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
 		AEE818631C9AA6C100FC4E22 /* EqualGap.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EqualGap.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -526,6 +529,7 @@
 		71EB0B271C3F4DC000290797 /* CodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				AE6EB33B1CFBEE4E00465E07 /* Category */,
 				AE61E2B91CEC55FB00A4A39C /* AVPlayer */,
 				AED09E0E1CE35191006A9FA4 /* Swift */,
 				AE0C3D9B1CD9D474004244AF /* KVO */,
@@ -695,6 +699,15 @@
 			path = AVPlayer;
 			sourceTree = "<group>";
 		};
+		AE6EB33B1CFBEE4E00465E07 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				AE6EB33C1CFBEE5C00465E07 /* UIImage+RoundedCorner.h */,
+				AE6EB33D1CFBEE5C00465E07 /* UIImage+RoundedCorner.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		AED09E0E1CE35191006A9FA4 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
@@ -837,6 +850,7 @@
 				7104A5AC1C505A680080610C /* MethodSwizzlingViewController.m in Sources */,
 				71131D3F1C40CEEE00E41DA5 /* CheckNetworkViewController.m in Sources */,
 				71131D291C40A29500E41DA5 /* ScrollViewController.m in Sources */,
+				AE6EB33E1CFBEE5C00465E07 /* UIImage+RoundedCorner.m in Sources */,
 				7128D95A1C4F515300DDED05 /* BView.m in Sources */,
 				71EB0B551C3F512000290797 /* InputAccessoryTableViewController.m in Sources */,
 				AE216E201CC9F1FE0046FC6C /* UIViewController+InjectStatisticMaiDian.m in Sources */,
