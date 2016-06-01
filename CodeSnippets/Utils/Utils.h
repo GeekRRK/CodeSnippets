@@ -83,4 +83,6 @@
 
 + (int)getRandomNumber:(int)from to:(int)to;
 
++ (CGRect)getRectOfString:(NSString *)str font:(UIFont *)font size:(CGSize)size;
+
 @end

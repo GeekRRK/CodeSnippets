@@ -549,4 +549,9 @@
     layer.beginTime = timeSincePause;
 }
 
++ (CGRect)getRectOfString:(NSString *)str font:(UIFont *)font size:(CGSize)size{
+    CGRect rect = [str boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin attributes:[NSDictionary dictionaryWithObjectsAndKeys:font, NSFontAttributeName, nil] context:nil];
+    return rect;
+}
+
 @end
