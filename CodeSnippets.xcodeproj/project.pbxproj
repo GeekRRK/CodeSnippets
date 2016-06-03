@@ -102,6 +102,26 @@
 		AE61E2BD1CEC561300A4A39C /* AVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE61E2BB1CEC561200A4A39C /* AVPlayerViewController.m */; };
 		AE61E2BE1CEC561300A4A39C /* AVPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE61E2BC1CEC561200A4A39C /* AVPlayerViewController.xib */; };
 		AE6EB33E1CFBEE5C00465E07 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6EB33D1CFBEE5C00465E07 /* UIImage+RoundedCorner.m */; };
+		AE9FEFF61D014C9D00493843 /* AlCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9FEFF21D014C9D00493843 /* AlCollectionCell.m */; };
+		AE9FEFF71D014C9D00493843 /* AlCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE9FEFF31D014C9D00493843 /* AlCollectionCell.xib */; };
+		AE9FEFF81D014C9D00493843 /* AlCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9FEFF51D014C9D00493843 /* AlCollectionViewLayout.m */; };
+		AE9FF0091D014CA800493843 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE9FEFF91D014CA800493843 /* 7.jpg */; };
+		AE9FF00A1D014CA800493843 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE9FEFFA1D014CA800493843 /* 8.jpg */; };
+		AE9FF00B1D014CA800493843 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE9FEFFB1D014CA800493843 /* 9.jpg */; };
+		AE9FF00C1D014CA800493843 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE9FEFFC1D014CA800493843 /* 10.jpg */; };
+		AE9FF00D1D014CA800493843 /* 11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE9FEFFD1D014CA800493843 /* 11.jpg */; };
+		AE9FF00E1D014CA800493843 /* 12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE9FEFFE1D014CA800493843 /* 12.jpg */; };
+		AE9FF00F1D014CA800493843 /* 13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE9FEFFF1D014CA800493843 /* 13.jpg */; };
+		AE9FF0101D014CA800493843 /* 14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE9FF0001D014CA800493843 /* 14.jpg */; };
+		AE9FF0111D014CA800493843 /* 15.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE9FF0011D014CA800493843 /* 15.jpg */; };
+		AE9FF0121D014CA800493843 /* 16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE9FF0021D014CA800493843 /* 16.jpg */; };
+		AE9FF0131D014CA800493843 /* 17.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE9FF0031D014CA800493843 /* 17.jpg */; };
+		AE9FF0141D014CA800493843 /* 18.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE9FF0041D014CA800493843 /* 18.jpg */; };
+		AE9FF0151D014CA800493843 /* 19.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE9FF0051D014CA800493843 /* 19.jpg */; };
+		AE9FF0161D014CA800493843 /* 20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE9FF0061D014CA800493843 /* 20.jpg */; };
+		AE9FF0171D014CA800493843 /* 21.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE9FF0071D014CA800493843 /* 21.jpg */; };
+		AE9FF0181D014CA800493843 /* 22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE9FF0081D014CA800493843 /* 22.jpg */; };
+		AE9FF01B1D014CD900493843 /* UICollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9FF01A1D014CD900493843 /* UICollectionVC.m */; };
 		AED09E101CE351B2006A9FA4 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED09E0F1CE351B2006A9FA4 /* SwiftViewController.swift */; };
 		AEE818641C9AA6C100FC4E22 /* EqualGap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEE818631C9AA6C100FC4E22 /* EqualGap.storyboard */; };
 /* End PBXBuildFile section */
@@ -256,6 +276,29 @@
 		AE61E2BC1CEC561200A4A39C /* AVPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVPlayerViewController.xib; sourceTree = "<group>"; };
 		AE6EB33C1CFBEE5C00465E07 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
 		AE6EB33D1CFBEE5C00465E07 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		AE9FEFF11D014C9D00493843 /* AlCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlCollectionCell.h; sourceTree = "<group>"; };
+		AE9FEFF21D014C9D00493843 /* AlCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlCollectionCell.m; sourceTree = "<group>"; };
+		AE9FEFF31D014C9D00493843 /* AlCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlCollectionCell.xib; sourceTree = "<group>"; };
+		AE9FEFF41D014C9D00493843 /* AlCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlCollectionViewLayout.h; sourceTree = "<group>"; };
+		AE9FEFF51D014C9D00493843 /* AlCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlCollectionViewLayout.m; sourceTree = "<group>"; };
+		AE9FEFF91D014CA800493843 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		AE9FEFFA1D014CA800493843 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
+		AE9FEFFB1D014CA800493843 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
+		AE9FEFFC1D014CA800493843 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
+		AE9FEFFD1D014CA800493843 /* 11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpg; sourceTree = "<group>"; };
+		AE9FEFFE1D014CA800493843 /* 12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 12.jpg; sourceTree = "<group>"; };
+		AE9FEFFF1D014CA800493843 /* 13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 13.jpg; sourceTree = "<group>"; };
+		AE9FF0001D014CA800493843 /* 14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 14.jpg; sourceTree = "<group>"; };
+		AE9FF0011D014CA800493843 /* 15.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 15.jpg; sourceTree = "<group>"; };
+		AE9FF0021D014CA800493843 /* 16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 16.jpg; sourceTree = "<group>"; };
+		AE9FF0031D014CA800493843 /* 17.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 17.jpg; sourceTree = "<group>"; };
+		AE9FF0041D014CA800493843 /* 18.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 18.jpg; sourceTree = "<group>"; };
+		AE9FF0051D014CA800493843 /* 19.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 19.jpg; sourceTree = "<group>"; };
+		AE9FF0061D014CA800493843 /* 20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 20.jpg; sourceTree = "<group>"; };
+		AE9FF0071D014CA800493843 /* 21.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 21.jpg; sourceTree = "<group>"; };
+		AE9FF0081D014CA800493843 /* 22.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 22.jpg; sourceTree = "<group>"; };
+		AE9FF0191D014CD900493843 /* UICollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionVC.h; sourceTree = "<group>"; };
+		AE9FF01A1D014CD900493843 /* UICollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionVC.m; sourceTree = "<group>"; };
 		AED09E0F1CE351B2006A9FA4 /* SwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
 		AEE818631C9AA6C100FC4E22 /* EqualGap.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EqualGap.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -529,6 +572,7 @@
 		71EB0B271C3F4DC000290797 /* CodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				AE9FEFF01D014C7700493843 /* UICollectionView */,
 				AE6EB33B1CFBEE4E00465E07 /* Category */,
 				AE61E2B91CEC55FB00A4A39C /* AVPlayer */,
 				AED09E0E1CE35191006A9FA4 /* Swift */,
@@ -708,6 +752,36 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		AE9FEFF01D014C7700493843 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				AE9FEFF91D014CA800493843 /* 7.jpg */,
+				AE9FEFFA1D014CA800493843 /* 8.jpg */,
+				AE9FEFFB1D014CA800493843 /* 9.jpg */,
+				AE9FEFFC1D014CA800493843 /* 10.jpg */,
+				AE9FEFFD1D014CA800493843 /* 11.jpg */,
+				AE9FEFFE1D014CA800493843 /* 12.jpg */,
+				AE9FEFFF1D014CA800493843 /* 13.jpg */,
+				AE9FF0001D014CA800493843 /* 14.jpg */,
+				AE9FF0011D014CA800493843 /* 15.jpg */,
+				AE9FF0021D014CA800493843 /* 16.jpg */,
+				AE9FF0031D014CA800493843 /* 17.jpg */,
+				AE9FF0041D014CA800493843 /* 18.jpg */,
+				AE9FF0051D014CA800493843 /* 19.jpg */,
+				AE9FF0061D014CA800493843 /* 20.jpg */,
+				AE9FF0071D014CA800493843 /* 21.jpg */,
+				AE9FF0081D014CA800493843 /* 22.jpg */,
+				AE9FEFF11D014C9D00493843 /* AlCollectionCell.h */,
+				AE9FEFF21D014C9D00493843 /* AlCollectionCell.m */,
+				AE9FEFF31D014C9D00493843 /* AlCollectionCell.xib */,
+				AE9FEFF41D014C9D00493843 /* AlCollectionViewLayout.h */,
+				AE9FEFF51D014C9D00493843 /* AlCollectionViewLayout.m */,
+				AE9FF0191D014CD900493843 /* UICollectionVC.h */,
+				AE9FF01A1D014CD900493843 /* UICollectionVC.m */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
 		AED09E0E1CE35191006A9FA4 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
@@ -783,27 +857,42 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE9FF0141D014CA800493843 /* 18.jpg in Resources */,
+				AE9FF00E1D014CA800493843 /* 12.jpg in Resources */,
+				AE9FF00D1D014CA800493843 /* 11.jpg in Resources */,
 				71131D311C40A59C00E41DA5 /* scrollImg4.png in Resources */,
 				71CF7D721C55F3DF008A30BE /* calayer_background.jpg in Resources */,
+				AE9FF0111D014CA800493843 /* 15.jpg in Resources */,
 				AE216E1E1CC9F1FE0046FC6C /* GlobalUserStatisticConfig.plist in Resources */,
+				AE9FF0151D014CA800493843 /* 19.jpg in Resources */,
 				71C765C81C4349F100E6CA12 /* appcoda-logo@2x.png in Resources */,
 				71C765C31C4348E000E6CA12 /* back_btn.png in Resources */,
 				71EB0B491C3F4FAD00290797 /* uiimageviewmode.jpg in Resources */,
+				AE9FF00B1D014CA800493843 /* 9.jpg in Resources */,
 				71131D3B1C40C72D00E41DA5 /* CodeAutoLayoutViewController.xib in Resources */,
+				AE9FF00F1D014CA800493843 /* 13.jpg in Resources */,
 				AEE818641C9AA6C100FC4E22 /* EqualGap.storyboard in Resources */,
 				71D8F0381C46144500DF7EB5 /* addPic.jpg in Resources */,
 				71EB0B641C3FA89D00290797 /* DelaysContentTouchesTableViewCell.xib in Resources */,
+				AE9FF0131D014CA800493843 /* 17.jpg in Resources */,
 				71C766041C4381FD00E6CA12 /* Assets.xcassets in Resources */,
 				71131D301C40A59C00E41DA5 /* scrollImg3.png in Resources */,
+				AE9FF00A1D014CA800493843 /* 8.jpg in Resources */,
 				AE02606B1CA00325007C770C /* UIKitAnimation.xcassets in Resources */,
 				AE148B9A1CBBAB42002FEF1D /* AVCameraViewController.xib in Resources */,
+				AE9FF0161D014CA800493843 /* 20.jpg in Resources */,
 				71C766071C4381FD00E6CA12 /* Info.plist in Resources */,
+				AE9FF0171D014CA800493843 /* 21.jpg in Resources */,
 				71C765BF1C43484500E6CA12 /* nav_bg_ios7.png in Resources */,
 				71CF7D711C55F3DF008A30BE /* calayer_avatar.png in Resources */,
+				AE9FF0091D014CA800493843 /* 7.jpg in Resources */,
 				AE02606A1CA00325007C770C /* UIKitAnimation.storyboard in Resources */,
+				AE9FF0101D014CA800493843 /* 14.jpg in Resources */,
 				71C766051C4381FD00E6CA12 /* LaunchScreen.storyboard in Resources */,
 				71C765C41C4348E000E6CA12 /* back_btn@2x.png in Resources */,
+				AE9FEFF71D014C9D00493843 /* AlCollectionCell.xib in Resources */,
 				AE61E2BE1CEC561300A4A39C /* AVPlayerViewController.xib in Resources */,
+				AE9FF0181D014CA800493843 /* 22.jpg in Resources */,
 				71C765BC1C43481200E6CA12 /* nav_bg@2x.png in Resources */,
 				AE0C3DA01CD9D49B004244AF /* KVOViewController.xib in Resources */,
 				71C765C01C43484500E6CA12 /* nav_bg.png in Resources */,
@@ -811,8 +900,10 @@
 				71C765C71C4349F100E6CA12 /* appcoda-logo.png in Resources */,
 				71C765BB1C43481200E6CA12 /* nav_bg_ios7@2x.png in Resources */,
 				7128D9651C4F519E00DDED05 /* ResponderChainViewController.xib in Resources */,
+				AE9FF00C1D014CA800493843 /* 10.jpg in Resources */,
 				71D5D5B91C473FA700904EA1 /* contentsimg.jpg in Resources */,
 				71131D2E1C40A59C00E41DA5 /* scrollImg1.png in Resources */,
+				AE9FF0121D014CA800493843 /* 16.jpg in Resources */,
 				71EB0B691C3FA93F00290797 /* DelaysContentTouchesTableViewController.xib in Resources */,
 				71C766061C4381FD00E6CA12 /* Main.storyboard in Resources */,
 				71131D2F1C40A59C00E41DA5 /* scrollImg2.png in Resources */,
@@ -849,6 +940,7 @@
 				71CF7D731C55F3DF008A30BE /* KCLayer.m in Sources */,
 				7104A5AC1C505A680080610C /* MethodSwizzlingViewController.m in Sources */,
 				71131D3F1C40CEEE00E41DA5 /* CheckNetworkViewController.m in Sources */,
+				AE9FEFF81D014C9D00493843 /* AlCollectionViewLayout.m in Sources */,
 				71131D291C40A29500E41DA5 /* ScrollViewController.m in Sources */,
 				AE6EB33E1CFBEE5C00465E07 /* UIImage+RoundedCorner.m in Sources */,
 				7128D95A1C4F515300DDED05 /* BView.m in Sources */,
@@ -861,6 +953,7 @@
 				71EB0B5F1C3FA73000290797 /* DelaysContentTouchesTableView.m in Sources */,
 				AE46AB3F1CB6498700B44091 /* Utils.m in Sources */,
 				71C765B41C43450200E6CA12 /* UINavigationBarViewController.m in Sources */,
+				AE9FEFF61D014C9D00493843 /* AlCollectionCell.m in Sources */,
 				7188A0A81C448E7700027977 /* CoreDataViewController.m in Sources */,
 				AE216E231CC9F23E0046FC6C /* HookUtility.m in Sources */,
 				7104A5AF1C505A9A0080610C /* UIViewController+Tracking.m in Sources */,
@@ -870,6 +963,7 @@
 				71CF7D7C1C562477008A30BE /* TcpClient.m in Sources */,
 				AE216E1F1CC9F1FE0046FC6C /* UIControl+InjectStatisticMaiDian.m in Sources */,
 				71EB0B631C3FA89D00290797 /* DelaysContentTouchesTableViewCell.m in Sources */,
+				AE9FF01B1D014CD900493843 /* UICollectionVC.m in Sources */,
 				AED09E101CE351B2006A9FA4 /* SwiftViewController.swift in Sources */,
 				71131D3A1C40C72D00E41DA5 /* CodeAutoLayoutViewController.m in Sources */,
 				717D8EC11C75A6D9007CB655 /* CAShapeLayerViewController.m in Sources */,

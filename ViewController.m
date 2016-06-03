@@ -10,6 +10,7 @@
 #import "CodeSnippets-Swift.h"
 #import "AlIndicator.h"
 #import "Utils.h"
+#import "UICollectionVC.h"
 
 @interface ViewController ()
 
@@ -20,10 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSDate *fDate = [NSDate date];
-    NSDate *tDate = [NSDate dateWithTimeIntervalSinceNow:60 * 3];
-    NSInteger minute = [Utils getMinuteFromDate:fDate toDate:tDate];
-    NSLog(@"%ld", minute);
+    UICollectionVC *vc = [[UICollectionVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end
