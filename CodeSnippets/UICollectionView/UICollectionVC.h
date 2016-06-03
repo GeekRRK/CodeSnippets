@@ -2,7 +2,7 @@
 //  UICollectionVC.h
 //  CodeSnippets
 //
-//  Created by UGOMEDIA on 16/6/3.
+//  Created by GeekRRK on 16/6/3.
 //  Copyright © 2016年 GeekRRK. All rights reserved.
 //
 

@@ -2,8 +2,8 @@
 //  YZCollectionCell.m
 //  Collection
 //
-//  Created by UGOMEDIA on 16/6/2.
-//  Copyright © 2016年 UgoMedia. All rights reserved.
+//  Created by GeekRRK on 16/6/2.
+//  Copyright © 2016年 GeekRRK. All rights reserved.
 //
 
 #import "AlCollectionCell.h"
