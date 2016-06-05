@@ -1,4 +1,10 @@
-- (void)addBtn{
+@interface CustomTabBar : UITabBar
+
+@property (strong, nonatomic) UIButton *midBtn;
+
+@end
+
+- (void)addBtn {
     if (_midBtn == nil) {
         UIView *bkgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width, 49)];
         bkgView.backgroundColor = [[UIColor yellowColor] colorWithAlphaComponent:1];
