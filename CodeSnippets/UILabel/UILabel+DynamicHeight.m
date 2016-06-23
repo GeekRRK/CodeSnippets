@@ -25,11 +25,14 @@
     
     CGSize maximumLabelSize = CGSizeMake(self.frame.size.width, 9999);
     
-    CGSize expectedLabelSize = [[self text] sizeWithFont:[self font]
-                                       constrainedToSize:maximumLabelSize
-                                           lineBreakMode:[self lineBreakMode]];
+    NSDictionary *attributes = @{NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue" size:14]};
+    CGRect rect = [[self text] boundingRectWithSize:maximumLabelSize
+                                              options:NSStringDrawingUsesLineFragmentOrigin
+                                           attributes:attributes
+                                              context:nil];
     
-    return expectedLabelSize.height;
+    
+    return rect.size.height;
 }
 
 @end
