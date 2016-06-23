@@ -131,6 +131,9 @@ static void MyCompletionCallback (
     // create a system sound ID to represent the sound file
     OSStatus error = AudioServicesCreateSystemSoundID (myURLRef,
                                                        &mySSID);
+    if (error) {
+        
+    }
     // Register the sound completion callback.
     // Again, useful when you need to free memory after playing.
     AudioServicesAddSystemSoundCompletion (

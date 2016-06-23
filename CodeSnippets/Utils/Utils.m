@@ -22,15 +22,17 @@
     [window addSubview:showview];
     
     UILabel *label = [[UILabel alloc]init];
-    CGSize LabelSize = [message sizeWithFont:[UIFont systemFontOfSize:17] constrainedToSize:CGSizeMake(290, 9000)];
-    label.frame = CGRectMake(10, 5, LabelSize.width, LabelSize.height);
+    
+    CGRect labelRect = [message boundingRectWithSize:CGSizeMake(290, 9000) options:NSStringDrawingUsesLineFragmentOrigin attributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont systemFontOfSize:17], NSFontAttributeName, nil] context:nil];
+    
+    label.frame = CGRectMake(10, 5, labelRect.size.width, labelRect.size.height);
     label.text = message;
     label.textColor = [UIColor whiteColor];
     label.textAlignment = 1;
     label.backgroundColor = [UIColor clearColor];
     label.font = [UIFont boldSystemFontOfSize:15];
     [showview addSubview:label];
-    showview.frame = CGRectMake((cSCREENWIDTH - LabelSize.width - 20)/2, cSCREENHEIGHT - 100, LabelSize.width+20, LabelSize.height+10);
+    showview.frame = CGRectMake((cSCREENWIDTH - labelRect.size.width - 20)/2, cSCREENHEIGHT - 100, labelRect.size.width+20, labelRect.size.height+10);
     [UIView animateWithDuration:1.5 animations:^{
         showview.alpha = 0;
     } completion:^(BOOL finished) {
@@ -224,7 +226,7 @@
     NSData *imgData = UIImageJPEGRepresentation(img, 0);
     NSLog(@"The size after compress：%ldKB\n", [imgData length] / 1024);
     
-    NSString *baseStr = [imgData base64Encoding];
+    NSString *baseStr = [imgData base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
     NSString *base64Str = (__bridge NSString *) CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
                                                                                         (CFStringRef)baseStr,
                                                                                         NULL,
