@@ -470,8 +470,7 @@
     return [phoneTest evaluateWithObject:candidate];
 }
 
-+ (long)getDocumentSize:(NSString *)folderName
-{
++ (long)getDocumentSize:(NSString *)folderName {
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = paths[0];
@@ -488,8 +487,7 @@
     return size;
 }
 
-+ (NSString *)getDiskUsed
-{
++ (NSString *)getDiskUsed {
     NSDictionary *fsAttr = [[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory() error:nil];
     float diskSize = [fsAttr[NSFileSystemSize] doubleValue] / 1073741824.f;
     float diskFreeSize = [fsAttr[NSFileSystemFreeSize] doubleValue] / 1073741824.f;
@@ -498,13 +496,11 @@
 }
 
 
-+ (NSArray *)getLetters
-{
++ (NSArray *)getLetters {
     return @[@"a",@"b",@"c",@"d",@"e",@"f",@"g",@"h",@"i",@"j",@"k",@"l",@"m",@"n",@"o",@"p",@"q",@"r",@"s",@"t",@"u",@"v",@"w",@"x",@"y",@"z"];
 }
 
-+ (NSArray *)getUpperLetters
-{
++ (NSArray *)getUpperLetters {
     return @[@"A",@"B",@"C",@"D",@"E",@"F",@"G",@"H",@"I",@"J",@"K",@"L",@"M",@"N",@"O",@"P",@"Q",@"R",@"S",@"T",@"U",@"V",@"W",@"X",@"Y",@"Z"];
 }
 
