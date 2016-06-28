@@ -7,9 +7,13 @@
 //
 
 #import "UIImagePickerViewController.h"
+#import <AssetsLibrary/AssetsLibrary.h>
 
-@interface UIImagePickerViewController ()
-<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+typedef void (^ALAssetsEnumeration)(id);
+
+@interface UIImagePickerViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+
+@property (strong, nonatomic) NSMutableArray *assetArray;
 
 @end
 
@@ -103,6 +107,41 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info{
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
     [picker dismissViewControllerAnimated:YES completion:NULL];
+}
+
+- (void)setupImgPickerVC {
+    __block UIImagePickerViewController *thisVC = self;
+    ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
+    [library enumerateGroupsWithTypes:ALAssetsGroupSavedPhotos usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
+        if (group) {
+            [self enumerateAssetForGroup:group forFilter:[ALAssetsFilter allPhotos] withCompletionBlock:^(id object) {
+                thisVC.assetArray = object;
+                [thisVC.assetArray sortUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+                    NSDate *date1 = [obj1 valueForProperty:ALAssetPropertyDate];
+                    NSDate *date2 = [obj2 valueForProperty:ALAssetPropertyDate];
+                    
+                    return ([date1 compare:date2] == NSOrderedAscending ? NSOrderedDescending : NSOrderedAscending);
+                }];
+//                [thisVC.tableView reloadData];
+            }];
+        }
+    } failureBlock:nil];
+}
+
+- (void)enumerateAssetForGroup:(ALAssetsGroup*)group forFilter:(ALAssetsFilter*)filter withCompletionBlock:(ALAssetsEnumeration)enumerationCompletionBlock {
+    [group setAssetsFilter:filter];
+    __block NSInteger assetsCount = [group numberOfAssets];
+    __block NSMutableArray *assetArray = [[NSMutableArray alloc] init];
+    [group enumerateAssetsUsingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {
+        if (result) {
+            [assetArray addObject:result];
+            if (*stop) {
+                enumerationCompletionBlock(assetArray);
+            }
+        } else if (assetsCount == 0) {
+            enumerationCompletionBlock(nil);
+        }
+    }];
 }
 
 @end
