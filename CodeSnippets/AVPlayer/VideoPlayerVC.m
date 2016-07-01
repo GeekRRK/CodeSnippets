@@ -171,7 +171,7 @@
 }
 
 - (void)monitoringPlayback:(AVPlayerItem *)playerItem {
-    __weak NXHVideoPlayerVC *blockSelf = self;
+    __weak VideoPlayerVC *blockSelf = self;
     [self.player addPeriodicTimeObserverForInterval:CMTimeMakeWithSeconds(1.0 / 60.0, NSEC_PER_SEC) queue:NULL usingBlock:^(CMTime time) {
         CGFloat currentSecond = playerItem.currentTime.value/playerItem.currentTime.timescale;
         _currentTime = currentSecond;
