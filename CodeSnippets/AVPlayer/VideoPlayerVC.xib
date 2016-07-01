@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NXHVideoPlayerVC">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoPlayerVC">
             <connections>
                 <outlet property="backBtn" destination="uxb-XM-2y2" id="kk9-hc-KVU"/>
                 <outlet property="bufferProgressView" destination="5wb-b6-9qs" id="A8C-t7-Ayn"/>
