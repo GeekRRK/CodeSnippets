@@ -131,6 +131,7 @@
 		AE9FF0181D014CA800493843 /* 22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE9FF0081D014CA800493843 /* 22.jpg */; };
 		AE9FF01B1D014CD900493843 /* UICollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9FF01A1D014CD900493843 /* UICollectionVC.m */; };
 		AED09E101CE351B2006A9FA4 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED09E0F1CE351B2006A9FA4 /* SwiftViewController.swift */; };
+		AED74C0F1D2A6AD90003D19F /* DBUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = AED74C0E1D2A6AD90003D19F /* DBUtils.m */; };
 		AEE818641C9AA6C100FC4E22 /* EqualGap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEE818631C9AA6C100FC4E22 /* EqualGap.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -317,6 +318,8 @@
 		AE9FF0191D014CD900493843 /* UICollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionVC.h; sourceTree = "<group>"; };
 		AE9FF01A1D014CD900493843 /* UICollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionVC.m; sourceTree = "<group>"; };
 		AED09E0F1CE351B2006A9FA4 /* SwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
+		AED74C0D1D2A6AD90003D19F /* DBUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBUtils.h; sourceTree = "<group>"; };
+		AED74C0E1D2A6AD90003D19F /* DBUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBUtils.m; sourceTree = "<group>"; };
 		AEE818631C9AA6C100FC4E22 /* EqualGap.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EqualGap.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -759,6 +762,8 @@
 				AE46AB3A1CB646D800B44091 /* Common.h */,
 				AE46AB3D1CB6498700B44091 /* Utils.h */,
 				AE46AB3E1CB6498700B44091 /* Utils.m */,
+				AED74C0D1D2A6AD90003D19F /* DBUtils.h */,
+				AED74C0E1D2A6AD90003D19F /* DBUtils.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1024,6 +1029,7 @@
 				AE02606D1CA00325007C770C /* UIKitAnimationVC2.swift in Sources */,
 				71CF7D751C55F3DF008A30BE /* AnimateLayerViewController.m in Sources */,
 				71CF7D7E1C562510008A30BE /* UdpServer.m in Sources */,
+				AED74C0F1D2A6AD90003D19F /* DBUtils.m in Sources */,
 				71EB0B521C3F50A800290797 /* InputAccessoryTableViewCell.m in Sources */,
 				7188A0CD1C44975800027977 /* Card+CoreDataProperties.m in Sources */,
 			);

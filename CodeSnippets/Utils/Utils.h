@@ -57,7 +57,7 @@
 
 + (CGSize)fitsize:(CGSize)thisSize;
 
-+(UIImage *)fitSmallImage:(UIImage *)image;
++ (UIImage *)fitSmallImage:(UIImage *)image;
 
 + (NSString *)md5:(NSString *)str;
 
