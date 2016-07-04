@@ -133,6 +133,7 @@
 		AE9FF01B1D014CD900493843 /* UICollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9FF01A1D014CD900493843 /* UICollectionVC.m */; };
 		AED09E101CE351B2006A9FA4 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED09E0F1CE351B2006A9FA4 /* SwiftViewController.swift */; };
 		AED74C0F1D2A6AD90003D19F /* DBUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = AED74C0E1D2A6AD90003D19F /* DBUtils.m */; };
+		AED74C121D2A6E0A0003D19F /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = AED74C111D2A6E0A0003D19F /* Model.m */; };
 		AEE818641C9AA6C100FC4E22 /* EqualGap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEE818631C9AA6C100FC4E22 /* EqualGap.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -321,6 +322,8 @@
 		AED09E0F1CE351B2006A9FA4 /* SwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
 		AED74C0D1D2A6AD90003D19F /* DBUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBUtils.h; sourceTree = "<group>"; };
 		AED74C0E1D2A6AD90003D19F /* DBUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBUtils.m; sourceTree = "<group>"; };
+		AED74C101D2A6E0A0003D19F /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		AED74C111D2A6E0A0003D19F /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
 		AEE818631C9AA6C100FC4E22 /* EqualGap.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EqualGap.storyboard; sourceTree = "<group>"; };
 		C598935F8AB5FD24FEC47D27 /* Pods_CodeSnippets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeSnippets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D64C78AD3FC15316F3A4221C /* Pods-CodeSnippets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeSnippets.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodeSnippets/Pods-CodeSnippets.debug.xcconfig"; sourceTree = "<group>"; };
@@ -779,6 +782,8 @@
 				AE46AB3E1CB6498700B44091 /* Utils.m */,
 				AED74C0D1D2A6AD90003D19F /* DBUtils.h */,
 				AED74C0E1D2A6AD90003D19F /* DBUtils.m */,
+				AED74C101D2A6E0A0003D19F /* Model.h */,
+				AED74C111D2A6E0A0003D19F /* Model.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1077,6 +1082,7 @@
 				AE9FEFF61D014C9D00493843 /* AlCollectionCell.m in Sources */,
 				7188A0A81C448E7700027977 /* CoreDataViewController.m in Sources */,
 				AE216E231CC9F23E0046FC6C /* HookUtility.m in Sources */,
+				AED74C121D2A6E0A0003D19F /* Model.m in Sources */,
 				7104A5AF1C505A9A0080610C /* UIViewController+Tracking.m in Sources */,
 				71C766081C4381FD00E6CA12 /* main.m in Sources */,
 				7128D9571C4F514300DDED05 /* AView.m in Sources */,
@@ -1224,7 +1230,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.GeekRRK.CodeSnippets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1244,7 +1250,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.GeekRRK.CodeSnippets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
