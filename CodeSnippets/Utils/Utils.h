@@ -85,4 +85,6 @@
 
 + (CGRect)getRectOfString:(NSString *)str font:(UIFont *)font size:(CGSize)size;
 
++ (NSString *)getStringFromJSONValue:(NSObject *)JSONValue;
+
 @end
