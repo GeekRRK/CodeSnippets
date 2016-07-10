@@ -1,15 +1,15 @@
 //
-//  ViewController.m
-//  Demo_Contact
+//  ContactVC.m
+//  ContactVC
 //
 //  Created by Geek on 16-7-10.
 //  Copyright (c) 2016年 GeekRRK. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ContactVC.h"
 #import "Person.h"
 
-@interface ViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface Contact () <UITableViewDataSource, UITableViewDelegate>
 
 @property (copy, nonatomic) NSArray *contactArr;
 @property (strong, nonatomic) UITableView *tableView;
@@ -23,7 +23,7 @@
 
 @end
 
-@implementation ViewController
+@implementation ContactVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
