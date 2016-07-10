@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  Contact.h
 //  Demo_Contact
 //
 //  Created by Geek on 16-7-10.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface Contact : UIViewController
 
 
 @end
