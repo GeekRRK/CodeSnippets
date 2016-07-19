@@ -106,6 +106,7 @@
 		AE2D97691D26386900C2D3D5 /* video_slider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE2D97661D26386900C2D3D5 /* video_slider@2x.png */; };
 		AE2D976A1D26386900C2D3D5 /* video_slider@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE2D97671D26386900C2D3D5 /* video_slider@3x.png */; };
 		AE2F5C281CA29E9100A01926 /* UILabel+DynamicHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5C271CA29E9100A01926 /* UILabel+DynamicHeight.m */; };
+		AE31DF7D1D3E011100CA5B1E /* UIImage+scale.m in Sources */ = {isa = PBXBuildFile; fileRef = AE31DF7C1D3E011100CA5B1E /* UIImage+scale.m */; };
 		AE39C00E1CC63A4F00AE80D1 /* NetworkInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = AE39C00D1CC63A4F00AE80D1 /* NetworkInterface.m */; };
 		AE46AB3F1CB6498700B44091 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = AE46AB3E1CB6498700B44091 /* Utils.m */; };
 		AE61E2BD1CEC561300A4A39C /* AVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE61E2BB1CEC561200A4A39C /* AVPlayerViewController.m */; };
@@ -131,6 +132,8 @@
 		AE9FF0171D014CA800493843 /* 21.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE9FF0071D014CA800493843 /* 21.jpg */; };
 		AE9FF0181D014CA800493843 /* 22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE9FF0081D014CA800493843 /* 22.jpg */; };
 		AE9FF01B1D014CD900493843 /* UICollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9FF01A1D014CD900493843 /* UICollectionVC.m */; };
+		AECDA8F21D374BDE008CEECA /* ContactVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AECDA8EF1D374BDE008CEECA /* ContactVC.m */; };
+		AECDA8F31D374BDE008CEECA /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = AECDA8F11D374BDE008CEECA /* Person.m */; };
 		AED09E101CE351B2006A9FA4 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED09E0F1CE351B2006A9FA4 /* SwiftViewController.swift */; };
 		AED74C0F1D2A6AD90003D19F /* DBUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = AED74C0E1D2A6AD90003D19F /* DBUtils.m */; };
 		AED74C121D2A6E0A0003D19F /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = AED74C111D2A6E0A0003D19F /* Model.m */; };
@@ -286,6 +289,8 @@
 		AE2D97671D26386900C2D3D5 /* video_slider@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "video_slider@3x.png"; sourceTree = "<group>"; };
 		AE2F5C261CA29E9100A01926 /* UILabel+DynamicHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+DynamicHeight.h"; sourceTree = "<group>"; };
 		AE2F5C271CA29E9100A01926 /* UILabel+DynamicHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DynamicHeight.m"; sourceTree = "<group>"; };
+		AE31DF7B1D3E011100CA5B1E /* UIImage+scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+scale.h"; sourceTree = "<group>"; };
+		AE31DF7C1D3E011100CA5B1E /* UIImage+scale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+scale.m"; sourceTree = "<group>"; };
 		AE39C00C1CC63A4F00AE80D1 /* NetworkInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkInterface.h; sourceTree = "<group>"; };
 		AE39C00D1CC63A4F00AE80D1 /* NetworkInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkInterface.m; sourceTree = "<group>"; };
 		AE46AB3A1CB646D800B44091 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
@@ -319,6 +324,10 @@
 		AE9FF0081D014CA800493843 /* 22.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 22.jpg; sourceTree = "<group>"; };
 		AE9FF0191D014CD900493843 /* UICollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionVC.h; sourceTree = "<group>"; };
 		AE9FF01A1D014CD900493843 /* UICollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionVC.m; sourceTree = "<group>"; };
+		AECDA8EE1D374BDE008CEECA /* ContactVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactVC.h; sourceTree = "<group>"; };
+		AECDA8EF1D374BDE008CEECA /* ContactVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactVC.m; sourceTree = "<group>"; };
+		AECDA8F01D374BDE008CEECA /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		AECDA8F11D374BDE008CEECA /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		AED09E0F1CE351B2006A9FA4 /* SwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
 		AED74C0D1D2A6AD90003D19F /* DBUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBUtils.h; sourceTree = "<group>"; };
 		AED74C0E1D2A6AD90003D19F /* DBUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBUtils.m; sourceTree = "<group>"; };
@@ -602,6 +611,7 @@
 		71EB0B271C3F4DC000290797 /* CodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				AECDA8ED1D374BDE008CEECA /* UILocalizedIndexedCollation */,
 				AE9FEFF01D014C7700493843 /* UICollectionView */,
 				AE6EB33B1CFBEE4E00465E07 /* Category */,
 				AE61E2B91CEC55FB00A4A39C /* AVPlayer */,
@@ -807,6 +817,8 @@
 			children = (
 				AE6EB33C1CFBEE5C00465E07 /* UIImage+RoundedCorner.h */,
 				AE6EB33D1CFBEE5C00465E07 /* UIImage+RoundedCorner.m */,
+				AE31DF7B1D3E011100CA5B1E /* UIImage+scale.h */,
+				AE31DF7C1D3E011100CA5B1E /* UIImage+scale.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -839,6 +851,17 @@
 				AE9FF01A1D014CD900493843 /* UICollectionVC.m */,
 			);
 			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		AECDA8ED1D374BDE008CEECA /* UILocalizedIndexedCollation */ = {
+			isa = PBXGroup;
+			children = (
+				AECDA8EE1D374BDE008CEECA /* ContactVC.h */,
+				AECDA8EF1D374BDE008CEECA /* ContactVC.m */,
+				AECDA8F01D374BDE008CEECA /* Person.h */,
+				AECDA8F11D374BDE008CEECA /* Person.m */,
+			);
+			path = UILocalizedIndexedCollation;
 			sourceTree = "<group>";
 		};
 		AED09E0E1CE35191006A9FA4 /* Swift */ = {
@@ -1085,6 +1108,7 @@
 				AED74C121D2A6E0A0003D19F /* Model.m in Sources */,
 				7104A5AF1C505A9A0080610C /* UIViewController+Tracking.m in Sources */,
 				71C766081C4381FD00E6CA12 /* main.m in Sources */,
+				AECDA8F31D374BDE008CEECA /* Person.m in Sources */,
 				7128D9571C4F514300DDED05 /* AView.m in Sources */,
 				7128D9541C4F504100DDED05 /* UIView+ResponderChain.m in Sources */,
 				71CF7D7C1C562477008A30BE /* TcpClient.m in Sources */,
@@ -1110,7 +1134,9 @@
 				AE02606D1CA00325007C770C /* UIKitAnimationVC2.swift in Sources */,
 				71CF7D751C55F3DF008A30BE /* AnimateLayerViewController.m in Sources */,
 				71CF7D7E1C562510008A30BE /* UdpServer.m in Sources */,
+				AECDA8F21D374BDE008CEECA /* ContactVC.m in Sources */,
 				AED74C0F1D2A6AD90003D19F /* DBUtils.m in Sources */,
+				AE31DF7D1D3E011100CA5B1E /* UIImage+scale.m in Sources */,
 				71EB0B521C3F50A800290797 /* InputAccessoryTableViewCell.m in Sources */,
 				7188A0CD1C44975800027977 /* Card+CoreDataProperties.m in Sources */,
 			);
