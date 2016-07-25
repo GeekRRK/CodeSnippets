@@ -1,6 +1,6 @@
 #import <AFNetworking.h>
 
-@implementation NXHInterface
+@implementation Interface
 
 + (AFURLSessionManager *)shareURLSessionMgr {
     static AFURLSessionManager *URLSessionMgr;
