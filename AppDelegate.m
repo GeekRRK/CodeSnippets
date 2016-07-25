@@ -42,4 +42,62 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (void)setRootVCAs:(int)who {
+    NSArray *VCArr;
+    NSArray *titleArr;
+    NSArray *tabitemImgArr;
+    
+    if (who == 0) {
+        NXHMyDealerVC *dealerVC = [[NXHMyDealerVC alloc] init];
+        NXHOrderNNeedsVC *orderNNeedsVC = [[NXHOrderNNeedsVC alloc] init];
+        NXHMyselfVC *myselfVC = [[NXHMyselfVC alloc] init];
+        
+        VCArr = @[dealerVC, orderNNeedsVC, myselfVC];
+        titleArr = @[@"Dealer", @"Order", @"myself"];
+        tabitemImgArr = @[@"tabbar_mydealer", @"tabbar_ordernneeds", @"tabbar_myself"];
+    } else if (who == 1) {
+        NXHCarSourceVC *carSourceVC = [[NXHCarSourceVC alloc] init];
+        NXHNeedsVC *needsVC = [[NXHNeedsVC alloc] init];
+        NXHMeVC *meVC = [[NXHMeVC alloc] init];
+        
+        VCArr = @[carSourceVC, needsVC, meVC];
+        titleArr = @[@"Car", @"needs", @"me"];
+        tabitemImgArr = @[@"tabbar_carsource", @"tabbar_needs", @"tabbar_me"];
+    }
+    
+    NSMutableArray *navCtrlArr = [[NSMutableArray alloc] init];
+    for(int i = 0; i < VCArr.count; ++i) {
+        UIViewController *itemVC = VCArr[i];
+        itemVC.title = titleArr[i];
+        UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:itemVC];
+        navVC.navigationBar.barTintColor = NXH_COLOR_NAVBAR_BLUE;
+        navVC.navigationBar.tintColor = [UIColor whiteColor];
+        navVC.navigationBar.translucent = NO;
+        [navVC.navigationBar setTitleTextAttributes:
+         @{NSFontAttributeName:[UIFont systemFontOfSize:NXH_NAVBAR_TITLE_FONTSIZE], NSForegroundColorAttributeName:[UIColor whiteColor]}];
+        
+        NSString *imgName = tabitemImgArr[i];
+        NSString *selImgName = [[NSString alloc] initWithFormat:@"%@_sel", tabitemImgArr[i]];
+        navVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:titleArr[i]
+                                                         image:[[UIImage imageNamed:imgName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
+                                                 selectedImage:[[UIImage imageNamed:selImgName]
+                                                                imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+        
+        [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName:NXH_COLOR_BTN_TITLE_GRAY}
+                                                 forState:UIControlStateNormal];
+        [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName:NXH_COLOR_NAVBAR_BLUE}
+                                                 forState:UIControlStateSelected];
+        
+        [navCtrlArr addObject:navVC];
+    }
+    
+    NSArray *navVCArray = [[NSArray alloc] initWithArray:navCtrlArr];
+    UITabBarController *tabBarVC = [[UITabBarController alloc] init];
+    tabBarVC.viewControllers = navVCArray;
+    tabBarVC.tabBar.barTintColor = NXH_COLOR_TITLE_LIGHTGRAY;
+    tabBarVC.tabBar.translucent = NO;
+    
+    self.window.rootViewController = tabBarVC;
+}
+
 @end
