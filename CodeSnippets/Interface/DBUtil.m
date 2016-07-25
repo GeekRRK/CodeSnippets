@@ -19,8 +19,8 @@
     [[DBUtil shareDateBase] executeUpdate:createStarTable];
 }
 
-+ (void)replaceUserModel:(NXHUserModel *)userModel intoTable:(NSString *)tableName {
-    [NXHDB createUserTable];
++ (void)replaceUserModel:(UserModel *)userModel intoTable:(NSString *)tableName {
+    [DBUtil createUserTable];
     
     NSString *replaceSql = [NSString stringWithFormat:
                             @"replace into %@ (id, name, phone, pwd) values ('%@', '%@', '%@', '%@')",
@@ -35,7 +35,7 @@
 + (UserModel *)queryUserModelByMid:(NSString *)mid fromTable:(NSString *)tableName {
     [DBUtil createUserTable];
     
-    HUserModel *userModel = [[NXHUserModel alloc] init];
+    UserModel *userModel = [[UserModel alloc] init];
     
     NSString *querySql = [NSString stringWithFormat:@"select * from %@ where id = '%@'", tableName, mid];
     FMResultSet *resultSet = [[NXHDB shareDateBase] executeQuery:querySql];
