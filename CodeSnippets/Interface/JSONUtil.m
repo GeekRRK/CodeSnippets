@@ -1,6 +1,6 @@
-#import "NXHJSON.h"
+#import "JSONUtil.h"
 
-@implementation NXHJSON
+@implementation JSONUtil
 
 + (NSString *)getStringFromJSONValue:(NSObject *)JSONValue {
     JSONValue  = [JSONValue isKindOfClass:[NSNull class]] ? @"" : JSONValue;
