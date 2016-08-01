@@ -133,7 +133,6 @@
 		AE9FF0181D014CA800493843 /* 22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE9FF0081D014CA800493843 /* 22.jpg */; };
 		AE9FF01B1D014CD900493843 /* UICollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9FF01A1D014CD900493843 /* UICollectionVC.m */; };
 		AECDA8F21D374BDE008CEECA /* ContactVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AECDA8EF1D374BDE008CEECA /* ContactVC.m */; };
-		AECDA8F31D374BDE008CEECA /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = AECDA8F11D374BDE008CEECA /* Person.m */; };
 		AED09E101CE351B2006A9FA4 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED09E0F1CE351B2006A9FA4 /* SwiftViewController.swift */; };
 		AED74C0F1D2A6AD90003D19F /* DBUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = AED74C0E1D2A6AD90003D19F /* DBUtils.m */; };
 		AED74C121D2A6E0A0003D19F /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = AED74C111D2A6E0A0003D19F /* Model.m */; };
@@ -326,8 +325,6 @@
 		AE9FF01A1D014CD900493843 /* UICollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionVC.m; sourceTree = "<group>"; };
 		AECDA8EE1D374BDE008CEECA /* ContactVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactVC.h; sourceTree = "<group>"; };
 		AECDA8EF1D374BDE008CEECA /* ContactVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactVC.m; sourceTree = "<group>"; };
-		AECDA8F01D374BDE008CEECA /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		AECDA8F11D374BDE008CEECA /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		AED09E0F1CE351B2006A9FA4 /* SwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
 		AED74C0D1D2A6AD90003D19F /* DBUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBUtils.h; sourceTree = "<group>"; };
 		AED74C0E1D2A6AD90003D19F /* DBUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBUtils.m; sourceTree = "<group>"; };
@@ -858,8 +855,6 @@
 			children = (
 				AECDA8EE1D374BDE008CEECA /* ContactVC.h */,
 				AECDA8EF1D374BDE008CEECA /* ContactVC.m */,
-				AECDA8F01D374BDE008CEECA /* Person.h */,
-				AECDA8F11D374BDE008CEECA /* Person.m */,
 			);
 			path = UILocalizedIndexedCollation;
 			sourceTree = "<group>";
@@ -1108,7 +1103,6 @@
 				AED74C121D2A6E0A0003D19F /* Model.m in Sources */,
 				7104A5AF1C505A9A0080610C /* UIViewController+Tracking.m in Sources */,
 				71C766081C4381FD00E6CA12 /* main.m in Sources */,
-				AECDA8F31D374BDE008CEECA /* Person.m in Sources */,
 				7128D9571C4F514300DDED05 /* AView.m in Sources */,
 				7128D9541C4F504100DDED05 /* UIView+ResponderChain.m in Sources */,
 				71CF7D7C1C562477008A30BE /* TcpClient.m in Sources */,

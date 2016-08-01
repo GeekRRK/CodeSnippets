@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -48,19 +49,19 @@
     NSArray *tabitemImgArr;
     
     if (who == 0) {
-        NXHMyDealerVC *dealerVC = [[NXHMyDealerVC alloc] init];
-        NXHOrderNNeedsVC *orderNNeedsVC = [[NXHOrderNNeedsVC alloc] init];
-        NXHMyselfVC *myselfVC = [[NXHMyselfVC alloc] init];
+        ViewController *vc1 = [[ViewController alloc] init];
+        ViewController *vc2 = [[ViewController alloc] init];
+        ViewController *vc3 = [[ViewController alloc] init];
         
-        VCArr = @[dealerVC, orderNNeedsVC, myselfVC];
+        VCArr = @[vc1, vc2, vc3];
         titleArr = @[@"Dealer", @"Order", @"myself"];
         tabitemImgArr = @[@"tabbar_mydealer", @"tabbar_ordernneeds", @"tabbar_myself"];
     } else if (who == 1) {
-        NXHCarSourceVC *carSourceVC = [[NXHCarSourceVC alloc] init];
-        NXHNeedsVC *needsVC = [[NXHNeedsVC alloc] init];
-        NXHMeVC *meVC = [[NXHMeVC alloc] init];
+        ViewController *vc1 = [[ViewController alloc] init];
+        ViewController *vc2 = [[ViewController alloc] init];
+        ViewController *vc3 = [[ViewController alloc] init];
         
-        VCArr = @[carSourceVC, needsVC, meVC];
+        VCArr = @[vc1, vc2, vc3];
         titleArr = @[@"Car", @"needs", @"me"];
         tabitemImgArr = @[@"tabbar_carsource", @"tabbar_needs", @"tabbar_me"];
     }
@@ -70,11 +71,11 @@
         UIViewController *itemVC = VCArr[i];
         itemVC.title = titleArr[i];
         UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:itemVC];
-        navVC.navigationBar.barTintColor = NXH_COLOR_NAVBAR_BLUE;
+        navVC.navigationBar.barTintColor = [UIColor blueColor];
         navVC.navigationBar.tintColor = [UIColor whiteColor];
         navVC.navigationBar.translucent = NO;
         [navVC.navigationBar setTitleTextAttributes:
-         @{NSFontAttributeName:[UIFont systemFontOfSize:NXH_NAVBAR_TITLE_FONTSIZE], NSForegroundColorAttributeName:[UIColor whiteColor]}];
+         @{NSFontAttributeName:[UIFont systemFontOfSize:14], NSForegroundColorAttributeName:[UIColor whiteColor]}];
         
         NSString *imgName = tabitemImgArr[i];
         NSString *selImgName = [[NSString alloc] initWithFormat:@"%@_sel", tabitemImgArr[i]];
@@ -83,9 +84,9 @@
                                                  selectedImage:[[UIImage imageNamed:selImgName]
                                                                 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
         
-        [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName:NXH_COLOR_BTN_TITLE_GRAY}
+        [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName:[UIColor grayColor]}
                                                  forState:UIControlStateNormal];
-        [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName:NXH_COLOR_NAVBAR_BLUE}
+        [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName:[UIColor blueColor]}
                                                  forState:UIControlStateSelected];
         
         [navCtrlArr addObject:navVC];
@@ -94,7 +95,7 @@
     NSArray *navVCArray = [[NSArray alloc] initWithArray:navCtrlArr];
     UITabBarController *tabBarVC = [[UITabBarController alloc] init];
     tabBarVC.viewControllers = navVCArray;
-    tabBarVC.tabBar.barTintColor = NXH_COLOR_TITLE_LIGHTGRAY;
+    tabBarVC.tabBar.barTintColor = [UIColor lightGrayColor];
     tabBarVC.tabBar.translucent = NO;
     
     self.window.rootViewController = tabBarVC;

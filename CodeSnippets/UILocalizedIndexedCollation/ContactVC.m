@@ -9,7 +9,7 @@
 #import "ContactVC.h"
 #import "Person.h"
 
-@interface Contact () <UITableViewDataSource, UITableViewDelegate>
+@interface ContactVC () <UITableViewDataSource, UITableViewDelegate>
 
 @property (copy, nonatomic) NSArray *contactArr;
 @property (strong, nonatomic) UITableView *tableView;
