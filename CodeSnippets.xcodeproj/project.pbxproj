@@ -88,6 +88,7 @@
 		AE02606D1CA00325007C770C /* UIKitAnimationVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0260671CA00325007C770C /* UIKitAnimationVC2.swift */; };
 		AE02606E1CA00325007C770C /* UIKitAnimationVC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0260681CA00325007C770C /* UIKitAnimationVC3.swift */; };
 		AE02606F1CA00325007C770C /* UIKitAnimationVC4.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0260691CA00325007C770C /* UIKitAnimationVC4.swift */; };
+		AE097A4E1D54688800A2EC26 /* UILabel+UILabelDynamicHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = AE097A4D1D54688800A2EC26 /* UILabel+UILabelDynamicHeight.m */; };
 		AE0C3D9F1CD9D49B004244AF /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0C3D9D1CD9D49B004244AF /* KVOViewController.m */; };
 		AE0C3DA01CD9D49B004244AF /* KVOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE0C3D9E1CD9D49B004244AF /* KVOViewController.xib */; };
 		AE148B951CBBAAD5002FEF1D /* AAPLPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE148B941CBBAAD5002FEF1D /* AAPLPreviewView.m */; };
@@ -262,6 +263,8 @@
 		AE0260671CA00325007C770C /* UIKitAnimationVC2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitAnimationVC2.swift; sourceTree = "<group>"; };
 		AE0260681CA00325007C770C /* UIKitAnimationVC3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitAnimationVC3.swift; sourceTree = "<group>"; };
 		AE0260691CA00325007C770C /* UIKitAnimationVC4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitAnimationVC4.swift; sourceTree = "<group>"; };
+		AE097A4C1D54688800A2EC26 /* UILabel+UILabelDynamicHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+UILabelDynamicHeight.h"; sourceTree = "<group>"; };
+		AE097A4D1D54688800A2EC26 /* UILabel+UILabelDynamicHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+UILabelDynamicHeight.m"; sourceTree = "<group>"; };
 		AE0C3D9C1CD9D49B004244AF /* KVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOViewController.h; sourceTree = "<group>"; };
 		AE0C3D9D1CD9D49B004244AF /* KVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOViewController.m; sourceTree = "<group>"; };
 		AE0C3D9E1CD9D49B004244AF /* KVOViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KVOViewController.xib; sourceTree = "<group>"; };
@@ -812,6 +815,8 @@
 		AE6EB33B1CFBEE4E00465E07 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				AE097A4C1D54688800A2EC26 /* UILabel+UILabelDynamicHeight.h */,
+				AE097A4D1D54688800A2EC26 /* UILabel+UILabelDynamicHeight.m */,
 				AE6EB33C1CFBEE5C00465E07 /* UIImage+RoundedCorner.h */,
 				AE6EB33D1CFBEE5C00465E07 /* UIImage+RoundedCorner.m */,
 				AE31DF7B1D3E011100CA5B1E /* UIImage+scale.h */,
@@ -1079,6 +1084,7 @@
 				AE02606F1CA00325007C770C /* UIKitAnimationVC4.swift in Sources */,
 				71CF7D801C562581008A30BE /* UdpClient.m in Sources */,
 				71C7660D1C43823900E6CA12 /* AppDelegate.m in Sources */,
+				AE097A4E1D54688800A2EC26 /* UILabel+UILabelDynamicHeight.m in Sources */,
 				71131D441C40D4B700E41DA5 /* Reachability.m in Sources */,
 				AE0C3D9F1CD9D49B004244AF /* KVOViewController.m in Sources */,
 				71CF7D731C55F3DF008A30BE /* KCLayer.m in Sources */,

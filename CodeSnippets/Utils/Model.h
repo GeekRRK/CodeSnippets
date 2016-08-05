@@ -2,7 +2,7 @@
 //  Model.h
 //  CodeSnippets
 //
-//  Created by UGOMEDIA on 16/7/4.
+//  Created by GeekRRK on 16/7/4.
 //  Copyright © 2016年 GeekRRK. All rights reserved.
 //
 

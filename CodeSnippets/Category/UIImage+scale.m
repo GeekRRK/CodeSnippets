@@ -2,7 +2,7 @@
 //  UIImage+scale.m
 //  CodeSnippets
 //
-//  Created by UGOMEDIA on 16/7/19.
+//  Created by GeekRRK on 16/7/19.
 //  Copyright © 2016年 GeekRRK. All rights reserved.
 //
 
