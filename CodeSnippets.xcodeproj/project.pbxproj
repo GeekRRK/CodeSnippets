@@ -133,6 +133,7 @@
 		AE9FF0171D014CA800493843 /* 21.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE9FF0071D014CA800493843 /* 21.jpg */; };
 		AE9FF0181D014CA800493843 /* 22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE9FF0081D014CA800493843 /* 22.jpg */; };
 		AE9FF01B1D014CD900493843 /* UICollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9FF01A1D014CD900493843 /* UICollectionVC.m */; };
+		AEBBD7CA1D585EF20028C898 /* UIView+Nib.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBBD7C91D585EF20028C898 /* UIView+Nib.m */; };
 		AECDA8F21D374BDE008CEECA /* ContactVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AECDA8EF1D374BDE008CEECA /* ContactVC.m */; };
 		AED09E101CE351B2006A9FA4 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED09E0F1CE351B2006A9FA4 /* SwiftViewController.swift */; };
 		AED74C0F1D2A6AD90003D19F /* DBUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = AED74C0E1D2A6AD90003D19F /* DBUtils.m */; };
@@ -326,6 +327,8 @@
 		AE9FF0081D014CA800493843 /* 22.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 22.jpg; sourceTree = "<group>"; };
 		AE9FF0191D014CD900493843 /* UICollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionVC.h; sourceTree = "<group>"; };
 		AE9FF01A1D014CD900493843 /* UICollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionVC.m; sourceTree = "<group>"; };
+		AEBBD7C81D585EF20028C898 /* UIView+Nib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Nib.h"; sourceTree = "<group>"; };
+		AEBBD7C91D585EF20028C898 /* UIView+Nib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Nib.m"; sourceTree = "<group>"; };
 		AECDA8EE1D374BDE008CEECA /* ContactVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactVC.h; sourceTree = "<group>"; };
 		AECDA8EF1D374BDE008CEECA /* ContactVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactVC.m; sourceTree = "<group>"; };
 		AED09E0F1CE351B2006A9FA4 /* SwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
@@ -821,6 +824,8 @@
 				AE6EB33D1CFBEE5C00465E07 /* UIImage+RoundedCorner.m */,
 				AE31DF7B1D3E011100CA5B1E /* UIImage+scale.h */,
 				AE31DF7C1D3E011100CA5B1E /* UIImage+scale.m */,
+				AEBBD7C81D585EF20028C898 /* UIView+Nib.h */,
+				AEBBD7C91D585EF20028C898 /* UIView+Nib.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1082,6 +1087,7 @@
 				71CF7D7A1C5623E9008A30BE /* TcpServer.m in Sources */,
 				AE61E2BD1CEC561300A4A39C /* AVPlayerViewController.m in Sources */,
 				AE02606F1CA00325007C770C /* UIKitAnimationVC4.swift in Sources */,
+				AEBBD7CA1D585EF20028C898 /* UIView+Nib.m in Sources */,
 				71CF7D801C562581008A30BE /* UdpClient.m in Sources */,
 				71C7660D1C43823900E6CA12 /* AppDelegate.m in Sources */,
 				AE097A4E1D54688800A2EC26 /* UILabel+UILabelDynamicHeight.m in Sources */,
