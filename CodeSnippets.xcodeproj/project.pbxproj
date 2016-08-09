@@ -106,13 +106,16 @@
 		AE2D97681D26386900C2D3D5 /* video_slider.png in Resources */ = {isa = PBXBuildFile; fileRef = AE2D97651D26386900C2D3D5 /* video_slider.png */; };
 		AE2D97691D26386900C2D3D5 /* video_slider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE2D97661D26386900C2D3D5 /* video_slider@2x.png */; };
 		AE2D976A1D26386900C2D3D5 /* video_slider@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE2D97671D26386900C2D3D5 /* video_slider@3x.png */; };
-		AE2F5C281CA29E9100A01926 /* UILabel+DynamicHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2F5C271CA29E9100A01926 /* UILabel+DynamicHeight.m */; };
 		AE31DF7D1D3E011100CA5B1E /* UIImage+scale.m in Sources */ = {isa = PBXBuildFile; fileRef = AE31DF7C1D3E011100CA5B1E /* UIImage+scale.m */; };
 		AE39C00E1CC63A4F00AE80D1 /* NetworkInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = AE39C00D1CC63A4F00AE80D1 /* NetworkInterface.m */; };
 		AE46AB3F1CB6498700B44091 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = AE46AB3E1CB6498700B44091 /* Utils.m */; };
 		AE61E2BD1CEC561300A4A39C /* AVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE61E2BB1CEC561200A4A39C /* AVPlayerViewController.m */; };
 		AE61E2BE1CEC561300A4A39C /* AVPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE61E2BC1CEC561200A4A39C /* AVPlayerViewController.xib */; };
 		AE6EB33E1CFBEE5C00465E07 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6EB33D1CFBEE5C00465E07 /* UIImage+RoundedCorner.m */; };
+		AE90279E1D597FCB00143A25 /* TSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE90279D1D597FCB00143A25 /* TSLabel.m */; };
+		AE9027A11D59801800143A25 /* TSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9027A01D59801800143A25 /* TSTableViewController.m */; };
+		AE9027A51D5980A600143A25 /* TSTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9027A31D5980A600143A25 /* TSTableViewCell.m */; };
+		AE9027A61D5980A600143A25 /* TSTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE9027A41D5980A600143A25 /* TSTableViewCell.xib */; };
 		AE9FEFF61D014C9D00493843 /* AlCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9FEFF21D014C9D00493843 /* AlCollectionCell.m */; };
 		AE9FEFF71D014C9D00493843 /* AlCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE9FEFF31D014C9D00493843 /* AlCollectionCell.xib */; };
 		AE9FEFF81D014C9D00493843 /* AlCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9FEFF51D014C9D00493843 /* AlCollectionViewLayout.m */; };
@@ -290,8 +293,6 @@
 		AE2D97651D26386900C2D3D5 /* video_slider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video_slider.png; sourceTree = "<group>"; };
 		AE2D97661D26386900C2D3D5 /* video_slider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "video_slider@2x.png"; sourceTree = "<group>"; };
 		AE2D97671D26386900C2D3D5 /* video_slider@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "video_slider@3x.png"; sourceTree = "<group>"; };
-		AE2F5C261CA29E9100A01926 /* UILabel+DynamicHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+DynamicHeight.h"; sourceTree = "<group>"; };
-		AE2F5C271CA29E9100A01926 /* UILabel+DynamicHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DynamicHeight.m"; sourceTree = "<group>"; };
 		AE31DF7B1D3E011100CA5B1E /* UIImage+scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+scale.h"; sourceTree = "<group>"; };
 		AE31DF7C1D3E011100CA5B1E /* UIImage+scale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+scale.m"; sourceTree = "<group>"; };
 		AE39C00C1CC63A4F00AE80D1 /* NetworkInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkInterface.h; sourceTree = "<group>"; };
@@ -304,6 +305,13 @@
 		AE61E2BC1CEC561200A4A39C /* AVPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVPlayerViewController.xib; sourceTree = "<group>"; };
 		AE6EB33C1CFBEE5C00465E07 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
 		AE6EB33D1CFBEE5C00465E07 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		AE90279C1D597FCB00143A25 /* TSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSLabel.h; sourceTree = "<group>"; };
+		AE90279D1D597FCB00143A25 /* TSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSLabel.m; sourceTree = "<group>"; };
+		AE90279F1D59801800143A25 /* TSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTableViewController.h; sourceTree = "<group>"; };
+		AE9027A01D59801800143A25 /* TSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTableViewController.m; sourceTree = "<group>"; };
+		AE9027A21D5980A600143A25 /* TSTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTableViewCell.h; sourceTree = "<group>"; };
+		AE9027A31D5980A600143A25 /* TSTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTableViewCell.m; sourceTree = "<group>"; };
+		AE9027A41D5980A600143A25 /* TSTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSTableViewCell.xib; sourceTree = "<group>"; };
 		AE9FEFF11D014C9D00493843 /* AlCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlCollectionCell.h; sourceTree = "<group>"; };
 		AE9FEFF21D014C9D00493843 /* AlCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlCollectionCell.m; sourceTree = "<group>"; };
 		AE9FEFF31D014C9D00493843 /* AlCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlCollectionCell.xib; sourceTree = "<group>"; };
@@ -772,8 +780,13 @@
 		AE2F5C251CA29E7A00A01926 /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
-				AE2F5C261CA29E9100A01926 /* UILabel+DynamicHeight.h */,
-				AE2F5C271CA29E9100A01926 /* UILabel+DynamicHeight.m */,
+				AE90279C1D597FCB00143A25 /* TSLabel.h */,
+				AE90279D1D597FCB00143A25 /* TSLabel.m */,
+				AE90279F1D59801800143A25 /* TSTableViewController.h */,
+				AE9027A01D59801800143A25 /* TSTableViewController.m */,
+				AE9027A21D5980A600143A25 /* TSTableViewCell.h */,
+				AE9027A31D5980A600143A25 /* TSTableViewCell.m */,
+				AE9027A41D5980A600143A25 /* TSTableViewCell.xib */,
 			);
 			path = UILabel;
 			sourceTree = "<group>";
@@ -962,6 +975,7 @@
 				71131D311C40A59C00E41DA5 /* scrollImg4.png in Resources */,
 				71CF7D721C55F3DF008A30BE /* calayer_background.jpg in Resources */,
 				AE9FF0111D014CA800493843 /* 15.jpg in Resources */,
+				AE9027A61D5980A600143A25 /* TSTableViewCell.xib in Resources */,
 				AE216E1E1CC9F1FE0046FC6C /* GlobalUserStatisticConfig.plist in Resources */,
 				AE9FF0151D014CA800493843 /* 19.jpg in Resources */,
 				71C765C81C4349F100E6CA12 /* appcoda-logo@2x.png in Resources */,
@@ -1072,11 +1086,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7128D95D1C4F515C00DDED05 /* CView.m in Sources */,
+				AE90279E1D597FCB00143A25 /* TSLabel.m in Sources */,
 				71C7660E1C43823900E6CA12 /* ViewController.m in Sources */,
 				AE148B951CBBAAD5002FEF1D /* AAPLPreviewView.m in Sources */,
 				71EB0B681C3FA93F00290797 /* DelaysContentTouchesTableViewController.m in Sources */,
 				71D8F0321C45EC3F00DF7EB5 /* NSXMLParserViewController.m in Sources */,
-				AE2F5C281CA29E9100A01926 /* UILabel+DynamicHeight.m in Sources */,
+				AE9027A51D5980A600143A25 /* TSTableViewCell.m in Sources */,
 				AE02606C1CA00325007C770C /* UIKitAnimationVC1.swift in Sources */,
 				7188A0CC1C44975800027977 /* Person.m in Sources */,
 				71131D351C40BF0D00E41DA5 /* DeleteCookieAndCacheViewController.m in Sources */,
@@ -1135,6 +1150,7 @@
 				7188A0A51C448C6400027977 /* Model.xcdatamodeld in Sources */,
 				7188A0CB1C44975800027977 /* Person+CoreDataProperties.m in Sources */,
 				71CDD4C11C4DD03200C8B3DE /* DeepSettingViewController.swift in Sources */,
+				AE9027A11D59801800143A25 /* TSTableViewController.m in Sources */,
 				7128D9681C4F7BAC00DDED05 /* GeneratorSequenceViewController.swift in Sources */,
 				7128D9641C4F519E00DDED05 /* ResponderChainViewController.m in Sources */,
 				AE02606D1CA00325007C770C /* UIKitAnimationVC2.swift in Sources */,
