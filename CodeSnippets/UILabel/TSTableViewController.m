@@ -6,6 +6,8 @@
 //  Copyright © 2016年 GeekRRK. All rights reserved.
 //
 
+// Refer to: http://stackoverflow.com/questions/18118021/how-to-resize-superview-to-fit-all-subviews-with-autolayout
+
 #import "TSTableViewController.h"
 #import "TSTableViewCell.h"
 
