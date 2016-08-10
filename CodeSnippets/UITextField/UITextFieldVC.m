@@ -8,7 +8,7 @@
 
 #import "UITextFieldVC.h"
 
-@interface UITextFieldVC () <UITextViewDelegate>
+@interface UITextFieldVC () <UITextFieldDelegate>
 
 @end
 
