@@ -92,6 +92,8 @@
 		AE0C3D9F1CD9D49B004244AF /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0C3D9D1CD9D49B004244AF /* KVOViewController.m */; };
 		AE0C3DA01CD9D49B004244AF /* KVOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE0C3D9E1CD9D49B004244AF /* KVOViewController.xib */; };
 		AE121D3D1D5C21E000D5A84C /* AFInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = AE121D3C1D5C21E000D5A84C /* AFInterface.m */; };
+		AE121D501D5C8CBD00D5A84C /* DBUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = AE121D4D1D5C8CBD00D5A84C /* DBUtil.m */; };
+		AE121D511D5C8CBD00D5A84C /* JSONUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = AE121D4F1D5C8CBD00D5A84C /* JSONUtil.m */; };
 		AE148B951CBBAAD5002FEF1D /* AAPLPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE148B941CBBAAD5002FEF1D /* AAPLPreviewView.m */; };
 		AE148B981CBBAB02002FEF1D /* AVCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE148B971CBBAB02002FEF1D /* AVCameraViewController.m */; };
 		AE148B9A1CBBAB42002FEF1D /* AVCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE148B991CBBAB42002FEF1D /* AVCameraViewController.xib */; };
@@ -276,6 +278,10 @@
 		AE0C3D9E1CD9D49B004244AF /* KVOViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KVOViewController.xib; sourceTree = "<group>"; };
 		AE121D3B1D5C21E000D5A84C /* AFInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFInterface.h; sourceTree = "<group>"; };
 		AE121D3C1D5C21E000D5A84C /* AFInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFInterface.m; sourceTree = "<group>"; };
+		AE121D4C1D5C8CBD00D5A84C /* DBUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBUtil.h; sourceTree = "<group>"; };
+		AE121D4D1D5C8CBD00D5A84C /* DBUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBUtil.m; sourceTree = "<group>"; };
+		AE121D4E1D5C8CBD00D5A84C /* JSONUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONUtil.h; sourceTree = "<group>"; };
+		AE121D4F1D5C8CBD00D5A84C /* JSONUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONUtil.m; sourceTree = "<group>"; };
 		AE148B931CBBAAD5002FEF1D /* AAPLPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLPreviewView.h; sourceTree = "<group>"; };
 		AE148B941CBBAAD5002FEF1D /* AAPLPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLPreviewView.m; sourceTree = "<group>"; };
 		AE148B961CBBAB02002FEF1D /* AVCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCameraViewController.h; sourceTree = "<group>"; };
@@ -810,6 +816,10 @@
 		AE39C00B1CC63A3C00AE80D1 /* NetworkInterface */ = {
 			isa = PBXGroup;
 			children = (
+				AE121D4C1D5C8CBD00D5A84C /* DBUtil.h */,
+				AE121D4D1D5C8CBD00D5A84C /* DBUtil.m */,
+				AE121D4E1D5C8CBD00D5A84C /* JSONUtil.h */,
+				AE121D4F1D5C8CBD00D5A84C /* JSONUtil.m */,
 				AE39C00C1CC63A4F00AE80D1 /* NetworkInterface.h */,
 				AE39C00D1CC63A4F00AE80D1 /* NetworkInterface.m */,
 				AE121D3B1D5C21E000D5A84C /* AFInterface.h */,
@@ -1112,6 +1122,7 @@
 				AE9027A51D5980A600143A25 /* TSTableViewCell.m in Sources */,
 				AE02606C1CA00325007C770C /* UIKitAnimationVC1.swift in Sources */,
 				7188A0CC1C44975800027977 /* Person.m in Sources */,
+				AE121D511D5C8CBD00D5A84C /* JSONUtil.m in Sources */,
 				71131D351C40BF0D00E41DA5 /* DeleteCookieAndCacheViewController.m in Sources */,
 				7128D9601C4F516500DDED05 /* DView.m in Sources */,
 				AE148B981CBBAB02002FEF1D /* AVCameraViewController.m in Sources */,
@@ -1132,6 +1143,7 @@
 				7104A5AC1C505A680080610C /* MethodSwizzlingViewController.m in Sources */,
 				71131D3F1C40CEEE00E41DA5 /* CheckNetworkViewController.m in Sources */,
 				AE9FEFF81D014C9D00493843 /* AlCollectionViewLayout.m in Sources */,
+				AE121D501D5C8CBD00D5A84C /* DBUtil.m in Sources */,
 				71131D291C40A29500E41DA5 /* ScrollViewController.m in Sources */,
 				AE6EB33E1CFBEE5C00465E07 /* UIImage+RoundedCorner.m in Sources */,
 				7128D95A1C4F515300DDED05 /* BView.m in Sources */,
