@@ -27,6 +27,10 @@
         return NO;
     }
     
+    if ([[[UITextInputMode currentInputMode ]primaryLanguage] isEqualToString:@"emoji"]) {
+        return NO;
+    }
+    
     NSUInteger newLength = [textField.text length] + [string length] - range.length;
     return newLength <= 11;
 }
