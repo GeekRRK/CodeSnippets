@@ -31,4 +31,16 @@
     return image;
 }
 
+- (UIImage *)cutCircleImage {
+    UIGraphicsBeginImageContextWithOptions(self.size, NO, 0.0);
+    CGContextRef ctr = UIGraphicsGetCurrentContext();
+    CGRect rect = CGRectMake(0, 0, self.size.width, self.size.height);
+    CGContextAddEllipseInRect(ctr, rect);
+    CGContextClip(ctr);
+    [self drawInRect:rect];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+
 @end
