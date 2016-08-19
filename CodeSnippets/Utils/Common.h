@@ -11,7 +11,8 @@
     #define SERVERADDR @""
 #endif
 
-#define WEAKSELF typeof(self) __weak weakSelf = self;
+#define LRWeakSelf(type)  __weak typeof(type) weak##type = type;
+#define LRToast(str) [NSString stringWithFormat:@"%@",@#str]
 #define APPDELEGATE ((AppDelegate *)[[UIApplication sharedApplication] delegate])
 
 #define SCREENWIDTH [[UIScreen mainScreen] bounds].size.width
