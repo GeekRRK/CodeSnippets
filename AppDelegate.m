@@ -101,4 +101,27 @@
     self.window.rootViewController = tabBarVC;
 }
 
+- (void)setRedDotForView:(UIView *)view origin:(CGPoint)point number:(NSString *)num {
+    const int msgBtnTag = 11;
+    [[view viewWithTag:msgBtnTag] removeFromSuperview];
+    
+    if([num intValue] <= 0){
+        return;
+    }
+    
+    float msgBtnW = 18;
+    float msgBtnH = msgBtnW;
+    float msgBtnX = point.x;
+    float msgBtnY = point.y;
+    UIButton *msgBtn = [[UIButton alloc] initWithFrame:CGRectMake(msgBtnX, msgBtnY, msgBtnW, msgBtnH)];
+    msgBtn.tag = msgBtnTag;
+    msgBtn.layer.masksToBounds = YES;
+    msgBtn.layer.cornerRadius = msgBtn.frame.size.width * 0.5;
+    msgBtn.backgroundColor = [UIColor colorWithRed:1 green:0 blue:0 alpha:0.9];
+    [msgBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    msgBtn.titleLabel.font = [UIFont systemFontOfSize:10];
+    [msgBtn setTitle:num forState:UIControlStateNormal];
+    [view addSubview:msgBtn];
+}
+
 @end
