@@ -91,6 +91,7 @@
 		AE097A4E1D54688800A2EC26 /* UILabel+UILabelDynamicHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = AE097A4D1D54688800A2EC26 /* UILabel+UILabelDynamicHeight.m */; };
 		AE0C3D9F1CD9D49B004244AF /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0C3D9D1CD9D49B004244AF /* KVOViewController.m */; };
 		AE0C3DA01CD9D49B004244AF /* KVOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE0C3D9E1CD9D49B004244AF /* KVOViewController.xib */; };
+		AE1102A71D6F002400DF2D83 /* UIViewController+NavigationCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1102A61D6F002400DF2D83 /* UIViewController+NavigationCtrl.m */; };
 		AE121D3D1D5C21E000D5A84C /* AFInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = AE121D3C1D5C21E000D5A84C /* AFInterface.m */; };
 		AE121D501D5C8CBD00D5A84C /* DBUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = AE121D4D1D5C8CBD00D5A84C /* DBUtil.m */; };
 		AE121D511D5C8CBD00D5A84C /* JSONUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = AE121D4F1D5C8CBD00D5A84C /* JSONUtil.m */; };
@@ -276,6 +277,8 @@
 		AE0C3D9C1CD9D49B004244AF /* KVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOViewController.h; sourceTree = "<group>"; };
 		AE0C3D9D1CD9D49B004244AF /* KVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOViewController.m; sourceTree = "<group>"; };
 		AE0C3D9E1CD9D49B004244AF /* KVOViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KVOViewController.xib; sourceTree = "<group>"; };
+		AE1102A51D6F002400DF2D83 /* UIViewController+NavigationCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationCtrl.h"; sourceTree = "<group>"; };
+		AE1102A61D6F002400DF2D83 /* UIViewController+NavigationCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationCtrl.m"; sourceTree = "<group>"; };
 		AE121D3B1D5C21E000D5A84C /* AFInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFInterface.h; sourceTree = "<group>"; };
 		AE121D3C1D5C21E000D5A84C /* AFInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFInterface.m; sourceTree = "<group>"; };
 		AE121D4C1D5C8CBD00D5A84C /* DBUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBUtil.h; sourceTree = "<group>"; };
@@ -867,6 +870,8 @@
 				AE31DF7C1D3E011100CA5B1E /* UIImage+scale.m */,
 				AEBBD7C81D585EF20028C898 /* UIView+Nib.h */,
 				AEBBD7C91D585EF20028C898 /* UIView+Nib.m */,
+				AE1102A51D6F002400DF2D83 /* UIViewController+NavigationCtrl.h */,
+				AE1102A61D6F002400DF2D83 /* UIViewController+NavigationCtrl.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1128,6 +1133,7 @@
 				AE148B981CBBAB02002FEF1D /* AVCameraViewController.m in Sources */,
 				AE233D471D5B125700050272 /* UITextFieldVC.m in Sources */,
 				71EB0B4A1C3F4FAD00290797 /* UIImageViewModeViewController.m in Sources */,
+				AE1102A71D6F002400DF2D83 /* UIViewController+NavigationCtrl.m in Sources */,
 				AE121D3D1D5C21E000D5A84C /* AFInterface.m in Sources */,
 				71C766121C43920000E6CA12 /* NSURLConnectionViewController.m in Sources */,
 				71CF7D7A1C5623E9008A30BE /* TcpServer.m in Sources */,
