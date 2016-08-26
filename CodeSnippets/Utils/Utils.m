@@ -111,7 +111,7 @@
     [array writeToFile:path atomically:YES];
 }
 
-+ (void) writeDict:(NSMutableDictionary *)dict to:(NSString *)fileName{
++ (void) writeDict:(NSDictionary *)dict to:(NSString *)fileName{
     NSString *path = [Utils getFilePathBy:fileName];
     [dict writeToFile:path atomically:YES];
 }
@@ -645,6 +645,12 @@
                             }];
     
     return returnValue;
+}
+
++ (void)deleteFileByName:(NSString *)fileName {
+    NSString *filePath = [Utils getFilePathBy:fileName];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    [fileManager removeItemAtPath:filePath error:nil];
 }
 
 @end

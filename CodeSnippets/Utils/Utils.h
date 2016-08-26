@@ -27,7 +27,7 @@
 
 + (void) writeArray:(NSMutableArray *)array to:(NSString *)fileName;
 
-+ (void) writeDict:(NSMutableDictionary *)dict to:(NSString *)fileName;
++ (void) writeDict:(NSDictionary *)dict to:(NSString *)fileName;
 
 + (NSData *)readDataBy:(NSString *)fileName;
 
@@ -86,5 +86,7 @@
 + (CGRect)getRectOfString:(NSString *)str font:(UIFont *)font size:(CGSize)size;
 
 + (NSString *)getStringFromJSONValue:(NSObject *)JSONValue;
+
++ (void)deleteFileByName:(NSString *)fileName;
 
 @end

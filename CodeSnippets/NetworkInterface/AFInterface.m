@@ -21,11 +21,11 @@
     return URLSessionMgr;
 }
 
-+ (void)request:(NSString *)urlStr param:(NSDictionary *)paramDict success:(SuccessBlock)successBlock failure:(FailureBlock)failureBlock {
++ (void)request:(NSString *)urlStr param:(NSDictionary *)paramDict orderedKeyArr:(NSArray *)orderedKeyArr success:(SuccessBlock)successBlock failure:(FailureBlock)failureBlock {
     NSURL *URL = [NSURL URLWithString:urlStr];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:URL];
     [request setHTTPMethod:@"POST"];
-    NSString *paramStr = [AFInterface convertDict2UrlStr:paramDict];
+    NSString *paramStr = [AFInterface convertDict2UrlStr:paramDict orderedKeyArr:(NSArray *)orderedKeyArr];
     NSData *paramData = [paramStr dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
     [request setHTTPBody:paramData];
     
@@ -83,11 +83,12 @@
     [uploadTask resume];
 }
 
-+ (NSString *)convertDict2UrlStr:(NSDictionary *)dict {
++ (NSString *)convertDict2UrlStr:(NSDictionary *)dict orderedKeyArr:(NSArray *)orderedKeyArr{
     NSString *md5Str = @"";
     
     NSString *urlStr = @"";
-    for (id key in dict) {
+    for (int i = 0; i < orderedKeyArr.count; ++i) {
+        NSString *key = orderedKeyArr[i];
         if ([dict[key] isEqualToString:@""]) {
             continue;
         }

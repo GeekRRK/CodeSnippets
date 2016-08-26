@@ -21,7 +21,7 @@ typedef void (^FailureBlock)(NSError *error);
 
 @interface AFInterface : NSObject
 
-+ (void)request:(NSString *)urlStr param:(NSDictionary *)param success:(SuccessBlock)successBlock failure:(FailureBlock)failureBlock;
++ (void)request:(NSString *)urlStr param:(NSDictionary *)paramDict orderedKeyArr:(NSArray *)orderedKeyArr success:(SuccessBlock)successBlock failure:(FailureBlock)failureBlock;
 + (void)request2UploadFile:(NSString *)urlStr filePath:(NSString *)path param:(NSDictionary *)paramDict success:(SuccessBlock)successBlock failure:(FailureBlock)failureBlock;
 + (void)request2UploadFile:(NSString *)urlStr filePathArr:(NSMutableArray *)pathArr param:(NSDictionary *)paramDict success:(SuccessBlock)successBlock failure:(FailureBlock)failureBlock;
 

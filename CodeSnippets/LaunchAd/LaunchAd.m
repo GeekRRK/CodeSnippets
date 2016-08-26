@@ -7,6 +7,8 @@
 //
 
 #import "LaunchAd.h"
+#import "Utils.h"
+#import "AFInterface.h"
 
 #define AD_IMG_NAME @"NXHAdImg.jpg"
 #define AD_INFO     @"NXHAdInfo"
@@ -49,29 +51,29 @@
 }
 
 - (void)checkNewAd {
-//    _oldAdDict = [ readDictBy:AD_INFO];
-//    if (_oldAdDict != nil && _oldAdDict.count > 0) {
-//        [self show];
-//    }
-//    
-//    NSString *APIAddr = SERVERADDR API_GET_LAUNCH_AD;
-//    NSDictionary *param = @{@"version":API_VERSION};
-//    NSArray *orderedKeyArr = @[@"version"];
-//    [Interface request:APIAddr param:param orderedKeyArr:orderedKeyArr success:^(NSDictionary *responseObject) {
-//        if ([responseObject[@"errcode"] intValue] == 0) {
-//            _curAdDict = responseObject[@"info"];
-//            
-//            if (_curAdDict == nil || _curAdDict.count == 0) {
-//                [NXHUtil deleteFileByName:AD_INFO];
-//            } else {
-//                [self asyncDownloadAdImageWithUrl:_curAdDict[@"imgurl"] imageName:AD_IMG_NAME];
-//            }
-//        } else {
-//            [NXHUtil showMessage:responseObject[@"msg"]];
-//        }
-//    } failure:^(NSError *error) {
-//        [NXHUtil showMessage:error.localizedDescription];
-//    }];
+    _oldAdDict = [Utils readDictBy:AD_INFO];
+    if (_oldAdDict != nil && _oldAdDict.count > 0) {
+        [self show];
+    }
+    
+    NSString *APIAddr = SERVERADDR;
+    NSDictionary *param = @{@"version":APIAddr};
+    NSArray *orderedKeyArr = @[@"version"];
+    [AFInterface request:APIAddr param:param orderedKeyArr:orderedKeyArr success:^(NSDictionary *responseObject) {
+        if ([responseObject[@"errcode"] intValue] == 0) {
+            _curAdDict = responseObject[@"info"];
+            
+            if (_curAdDict == nil || _curAdDict.count == 0) {
+                [Utils deleteFileByName:AD_INFO];
+            } else {
+                [self asyncDownloadAdImageWithUrl:_curAdDict[@"imgurl"] imageName:AD_IMG_NAME];
+            }
+        } else {
+            [Utils showMessage:responseObject[@"msg"]];
+        }
+    } failure:^(NSError *error) {
+        [Utils showMessage:error.localizedDescription];
+    }];
 }
 
 - (void)show {
@@ -98,8 +100,8 @@
 //    } else {
 //        [APPDELEGATE.guideNavVC pushViewController:webVC animated:YES];
 //    }
-//    
-//    [self hide];
+    
+    [self hide];
 }
 
 - (void)clickJumpBtn {
@@ -121,8 +123,8 @@
 - (void)setupSubviews:(UIWindow*)window {
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:window.bounds];
     
-//    NSString *imgPath = [NXHUtil getFilePathBy:AD_IMG_NAME];
-//    imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfFile:imgPath]];
+    NSString *imgPath = [Utils getFilePathBy:AD_IMG_NAME];
+    imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfFile:imgPath]];
     
     imageView.userInteractionEnabled = YES;
     
@@ -160,12 +162,12 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:imageUrl]];
         UIImage *image = [UIImage imageWithData:data];
-//        NSString *filePath = [NXHUtil getFilePathBy:imageName];
-//        if ([UIImagePNGRepresentation(image) writeToFile:filePath atomically:YES]) {
-//            [NXHUtil writeDict:_curAdDict to:AD_INFO];
-//        }else{
-//            NSLog(@"保存图片失败");
-//        }
+        NSString *filePath = [Utils getFilePathBy:imageName];
+        if ([UIImagePNGRepresentation(image) writeToFile:filePath atomically:YES]) {
+            [Utils writeDict:_curAdDict to:AD_INFO];
+        }else{
+            NSLog(@"Fail to save image");
+        }
     });
 }
 
