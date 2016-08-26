@@ -91,6 +91,7 @@
 		AE097A4E1D54688800A2EC26 /* UILabel+UILabelDynamicHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = AE097A4D1D54688800A2EC26 /* UILabel+UILabelDynamicHeight.m */; };
 		AE0C3D9F1CD9D49B004244AF /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0C3D9D1CD9D49B004244AF /* KVOViewController.m */; };
 		AE0C3DA01CD9D49B004244AF /* KVOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE0C3D9E1CD9D49B004244AF /* KVOViewController.xib */; };
+		AE10F5B51D703DCE009E522C /* LaunchAd.m in Sources */ = {isa = PBXBuildFile; fileRef = AE10F5B41D703DCE009E522C /* LaunchAd.m */; };
 		AE1102A71D6F002400DF2D83 /* UIViewController+NavigationCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1102A61D6F002400DF2D83 /* UIViewController+NavigationCtrl.m */; };
 		AE121D3D1D5C21E000D5A84C /* AFInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = AE121D3C1D5C21E000D5A84C /* AFInterface.m */; };
 		AE121D501D5C8CBD00D5A84C /* DBUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = AE121D4D1D5C8CBD00D5A84C /* DBUtil.m */; };
@@ -277,6 +278,8 @@
 		AE0C3D9C1CD9D49B004244AF /* KVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOViewController.h; sourceTree = "<group>"; };
 		AE0C3D9D1CD9D49B004244AF /* KVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOViewController.m; sourceTree = "<group>"; };
 		AE0C3D9E1CD9D49B004244AF /* KVOViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KVOViewController.xib; sourceTree = "<group>"; };
+		AE10F5B31D703DCE009E522C /* LaunchAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchAd.h; sourceTree = "<group>"; };
+		AE10F5B41D703DCE009E522C /* LaunchAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchAd.m; sourceTree = "<group>"; };
 		AE1102A51D6F002400DF2D83 /* UIViewController+NavigationCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationCtrl.h"; sourceTree = "<group>"; };
 		AE1102A61D6F002400DF2D83 /* UIViewController+NavigationCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationCtrl.m"; sourceTree = "<group>"; };
 		AE121D3B1D5C21E000D5A84C /* AFInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFInterface.h; sourceTree = "<group>"; };
@@ -637,6 +640,7 @@
 		71EB0B271C3F4DC000290797 /* CodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				AE10F5B01D703D7D009E522C /* LaunchAd */,
 				AE233D421D5B122F00050272 /* UITextField */,
 				AECDA8ED1D374BDE008CEECA /* UILocalizedIndexedCollation */,
 				AE9FEFF01D014C7700493843 /* UICollectionView */,
@@ -752,6 +756,15 @@
 				AE0C3D9E1CD9D49B004244AF /* KVOViewController.xib */,
 			);
 			path = KVO;
+			sourceTree = "<group>";
+		};
+		AE10F5B01D703D7D009E522C /* LaunchAd */ = {
+			isa = PBXGroup;
+			children = (
+				AE10F5B31D703DCE009E522C /* LaunchAd.h */,
+				AE10F5B41D703DCE009E522C /* LaunchAd.m */,
+			);
+			path = LaunchAd;
 			sourceTree = "<group>";
 		};
 		AE148B921CBBAAC7002FEF1D /* AVCamera */ = {
@@ -1189,6 +1202,7 @@
 				7188A0CB1C44975800027977 /* Person+CoreDataProperties.m in Sources */,
 				71CDD4C11C4DD03200C8B3DE /* DeepSettingViewController.swift in Sources */,
 				AE9027A11D59801800143A25 /* TSTableViewController.m in Sources */,
+				AE10F5B51D703DCE009E522C /* LaunchAd.m in Sources */,
 				7128D9681C4F7BAC00DDED05 /* GeneratorSequenceViewController.swift in Sources */,
 				7128D9641C4F519E00DDED05 /* ResponderChainViewController.m in Sources */,
 				AE02606D1CA00325007C770C /* UIKitAnimationVC2.swift in Sources */,
