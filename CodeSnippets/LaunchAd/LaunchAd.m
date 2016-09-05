@@ -6,6 +6,11 @@
 //  Copyright © 2016年 GeekRRK. All rights reserved.
 //
 
+/*
+ Refer to: http://www.cocoachina.com/ios/20160614/16671.html
+           http://www.cocoachina.com/ios/20160628/16828.html
+ */
+
 #import "LaunchAd.h"
 #import "Utils.h"
 #import "AFInterface.h"
