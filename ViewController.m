@@ -10,7 +10,7 @@
 #import "CodeSnippets-Swift.h"
 #import "AlIndicator.h"
 #import "Utils.h"
-#import "UICollectionVC.h"
+#import "ImageButton.h"
 
 @interface ViewController ()
 
@@ -21,8 +21,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UICollectionVC *vc = [[UICollectionVC alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+    ImageButton *imgBtn = [[ImageButton alloc] initWithFrame:CGRectMake(100, 100, 200, 150)];
+    [imgBtn setTitle:@"首页" forState:UIControlStateNormal];
+    [imgBtn setImage:[UIImage imageNamed:@"10"] forState:UIControlStateNormal];
+    [self.view addSubview:imgBtn];
 }
 
 @end

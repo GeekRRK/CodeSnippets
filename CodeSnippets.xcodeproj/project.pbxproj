@@ -115,6 +115,7 @@
 		AE31DF7D1D3E011100CA5B1E /* UIImage+scale.m in Sources */ = {isa = PBXBuildFile; fileRef = AE31DF7C1D3E011100CA5B1E /* UIImage+scale.m */; };
 		AE39C00E1CC63A4F00AE80D1 /* NetworkInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = AE39C00D1CC63A4F00AE80D1 /* NetworkInterface.m */; };
 		AE46AB3F1CB6498700B44091 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = AE46AB3E1CB6498700B44091 /* Utils.m */; };
+		AE61BBF61D7FDA9C00197865 /* ImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AE61BBF51D7FDA9C00197865 /* ImageButton.m */; };
 		AE61E2BD1CEC561300A4A39C /* AVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE61E2BB1CEC561200A4A39C /* AVPlayerViewController.m */; };
 		AE61E2BE1CEC561300A4A39C /* AVPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE61E2BC1CEC561200A4A39C /* AVPlayerViewController.xib */; };
 		AE6EB33E1CFBEE5C00465E07 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6EB33D1CFBEE5C00465E07 /* UIImage+RoundedCorner.m */; };
@@ -318,6 +319,8 @@
 		AE46AB3A1CB646D800B44091 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		AE46AB3D1CB6498700B44091 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		AE46AB3E1CB6498700B44091 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		AE61BBF41D7FDA9C00197865 /* ImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageButton.h; sourceTree = "<group>"; };
+		AE61BBF51D7FDA9C00197865 /* ImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageButton.m; sourceTree = "<group>"; };
 		AE61E2BA1CEC561200A4A39C /* AVPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayerViewController.h; sourceTree = "<group>"; };
 		AE61E2BB1CEC561200A4A39C /* AVPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerViewController.m; sourceTree = "<group>"; };
 		AE61E2BC1CEC561200A4A39C /* AVPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVPlayerViewController.xib; sourceTree = "<group>"; };
@@ -640,6 +643,7 @@
 		71EB0B271C3F4DC000290797 /* CodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				AE61BBF31D7FDA8500197865 /* UIButton */,
 				AE10F5B01D703D7D009E522C /* LaunchAd */,
 				AE233D421D5B122F00050272 /* UITextField */,
 				AECDA8ED1D374BDE008CEECA /* UILocalizedIndexedCollation */,
@@ -856,6 +860,15 @@
 				AED74C111D2A6E0A0003D19F /* Model.m */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		AE61BBF31D7FDA8500197865 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				AE61BBF41D7FDA9C00197865 /* ImageButton.h */,
+				AE61BBF51D7FDA9C00197865 /* ImageButton.m */,
+			);
+			path = UIButton;
 			sourceTree = "<group>";
 		};
 		AE61E2B91CEC55FB00A4A39C /* AVPlayer */ = {
@@ -1188,6 +1201,7 @@
 				71EB0B631C3FA89D00290797 /* DelaysContentTouchesTableViewCell.m in Sources */,
 				AE9FF01B1D014CD900493843 /* UICollectionVC.m in Sources */,
 				AED09E101CE351B2006A9FA4 /* SwiftViewController.swift in Sources */,
+				AE61BBF61D7FDA9C00197865 /* ImageButton.m in Sources */,
 				71131D3A1C40C72D00E41DA5 /* CodeAutoLayoutViewController.m in Sources */,
 				717D8EC11C75A6D9007CB655 /* CAShapeLayerViewController.m in Sources */,
 				71EB0B581C3F527D00290797 /* UIImagePickerViewController.m in Sources */,
