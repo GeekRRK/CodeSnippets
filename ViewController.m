@@ -22,8 +22,9 @@
     [super viewDidLoad];
     
     ImageButton *imgBtn = [[ImageButton alloc] initWithFrame:CGRectMake(100, 100, 200, 150)];
+    imgBtn.backgroundColor = [UIColor greenColor];
     [imgBtn setTitle:@"首页" forState:UIControlStateNormal];
-    [imgBtn setImage:[UIImage imageNamed:@"10"] forState:UIControlStateNormal];
+    [imgBtn setImage:[UIImage imageNamed:@"8.jpg"] forState:UIControlStateNormal];
     [self.view addSubview:imgBtn];
 }
 

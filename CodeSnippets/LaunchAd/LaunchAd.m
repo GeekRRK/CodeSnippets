@@ -33,7 +33,7 @@
 @implementation LaunchAd
 
 + (void)load {
-    [self shareInstance];
+//    [self shareInstance];
 }
 
 + (instancetype)shareInstance {
