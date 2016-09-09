@@ -27,23 +27,23 @@
     self.titleLabel.frame = titleRect;
 }
 
-/*
- UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
- btn1.frame = CGRectMake(50, 100, 80, 40);
- [btn1 setImage:[UIImage imageNamed:@"icon_shouye"] forState:UIControlStateNormal];
- [btn1 setTitle:@"首页" forState:UIControlStateNormal];
- [btn1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
- btn1.backgroundColor = [UIColor redColor];    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
- btn.frame = CGRectMake(50, 50, 80, 40);
- [btn setImage:[UIImage imageNamed:@"icon_shouye"] forState:UIControlStateNormal];
- [btn setTitle:@"首页" forState:UIControlStateNormal];
- [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
- btn.backgroundColor = [UIColor redColor];    //上左下右
- 
- btn.imageEdgeInsets = UIEdgeInsetsMake(0, btn.frame.size.width - btn.imageView.frame.origin.x - btn.imageView.frame.size.width, 0, 0);
- btn.titleEdgeInsets = UIEdgeInsetsMake(0, -(btn.frame.size.width - btn.imageView.frame.size.width ), 0, 0);
- [self.view addSubview:btn1];
- [self.view addSubview:btn];
- */
+- (void)anotherWayInParentView {
+    UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn1.frame = CGRectMake(50, 100, 80, 40);
+    [btn1 setImage:[UIImage imageNamed:@"icon_shouye"] forState:UIControlStateNormal];
+    [btn1 setTitle:@"首页" forState:UIControlStateNormal];
+    [btn1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    btn1.backgroundColor = [UIColor redColor];    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(50, 50, 80, 40);
+    [btn setImage:[UIImage imageNamed:@"icon_shouye"] forState:UIControlStateNormal];
+    [btn setTitle:@"首页" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    btn.backgroundColor = [UIColor redColor];    //上左下右
+    
+    btn.imageEdgeInsets = UIEdgeInsetsMake(0, btn.frame.size.width - btn.imageView.frame.origin.x - btn.imageView.frame.size.width, 0, 0);
+    btn.titleEdgeInsets = UIEdgeInsetsMake(0, -(btn.frame.size.width - btn.imageView.frame.size.width ), 0, 0);
+//    [self.view addSubview:btn1];
+//    [self.view addSubview:btn];
+}
 
 @end
