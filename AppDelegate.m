@@ -126,4 +126,13 @@
     [view addSubview:msgBtn];
 }
 
+- (void)setAllNavigationBarAppearance {
+    [UINavigationBar appearance].translucent = NO;
+    UIImage *navbarImg = [UIImage imageNamed:@"common_navbar_bg"];
+    [[UINavigationBar appearance] setBackgroundImage:navbarImg forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:16], NSForegroundColorAttributeName:[UIColor whiteColor]}];
+}
+
 @end
