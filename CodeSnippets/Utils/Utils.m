@@ -653,4 +653,24 @@
     [fileManager removeItemAtPath:filePath error:nil];
 }
 
+//- (IBAction)clickCollapseBtn:(id)sender {
+//    NSInteger numOfRows = ((NSArray *)(_sectionArr[_section])).count;
+//    NSMutableArray *indexPathArr = [[NSMutableArray alloc] init];
+//    
+//    BOOL isCollapsed = ((NSArray *)(_curSectionArr[_section])).count != 0 ? YES : NO;
+//    
+//    for (int i = 0; i < numOfRows; ++i) {
+//        NSIndexPath *path = [NSIndexPath indexPathForRow:i inSection:_section];
+//        [indexPathArr addObject:path];
+//    }
+//    
+//    if (isCollapsed) {
+//        [_curSectionArr replaceObjectAtIndex:_section withObject:@[]];
+//        [_tableView deleteRowsAtIndexPaths:indexPathArr withRowAnimation:UITableViewRowAnimationTop];
+//    } else {
+//        [_curSectionArr replaceObjectAtIndex:_section withObject:_sectionArr[_section]];
+//        [_tableView insertRowsAtIndexPaths:indexPathArr withRowAnimation:UITableViewRowAnimationTop];
+//    }
+//}
+
 @end
