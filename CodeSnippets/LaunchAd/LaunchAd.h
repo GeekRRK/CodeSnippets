@@ -2,7 +2,7 @@
 //  LaunchAd.h
 //  CodeSnippets
 //
-//  Created by UGOMEDIA on 16/8/26.
+//  Created by GeekRRK on 16/8/26.
 //  Copyright © 2016年 GeekRRK. All rights reserved.
 //
 

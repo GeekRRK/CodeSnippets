@@ -2,7 +2,7 @@
 //  UITableViewVC.m
 //  CodeSnippets
 //
-//  Created by UGOMEDIA on 16/9/22.
+//  Created by GeekRRK on 16/9/22.
 //  Copyright © 2016年 GeekRRK. All rights reserved.
 //
 

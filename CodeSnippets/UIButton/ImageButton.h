@@ -2,7 +2,7 @@
 //  ImageButton.h
 //  CodeSnippets
 //
-//  Created by UGOMEDIA on 16/9/7.
+//  Created by GeekRRK on 16/9/7.
 //  Copyright © 2016年 GeekRRK. All rights reserved.
 //
 

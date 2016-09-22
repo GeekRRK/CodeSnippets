@@ -2,7 +2,7 @@
 //  TSLabel.m
 //  CodeSnippets
 //
-//  Created by UGOMEDIA on 16/8/9.
+//  Created by GeekRRK on 16/8/9.
 //  Copyright © 2016年 GeekRRK. All rights reserved.
 //
 
