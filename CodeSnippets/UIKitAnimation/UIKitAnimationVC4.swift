@@ -15,28 +15,28 @@ class UIKitAnimationVC4: UIViewController {
     func planeDepart() {
         let originalCenter = planeImage.center
         
-        UIView.animateKeyframesWithDuration(1.5, delay: 0.0, options: .Repeat, animations: {
-            UIView.addKeyframeWithRelativeStartTime(0.0, relativeDuration: 0.25, animations: {
+        UIView.animateKeyframes(withDuration: 1.5, delay: 0.0, options: .repeat, animations: {
+            UIView.addKeyframe(withRelativeStartTime: 0.0, relativeDuration: 0.25, animations: {
                 self.planeImage.center.x += 80.0
                 self.planeImage.center.y -= 10.0
             })
             
-            UIView.addKeyframeWithRelativeStartTime(0.1, relativeDuration: 0.4, animations: {
-                self.planeImage.transform = CGAffineTransformMakeRotation(CGFloat(-M_PI_4 / 2))
+            UIView.addKeyframe(withRelativeStartTime: 0.1, relativeDuration: 0.4, animations: {
+                self.planeImage.transform = CGAffineTransform(rotationAngle: CGFloat(-M_PI_4 / 2))
             })
             
-            UIView.addKeyframeWithRelativeStartTime(0.25, relativeDuration: 0.25, animations: {
+            UIView.addKeyframe(withRelativeStartTime: 0.25, relativeDuration: 0.25, animations: {
                 self.planeImage.center.x += 100.0
                 self.planeImage.center.y -= 50.0
                 self.planeImage.alpha = 0.0
             })
             
-            UIView.addKeyframeWithRelativeStartTime(0.51, relativeDuration: 0.01, animations: {
-                self.planeImage.transform = CGAffineTransformIdentity
+            UIView.addKeyframe(withRelativeStartTime: 0.51, relativeDuration: 0.01, animations: {
+                self.planeImage.transform = CGAffineTransform.identity
                 self.planeImage.center = CGPoint(x: 0.0, y: originalCenter.y)
             })
             
-            UIView.addKeyframeWithRelativeStartTime(0.55, relativeDuration: 0.45, animations: {
+            UIView.addKeyframe(withRelativeStartTime: 0.55, relativeDuration: 0.45, animations: {
                 self.planeImage.alpha = 1.0
                 self.planeImage.center = originalCenter
             })

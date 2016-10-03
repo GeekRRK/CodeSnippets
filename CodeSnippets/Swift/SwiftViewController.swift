@@ -9,18 +9,18 @@
 import UIKit
 
 enum Rank: Int {
-    case Ace = 1
-    case Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten
-    case Jack, Queen, King
+    case ace = 1
+    case two, three, four, five, six, seven, eight, nine, ten
+    case jack, queen, king
     func simpleDescription() -> String {
         switch self {
-        case .Ace:
+        case .ace:
             return "ace"
-        case .Jack:
+        case .jack:
             return "jack"
-        case .Queen:
+        case .queen:
             return "queen"
-        case .King:
+        case .king:
             return "king"
         default:
             return String(self.rawValue)
@@ -55,7 +55,7 @@ class SwiftViewController: UIViewController {
         }
     }
     
-    func greet(name: String, day: String) -> String {
+    func greet(_ name: String, day: String) -> String {
         return "Hello \(name), today is \(day)."
     }
 

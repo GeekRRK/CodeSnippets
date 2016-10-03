@@ -33,7 +33,7 @@ class GeneratorSequenceViewController: UIViewController {
 }
 
 protocol GeneratorType {
-    typealias Element
+    associatedtype Element
     func next() -> Element?
 }
 
@@ -46,12 +46,12 @@ class CountdownGenerator: GeneratorType {
     }
     
     func next() -> Element? {
-        return self.element < 0 ? nil : element--
+        return self.element < 0 ? nil : element
     }
 }
 
 protocol SequenceType {
-    typealias Generator: GeneratorType
+    associatedtype Generator: GeneratorType
     func generate() -> Generator
 }
 

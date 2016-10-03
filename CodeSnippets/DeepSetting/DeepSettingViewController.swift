@@ -20,21 +20,21 @@ class DeepSettingViewController: UIViewController {
         if #available(iOS 8.0, *) {
             let alertController = UIAlertController(title: "Sad Face Emoji!",
                 message: "The calendar permission was not authorized. Please enable it in Settings to continue.",
-                preferredStyle: .Alert)
+                preferredStyle: .alert)
             
-            let settingsAction = UIAlertAction(title: "Settings", style: .Default) { (alertAction) in
+            let settingsAction = UIAlertAction(title: "Settings", style: .default) { (alertAction) in
                 
                 // THIS IS WHERE THE MAGIC HAPPENS!!!!
-                if let appSettings = NSURL(string: UIApplicationOpenSettingsURLString) {
-                    UIApplication.sharedApplication().openURL(appSettings)
+                if let appSettings = URL(string: UIApplicationOpenSettingsURLString) {
+                    UIApplication.shared.openURL(appSettings)
                 }
             }
             alertController.addAction(settingsAction)
             
-            let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
             alertController.addAction(cancelAction)
             
-            presentViewController(alertController, animated: true, completion: nil)
+            present(alertController, animated: true, completion: nil)
         } else {
             // Fallback on earlier versions
         }

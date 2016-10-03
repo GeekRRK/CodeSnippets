@@ -1015,6 +1015,7 @@
 					71EB0B241C3F4DC000290797 = {
 						CreatedOnToolsVersion = 7.1.1;
 						DevelopmentTeam = B5BXCD45E5;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -1365,6 +1366,7 @@
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "CodeSnippets-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -1384,6 +1386,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "CodeSnippets-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

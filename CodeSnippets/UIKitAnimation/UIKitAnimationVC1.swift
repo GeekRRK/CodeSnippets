@@ -26,7 +26,7 @@ class UIKitAnimationVC1: UIViewController {
     }
     
     func animateView1() {
-        UIView.animateWithDuration(5, delay: 0.5, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: .Repeat, animations: { () -> Void in
+        UIView.animate(withDuration: 5, delay: 0.5, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: .repeat, animations: { () -> Void in
             self.view1.center.y += 60
             }) { (Bool) -> Void in
                 print("view1: complete")
@@ -34,7 +34,7 @@ class UIKitAnimationVC1: UIViewController {
     }
     
     func animateView2() {
-        UIView.animateWithDuration(5, delay: 0.5, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: .Repeat, animations: { () -> Void in
+        UIView.animate(withDuration: 5, delay: 0.5, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: .repeat, animations: { () -> Void in
             self.view2.alpha = 1
         }) { (Bool) -> Void in
             print("view2: complete")
@@ -42,7 +42,7 @@ class UIKitAnimationVC1: UIViewController {
     }
     
     func animateView3() {
-        UIView.animateWithDuration(5, delay: 0.5, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: .Repeat, animations: { () -> Void in
+        UIView.animate(withDuration: 5, delay: 0.5, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: .repeat, animations: { () -> Void in
             self.view3.alpha = 1
             self.view3.center.y -= 60;
         }) { (Bool) -> Void in

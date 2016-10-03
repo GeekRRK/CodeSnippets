@@ -8,10 +8,10 @@
 
 import UIKit
 
-func delay(seconds seconds: Double, completion:()->()) {
-    let popTime = dispatch_time(DISPATCH_TIME_NOW, Int64( Double(NSEC_PER_SEC) * seconds) )
+func delay(seconds: Double, completion:@escaping ()->()) {
+    let popTime = DispatchTime.now() + Double(Int64( Double(NSEC_PER_SEC) * seconds)) / Double(NSEC_PER_SEC)
     
-    dispatch_after(popTime, dispatch_get_main_queue()) {
+    DispatchQueue.main.asyncAfter(deadline: popTime) {
         completion()
     }
 }
@@ -25,14 +25,14 @@ class UIKitAnimationVC2: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        status.hidden = true
+        status.isHidden = true
         status.center = CGPoint(x: 160, y: 300)
         view.addSubview(status)
         
         label.frame = CGRect(x: 0.0, y: 0.0, width: status.frame.size.width, height: status.frame.size.height)
         label.font = UIFont(name: "HelveticaNeue", size: 18.0)
         label.textColor = UIColor(red: 0.89, green: 0.38, blue: 0.0, alpha: 1.0)
-        label.textAlignment = .Center
+        label.textAlignment = .center
         status.addSubview(label)
         
         statusPosition = status.center
@@ -42,11 +42,11 @@ class UIKitAnimationVC2: UIViewController {
         }
     }
     
-    func showMessage(index index: Int) {
+    func showMessage(index: Int) {
         label.text = message[index]
         
-        UIView.transitionWithView(status, duration: 0.33, options: [.CurveEaseOut, .TransitionCurlDown], animations: {
-            self.status.hidden = false
+        UIView.transition(with: status, duration: 0.33, options: [.curveEaseOut, .transitionCurlDown], animations: {
+            self.status.isHidden = false
             }, completion: {_ in
                 delay(seconds: 2.0) {
                     if index < self.message.count - 1 {
@@ -58,11 +58,11 @@ class UIKitAnimationVC2: UIViewController {
         })
     }
     
-    func removeMessage(index index: Int) {
-        UIView.animateWithDuration(0.33, delay: 0.0, options: [], animations: {
+    func removeMessage(index: Int) {
+        UIView.animate(withDuration: 0.33, delay: 0.0, options: [], animations: {
             self.status.center.x += self.view.frame.width
             }, completion: {_ in
-                self.status.hidden = true;
+                self.status.isHidden = true;
                 self.status.center = self.statusPosition
                 
                 self.showMessage(index: index + 1)
