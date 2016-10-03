@@ -91,6 +91,7 @@
 		AE097A4E1D54688800A2EC26 /* UILabel+UILabelDynamicHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = AE097A4D1D54688800A2EC26 /* UILabel+UILabelDynamicHeight.m */; };
 		AE0C3D9F1CD9D49B004244AF /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0C3D9D1CD9D49B004244AF /* KVOViewController.m */; };
 		AE0C3DA01CD9D49B004244AF /* KVOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE0C3D9E1CD9D49B004244AF /* KVOViewController.xib */; };
+		AE0EA9C01DA2053D00C1EDC2 /* MasonryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0EA9BF1DA2053D00C1EDC2 /* MasonryVC.m */; };
 		AE10F5B51D703DCE009E522C /* LaunchAd.m in Sources */ = {isa = PBXBuildFile; fileRef = AE10F5B41D703DCE009E522C /* LaunchAd.m */; };
 		AE1102A71D6F002400DF2D83 /* UIViewController+NavigationCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1102A61D6F002400DF2D83 /* UIViewController+NavigationCtrl.m */; };
 		AE121D3D1D5C21E000D5A84C /* AFInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = AE121D3C1D5C21E000D5A84C /* AFInterface.m */; };
@@ -280,6 +281,8 @@
 		AE0C3D9C1CD9D49B004244AF /* KVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOViewController.h; sourceTree = "<group>"; };
 		AE0C3D9D1CD9D49B004244AF /* KVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOViewController.m; sourceTree = "<group>"; };
 		AE0C3D9E1CD9D49B004244AF /* KVOViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KVOViewController.xib; sourceTree = "<group>"; };
+		AE0EA9BE1DA2053D00C1EDC2 /* MasonryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryVC.h; sourceTree = "<group>"; };
+		AE0EA9BF1DA2053D00C1EDC2 /* MasonryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasonryVC.m; sourceTree = "<group>"; };
 		AE10F5B31D703DCE009E522C /* LaunchAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchAd.h; sourceTree = "<group>"; };
 		AE10F5B41D703DCE009E522C /* LaunchAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchAd.m; sourceTree = "<group>"; };
 		AE1102A51D6F002400DF2D83 /* UIViewController+NavigationCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationCtrl.h"; sourceTree = "<group>"; };
@@ -646,6 +649,7 @@
 		71EB0B271C3F4DC000290797 /* CodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				AE0EA9BD1DA204BB00C1EDC2 /* Masonry */,
 				AE23C37B1D9389D100F19351 /* UITableView */,
 				AE61BBF31D7FDA8500197865 /* UIButton */,
 				AE10F5B01D703D7D009E522C /* LaunchAd */,
@@ -764,6 +768,15 @@
 				AE0C3D9E1CD9D49B004244AF /* KVOViewController.xib */,
 			);
 			path = KVO;
+			sourceTree = "<group>";
+		};
+		AE0EA9BD1DA204BB00C1EDC2 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				AE0EA9BE1DA2053D00C1EDC2 /* MasonryVC.h */,
+				AE0EA9BF1DA2053D00C1EDC2 /* MasonryVC.m */,
+			);
+			path = Masonry;
 			sourceTree = "<group>";
 		};
 		AE10F5B01D703D7D009E522C /* LaunchAd */ = {
@@ -1166,6 +1179,7 @@
 				71D8F0321C45EC3F00DF7EB5 /* NSXMLParserViewController.m in Sources */,
 				AE9027A51D5980A600143A25 /* TSTableViewCell.m in Sources */,
 				AE02606C1CA00325007C770C /* UIKitAnimationVC1.swift in Sources */,
+				AE0EA9C01DA2053D00C1EDC2 /* MasonryVC.m in Sources */,
 				7188A0CC1C44975800027977 /* Person.m in Sources */,
 				AE121D511D5C8CBD00D5A84C /* JSONUtil.m in Sources */,
 				71131D351C40BF0D00E41DA5 /* DeleteCookieAndCacheViewController.m in Sources */,

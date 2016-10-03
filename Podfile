@@ -9,5 +9,6 @@ target 'CodeSnippets' do
 
 pod 'AFNetworking'
 pod 'FMDB'
+pod 'Masonry'
 
 end
