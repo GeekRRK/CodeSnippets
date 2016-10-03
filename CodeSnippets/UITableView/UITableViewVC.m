@@ -41,6 +41,10 @@
     return 0;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 44;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *reusableCell = @"ReusableCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reusableCell];
