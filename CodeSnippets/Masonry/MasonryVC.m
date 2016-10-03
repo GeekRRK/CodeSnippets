@@ -18,16 +18,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.view makeConstraints:^(MASConstraintMaker *make) {
-        
-    }];
+    self.navigationController.navigationBar.translucent = NO;
     
-    [self.view updateConstraints:^(MASConstraintMaker *make) {
-        
-    }];
+    UIView *view = [[UIView alloc] init];
+    view.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:view];
     
-    [self.view remakeConstraints:^(MASConstraintMaker *make) {
-        
+    UIEdgeInsets padding = UIEdgeInsetsMake(10, 10, 10, 10);
+    [view makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view).with.insets(padding);
     }];
 }
 
