@@ -92,6 +92,8 @@
 		AE0C3D9F1CD9D49B004244AF /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0C3D9D1CD9D49B004244AF /* KVOViewController.m */; };
 		AE0C3DA01CD9D49B004244AF /* KVOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE0C3D9E1CD9D49B004244AF /* KVOViewController.xib */; };
 		AE0EA9C01DA2053D00C1EDC2 /* MasonryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0EA9BF1DA2053D00C1EDC2 /* MasonryVC.m */; };
+		AE0EA9C31DA20DCD00C1EDC2 /* usercenter_header_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0EA9C21DA20DCD00C1EDC2 /* usercenter_header_bg@2x.png */; };
+		AE0EA9C51DA20FB100C1EDC2 /* usercenter_icon_avatar_default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0EA9C41DA20FB100C1EDC2 /* usercenter_icon_avatar_default@2x.png */; };
 		AE10F5B51D703DCE009E522C /* LaunchAd.m in Sources */ = {isa = PBXBuildFile; fileRef = AE10F5B41D703DCE009E522C /* LaunchAd.m */; };
 		AE1102A71D6F002400DF2D83 /* UIViewController+NavigationCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1102A61D6F002400DF2D83 /* UIViewController+NavigationCtrl.m */; };
 		AE121D3D1D5C21E000D5A84C /* AFInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = AE121D3C1D5C21E000D5A84C /* AFInterface.m */; };
@@ -284,6 +286,8 @@
 		AE0EA9BE1DA2053D00C1EDC2 /* MasonryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryVC.h; sourceTree = "<group>"; };
 		AE0EA9BF1DA2053D00C1EDC2 /* MasonryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasonryVC.m; sourceTree = "<group>"; };
 		AE0EA9C11DA2062800C1EDC2 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		AE0EA9C21DA20DCD00C1EDC2 /* usercenter_header_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "usercenter_header_bg@2x.png"; sourceTree = "<group>"; };
+		AE0EA9C41DA20FB100C1EDC2 /* usercenter_icon_avatar_default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "usercenter_icon_avatar_default@2x.png"; sourceTree = "<group>"; };
 		AE10F5B31D703DCE009E522C /* LaunchAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchAd.h; sourceTree = "<group>"; };
 		AE10F5B41D703DCE009E522C /* LaunchAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchAd.m; sourceTree = "<group>"; };
 		AE1102A51D6F002400DF2D83 /* UIViewController+NavigationCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationCtrl.h"; sourceTree = "<group>"; };
@@ -775,6 +779,8 @@
 		AE0EA9BD1DA204BB00C1EDC2 /* Masonry */ = {
 			isa = PBXGroup;
 			children = (
+				AE0EA9C41DA20FB100C1EDC2 /* usercenter_icon_avatar_default@2x.png */,
+				AE0EA9C21DA20DCD00C1EDC2 /* usercenter_header_bg@2x.png */,
 				AE0EA9BE1DA2053D00C1EDC2 /* MasonryVC.h */,
 				AE0EA9BF1DA2053D00C1EDC2 /* MasonryVC.m */,
 			);
@@ -1084,10 +1090,12 @@
 				AE9FF00A1D014CA800493843 /* 8.jpg in Resources */,
 				AE02606B1CA00325007C770C /* UIKitAnimation.xcassets in Resources */,
 				AE148B9A1CBBAB42002FEF1D /* AVCameraViewController.xib in Resources */,
+				AE0EA9C31DA20DCD00C1EDC2 /* usercenter_header_bg@2x.png in Resources */,
 				AE2D975B1D2637DD00C2D3D5 /* VideoPlayerVC.xib in Resources */,
 				AE9FF0161D014CA800493843 /* 20.jpg in Resources */,
 				71C766071C4381FD00E6CA12 /* Info.plist in Resources */,
 				AE9FF0171D014CA800493843 /* 21.jpg in Resources */,
+				AE0EA9C51DA20FB100C1EDC2 /* usercenter_icon_avatar_default@2x.png in Resources */,
 				71C765BF1C43484500E6CA12 /* nav_bg_ios7.png in Resources */,
 				71CF7D711C55F3DF008A30BE /* calayer_avatar.png in Resources */,
 				AE9FF0091D014CA800493843 /* 7.jpg in Resources */,
