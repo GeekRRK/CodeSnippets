@@ -18,6 +18,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self.view makeConstraints:^(MASConstraintMaker *make) {
+        
+    }];
+    
+    [self.view updateConstraints:^(MASConstraintMaker *make) {
+        
+    }];
+    
+    [self.view remakeConstraints:^(MASConstraintMaker *make) {
+        
+    }];
 }
 
 @end

@@ -283,6 +283,7 @@
 		AE0C3D9E1CD9D49B004244AF /* KVOViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KVOViewController.xib; sourceTree = "<group>"; };
 		AE0EA9BE1DA2053D00C1EDC2 /* MasonryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryVC.h; sourceTree = "<group>"; };
 		AE0EA9BF1DA2053D00C1EDC2 /* MasonryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasonryVC.m; sourceTree = "<group>"; };
+		AE0EA9C11DA2062800C1EDC2 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		AE10F5B31D703DCE009E522C /* LaunchAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchAd.h; sourceTree = "<group>"; };
 		AE10F5B41D703DCE009E522C /* LaunchAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchAd.m; sourceTree = "<group>"; };
 		AE1102A51D6F002400DF2D83 /* UIViewController+NavigationCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationCtrl.h"; sourceTree = "<group>"; };
@@ -625,6 +626,7 @@
 		71EB0B1C1C3F4DBF00290797 = {
 			isa = PBXGroup;
 			children = (
+				AE0EA9C11DA2062800C1EDC2 /* PrefixHeader.pch */,
 				71C766091C43823900E6CA12 /* AppDelegate.h */,
 				71C7660A1C43823900E6CA12 /* AppDelegate.m */,
 				71C7660B1C43823900E6CA12 /* ViewController.h */,
@@ -1372,6 +1374,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1393,6 +1397,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
