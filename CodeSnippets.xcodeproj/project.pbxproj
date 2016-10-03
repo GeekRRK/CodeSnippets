@@ -92,8 +92,11 @@
 		AE0C3D9F1CD9D49B004244AF /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0C3D9D1CD9D49B004244AF /* KVOViewController.m */; };
 		AE0C3DA01CD9D49B004244AF /* KVOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE0C3D9E1CD9D49B004244AF /* KVOViewController.xib */; };
 		AE0EA9C01DA2053D00C1EDC2 /* MasonryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0EA9BF1DA2053D00C1EDC2 /* MasonryVC.m */; };
-		AE0EA9C31DA20DCD00C1EDC2 /* usercenter_header_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0EA9C21DA20DCD00C1EDC2 /* usercenter_header_bg@2x.png */; };
 		AE0EA9C51DA20FB100C1EDC2 /* usercenter_icon_avatar_default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0EA9C41DA20FB100C1EDC2 /* usercenter_icon_avatar_default@2x.png */; };
+		AE0EA9C71DA21FF600C1EDC2 /* usercenter_icon_diamond@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0EA9C61DA21FF600C1EDC2 /* usercenter_icon_diamond@2x.png */; };
+		AE0EA9C91DA2228F00C1EDC2 /* usercenter_icon_money@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0EA9C81DA2228F00C1EDC2 /* usercenter_icon_money@2x.png */; };
+		AE0EA9CD1DA22AC700C1EDC2 /* CFUserCenterGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0EA9CB1DA22AC700C1EDC2 /* CFUserCenterGridCell.m */; };
+		AE0EA9CE1DA22AC700C1EDC2 /* CFUserCenterGridCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE0EA9CC1DA22AC700C1EDC2 /* CFUserCenterGridCell.xib */; };
 		AE10F5B51D703DCE009E522C /* LaunchAd.m in Sources */ = {isa = PBXBuildFile; fileRef = AE10F5B41D703DCE009E522C /* LaunchAd.m */; };
 		AE1102A71D6F002400DF2D83 /* UIViewController+NavigationCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1102A61D6F002400DF2D83 /* UIViewController+NavigationCtrl.m */; };
 		AE121D3D1D5C21E000D5A84C /* AFInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = AE121D3C1D5C21E000D5A84C /* AFInterface.m */; };
@@ -286,8 +289,12 @@
 		AE0EA9BE1DA2053D00C1EDC2 /* MasonryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryVC.h; sourceTree = "<group>"; };
 		AE0EA9BF1DA2053D00C1EDC2 /* MasonryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasonryVC.m; sourceTree = "<group>"; };
 		AE0EA9C11DA2062800C1EDC2 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		AE0EA9C21DA20DCD00C1EDC2 /* usercenter_header_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "usercenter_header_bg@2x.png"; sourceTree = "<group>"; };
 		AE0EA9C41DA20FB100C1EDC2 /* usercenter_icon_avatar_default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "usercenter_icon_avatar_default@2x.png"; sourceTree = "<group>"; };
+		AE0EA9C61DA21FF600C1EDC2 /* usercenter_icon_diamond@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "usercenter_icon_diamond@2x.png"; sourceTree = "<group>"; };
+		AE0EA9C81DA2228F00C1EDC2 /* usercenter_icon_money@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "usercenter_icon_money@2x.png"; sourceTree = "<group>"; };
+		AE0EA9CA1DA22AC700C1EDC2 /* CFUserCenterGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFUserCenterGridCell.h; sourceTree = "<group>"; };
+		AE0EA9CB1DA22AC700C1EDC2 /* CFUserCenterGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFUserCenterGridCell.m; sourceTree = "<group>"; };
+		AE0EA9CC1DA22AC700C1EDC2 /* CFUserCenterGridCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CFUserCenterGridCell.xib; sourceTree = "<group>"; };
 		AE10F5B31D703DCE009E522C /* LaunchAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchAd.h; sourceTree = "<group>"; };
 		AE10F5B41D703DCE009E522C /* LaunchAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchAd.m; sourceTree = "<group>"; };
 		AE1102A51D6F002400DF2D83 /* UIViewController+NavigationCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationCtrl.h"; sourceTree = "<group>"; };
@@ -779,8 +786,12 @@
 		AE0EA9BD1DA204BB00C1EDC2 /* Masonry */ = {
 			isa = PBXGroup;
 			children = (
+				AE0EA9C81DA2228F00C1EDC2 /* usercenter_icon_money@2x.png */,
+				AE0EA9C61DA21FF600C1EDC2 /* usercenter_icon_diamond@2x.png */,
 				AE0EA9C41DA20FB100C1EDC2 /* usercenter_icon_avatar_default@2x.png */,
-				AE0EA9C21DA20DCD00C1EDC2 /* usercenter_header_bg@2x.png */,
+				AE0EA9CA1DA22AC700C1EDC2 /* CFUserCenterGridCell.h */,
+				AE0EA9CB1DA22AC700C1EDC2 /* CFUserCenterGridCell.m */,
+				AE0EA9CC1DA22AC700C1EDC2 /* CFUserCenterGridCell.xib */,
 				AE0EA9BE1DA2053D00C1EDC2 /* MasonryVC.h */,
 				AE0EA9BF1DA2053D00C1EDC2 /* MasonryVC.m */,
 			);
@@ -1070,8 +1081,10 @@
 				71CF7D721C55F3DF008A30BE /* calayer_background.jpg in Resources */,
 				AE9FF0111D014CA800493843 /* 15.jpg in Resources */,
 				AE9027A61D5980A600143A25 /* TSTableViewCell.xib in Resources */,
+				AE0EA9C71DA21FF600C1EDC2 /* usercenter_icon_diamond@2x.png in Resources */,
 				AE216E1E1CC9F1FE0046FC6C /* GlobalUserStatisticConfig.plist in Resources */,
 				AE9FF0151D014CA800493843 /* 19.jpg in Resources */,
+				AE0EA9C91DA2228F00C1EDC2 /* usercenter_icon_money@2x.png in Resources */,
 				71C765C81C4349F100E6CA12 /* appcoda-logo@2x.png in Resources */,
 				AE2D97691D26386900C2D3D5 /* video_slider@2x.png in Resources */,
 				71C765C31C4348E000E6CA12 /* back_btn.png in Resources */,
@@ -1090,7 +1103,6 @@
 				AE9FF00A1D014CA800493843 /* 8.jpg in Resources */,
 				AE02606B1CA00325007C770C /* UIKitAnimation.xcassets in Resources */,
 				AE148B9A1CBBAB42002FEF1D /* AVCameraViewController.xib in Resources */,
-				AE0EA9C31DA20DCD00C1EDC2 /* usercenter_header_bg@2x.png in Resources */,
 				AE2D975B1D2637DD00C2D3D5 /* VideoPlayerVC.xib in Resources */,
 				AE9FF0161D014CA800493843 /* 20.jpg in Resources */,
 				71C766071C4381FD00E6CA12 /* Info.plist in Resources */,
@@ -1111,6 +1123,7 @@
 				AE0C3DA01CD9D49B004244AF /* KVOViewController.xib in Resources */,
 				71C765C01C43484500E6CA12 /* nav_bg.png in Resources */,
 				AE2D97611D26382100C2D3D5 /* video_back.png in Resources */,
+				AE0EA9CE1DA22AC700C1EDC2 /* CFUserCenterGridCell.xib in Resources */,
 				71D8F03A1C46156500DF7EB5 /* serverStartup.pdf in Resources */,
 				71C765C71C4349F100E6CA12 /* appcoda-logo.png in Resources */,
 				71C765BB1C43481200E6CA12 /* nav_bg_ios7@2x.png in Resources */,
@@ -1191,6 +1204,7 @@
 				AE02606C1CA00325007C770C /* UIKitAnimationVC1.swift in Sources */,
 				AE0EA9C01DA2053D00C1EDC2 /* MasonryVC.m in Sources */,
 				7188A0CC1C44975800027977 /* Person.m in Sources */,
+				AE0EA9CD1DA22AC700C1EDC2 /* CFUserCenterGridCell.m in Sources */,
 				AE121D511D5C8CBD00D5A84C /* JSONUtil.m in Sources */,
 				71131D351C40BF0D00E41DA5 /* DeleteCookieAndCacheViewController.m in Sources */,
 				7128D9601C4F516500DDED05 /* DView.m in Sources */,
