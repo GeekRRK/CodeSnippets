@@ -40,7 +40,7 @@
 //    UserModel *userModel = [[UserModel alloc] init];
 //    
 //    NSString *querySql = [NSString stringWithFormat:@"select * from %@ where id = '%@'", tableName, mid];
-//    FMResultSet *resultSet = [[NXHDB shareDateBase] executeQuery:querySql];
+//    FMResultSet *resultSet = [[AlDB shareDateBase] executeQuery:querySql];
 //    if ([resultSet next]) {
 //        userModel.m_id = [resultSet stringForColumn:@"id"];
 //        userModel.name = [resultSet stringForColumn:@"name"];

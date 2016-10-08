@@ -15,8 +15,8 @@
 #import "Utils.h"
 #import "AFInterface.h"
 
-#define AD_IMG_NAME @"NXHAdImg.jpg"
-#define AD_INFO     @"NXHAdInfo"
+#define AD_IMG_NAME @"AlAdImg.jpg"
+#define AD_INFO     @"AlAdInfo"
 
 @interface LaunchAd ()
 
@@ -95,7 +95,7 @@
 
 - (void)clickAd {
 //    UIViewController* rootVC = [[UIApplication sharedApplication].delegate window].rootViewController;
-//    NXHWebVC *webVC = [[NXHWebVC alloc] init];
+//    AlWebVC *webVC = [[AlWebVC alloc] init];
 //    webVC.isFromAd = YES;
 //    webVC.adDict = _oldAdDict;
 //    [webVC setHidesBottomBarWhenPushed:YES];
