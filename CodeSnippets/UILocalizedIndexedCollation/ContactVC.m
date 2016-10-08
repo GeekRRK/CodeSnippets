@@ -130,4 +130,45 @@
     return cell;
 }
 
+- (void)indexDealerArrBySeller:(NSMutableArray *)dealerMutableArr {
+    NSMutableDictionary *sortedDealerMutableDict = [[NSMutableDictionary alloc] init];
+    
+    for (int i = 0; i < dealerMutableArr.count; ++i) {
+        Person *person = dealerMutableArr[i];
+        NSString *saleName = person.name;
+        
+        if ([sortedDealerMutableDict valueForKey:saleName] == nil) {
+            NSMutableArray *dealerMutableArr = [[NSMutableArray alloc] initWithObjects:person, nil];
+            [sortedDealerMutableDict setObject:dealerMutableArr forKey:saleName];
+        } else {
+            NSMutableArray *dealerMutableArr = [sortedDealerMutableDict objectForKey:saleName];
+            [dealerMutableArr addObject:person];
+        }
+    }
+    
+    NSArray *allKeys = [sortedDealerMutableDict allKeys];
+    for (int i = 0; i < allKeys.count; ++i) {
+        NSMutableArray *dealerMutableArr = sortedDealerMutableDict[allKeys[i]];
+        NSArray *sortedDealerArr = [dealerMutableArr sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+            Person *person1 = (Person *)obj1;
+            Person *person2 = (Person *)obj2;
+            return [person1.name localizedStandardCompare:person2.name];
+        }];
+        
+        [sortedDealerMutableDict setObject:sortedDealerArr forKey:allKeys[i]];
+    }
+    
+    NSMutableArray *sortedKeyArray = [NSMutableArray arrayWithArray:sortedDealerMutableDict.allKeys];
+    [sortedKeyArray sortUsingSelector:@selector(localizedStandardCompare:)];
+    NSMutableArray *sortedDealerMutableArr = [[NSMutableArray alloc] init];
+    for (int i = 0; i < sortedKeyArray.count; ++i) {
+        [sortedDealerMutableArr addObject:sortedDealerMutableDict[sortedKeyArray[i]]];
+    }
+    
+    self.validSectionsArray = sortedDealerMutableArr;
+    self.validSectionTitleArray = sortedKeyArray;
+
+    [self.tableView reloadData];
+}
+
 @end
