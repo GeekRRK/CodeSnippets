@@ -673,4 +673,16 @@
 //    }
 //}
 
++ (void)checkVersion {
+    NSString *versionStr = @"1.0.2";
+    int versionInt = [[versionStr stringByReplacingOccurrencesOfString:@"." withString:@""] intValue];
+    NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+    NSString *oldVersionStr = [infoDictionary objectForKey:@"CFBundleShortVersionString"];  // CFBundleVersion
+    int oldVersionInt = [[oldVersionStr stringByReplacingOccurrencesOfString:@"." withString:@""] intValue];
+    
+    if (versionInt > oldVersionInt) {
+        NSLog(@"有新版本，请检查更新");
+    }
+}
+
 @end
