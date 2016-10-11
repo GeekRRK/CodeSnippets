@@ -144,4 +144,18 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info{
     }];
 }
 
+//- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+//    [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+//        if (buttonIndex == 0) {
+//            [self openCamera];
+//        } else if (buttonIndex == 1) {
+//            if (IPad) {
+//                [self openPhotoLibraryForIpad];
+//            } else {
+//                [self openPhotoLibrary];
+//            }
+//        }
+//    }];
+//}
+
 @end
