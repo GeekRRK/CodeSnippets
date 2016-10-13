@@ -89,4 +89,6 @@
 
 + (void)deleteFileByName:(NSString *)fileName;
 
++ (BOOL)isValidEmail:(NSString *)checkString;
+
 @end
