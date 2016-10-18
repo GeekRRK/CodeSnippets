@@ -82,6 +82,7 @@
 		71EB0B641C3FA89D00290797 /* DelaysContentTouchesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71EB0B621C3FA89D00290797 /* DelaysContentTouchesTableViewCell.xib */; };
 		71EB0B681C3FA93F00290797 /* DelaysContentTouchesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EB0B661C3FA93F00290797 /* DelaysContentTouchesTableViewController.m */; };
 		71EB0B691C3FA93F00290797 /* DelaysContentTouchesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71EB0B671C3FA93F00290797 /* DelaysContentTouchesTableViewController.xib */; };
+		AE00AF581DB5CCE100934567 /* UILabelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AE00AF571DB5CCE100934567 /* UILabelVC.m */; };
 		AE02606A1CA00325007C770C /* UIKitAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0260641CA00325007C770C /* UIKitAnimation.storyboard */; };
 		AE02606B1CA00325007C770C /* UIKitAnimation.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0260651CA00325007C770C /* UIKitAnimation.xcassets */; };
 		AE02606C1CA00325007C770C /* UIKitAnimationVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0260661CA00325007C770C /* UIKitAnimationVC1.swift */; };
@@ -277,6 +278,8 @@
 		71EB0B651C3FA93F00290797 /* DelaysContentTouchesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelaysContentTouchesTableViewController.h; sourceTree = "<group>"; };
 		71EB0B661C3FA93F00290797 /* DelaysContentTouchesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelaysContentTouchesTableViewController.m; sourceTree = "<group>"; };
 		71EB0B671C3FA93F00290797 /* DelaysContentTouchesTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DelaysContentTouchesTableViewController.xib; sourceTree = "<group>"; };
+		AE00AF561DB5CCE100934567 /* UILabelVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelVC.h; sourceTree = "<group>"; };
+		AE00AF571DB5CCE100934567 /* UILabelVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelVC.m; sourceTree = "<group>"; };
 		AE0260641CA00325007C770C /* UIKitAnimation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UIKitAnimation.storyboard; sourceTree = "<group>"; };
 		AE0260651CA00325007C770C /* UIKitAnimation.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = UIKitAnimation.xcassets; sourceTree = "<group>"; };
 		AE0260661CA00325007C770C /* UIKitAnimationVC1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitAnimationVC1.swift; sourceTree = "<group>"; };
@@ -873,6 +876,8 @@
 		AE2F5C251CA29E7A00A01926 /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
+				AE00AF561DB5CCE100934567 /* UILabelVC.h */,
+				AE00AF571DB5CCE100934567 /* UILabelVC.m */,
 				AE90279C1D597FCB00143A25 /* TSLabel.h */,
 				AE90279D1D597FCB00143A25 /* TSLabel.m */,
 				AE90279F1D59801800143A25 /* TSTableViewController.h */,
@@ -1236,6 +1241,7 @@
 				AE0C3D9F1CD9D49B004244AF /* KVOViewController.m in Sources */,
 				71CF7D731C55F3DF008A30BE /* KCLayer.m in Sources */,
 				7104A5AC1C505A680080610C /* MethodSwizzlingViewController.m in Sources */,
+				AE00AF581DB5CCE100934567 /* UILabelVC.m in Sources */,
 				71131D3F1C40CEEE00E41DA5 /* CheckNetworkViewController.m in Sources */,
 				AE9FEFF81D014C9D00493843 /* AlCollectionViewLayout.m in Sources */,
 				AE121D501D5C8CBD00D5A84C /* DBUtil.m in Sources */,
