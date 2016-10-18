@@ -22,94 +22,89 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setupContext];
-    [self addDataToDatabase];
-    [self addSubManagedObject];
-    [self queryDataFromDatabase];
+    NSManagedObjectContext *context = [self setupCoreData];
+    [self addData2Database:context];
+    [self queryFromDatabase:context];
 }
 
-- (void)setupContext {
-    NSManagedObjectModel *model =
-    [NSManagedObjectModel mergedModelFromBundles:nil];
-    NSPersistentStoreCoordinator *psc =
-    [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:model];
+- (NSManagedObjectContext *)setupCoreData {
+    // 1、Load merged model
+    NSManagedObjectModel *model = [NSManagedObjectModel mergedModelFromBundles:nil];
     
-    NSString *docs = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
-                                                          NSUserDomainMask,
-                                                          YES) lastObject];
-    NSURL *url = [NSURL fileURLWithPath:
-                  [docs stringByAppendingPathComponent:@"person.data"]];
+    // 2、Init NSPersistentStoreCoordinator with merged model
+    NSPersistentStoreCoordinator *psc = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:model];
+    
+    // 3、Set the path of SQLite file
+    NSString *docs = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    NSURL *url = [NSURL fileURLWithPath:[docs stringByAppendingPathComponent:@"person.data"]];
+    
+    // 4、Add persistent store with SQLite
     NSError *error = nil;
-    NSPersistentStore *store = [psc addPersistentStoreWithType:NSSQLiteStoreType
-                                                 configuration:nil
-                                                           URL:url
-                                                       options:nil
-                                                         error:&error];
+    NSPersistentStore *store = [psc addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:url options:nil error:&error];
     if (store == nil) {
-        [NSException raise:@"Failed to add database"
-                    format:@"%@", [error localizedDescription]];
+        [NSException raise:@"Exception when add database" format:@"%@", error.localizedDescription];
     }
     
-    self.context = [[NSManagedObjectContext alloc] init];
-    self.context.persistentStoreCoordinator = psc;
+    // 5、Init the context and set persistentStoreCoordinator to psc created in step 2
+    NSManagedObjectContext *context = [[NSManagedObjectContext alloc] init];
+    context.persistentStoreCoordinator = psc;
+    
+    return context;
 }
 
-- (void)addDataToDatabase {
-    NSManagedObject *person =
-    [NSEntityDescription insertNewObjectForEntityForName:@"Person"
-                                  inManagedObjectContext:self.context];
-    [person setValue:@"MJ" forKey:@"name"];
+- (void)addData2Database:(NSManagedObjectContext *)context {
+    // 1、Create managed object person
+    NSManagedObject *person = [NSEntityDescription insertNewObjectForEntityForName:@"Person" inManagedObjectContext:context];
+    [person setValue:@"Al" forKey:@"name"];
     [person setValue:[NSNumber numberWithInt:27] forKey:@"age"];
     
-    NSManagedObject *card =
-    [NSEntityDescription insertNewObjectForEntityForName:@"Card"
-                                  inManagedObjectContext:self.context];
-    [card setValue:@"4414241933432" forKey:@"no"];
+    // 2、Create managed object card
+    NSManagedObject *card = [NSEntityDescription insertNewObjectForEntityForName:@"Card" inManagedObjectContext:context];
+    [card setValue:@"1234567890" forKey:@"no"];
     
+    // 3、Connect person and card
     [person setValue:card forKey:@"card"];
     
+    // 4、Sync database
     NSError *error = nil;
-    BOOL success = [self.context save:&error];
+    BOOL success = [context save:&error];
     if (!success) {
-        [NSException raise:@"Failed to access database"
-                    format:@"%@", [error localizedDescription]];
+        [NSException raise:@"Exception when access database" format:@"%@", error.localizedDescription];
     }
 }
 
-- (void)queryDataFromDatabase {
+- (void)queryFromDatabase:(NSManagedObjectContext *)context {
+    // 1、Init fetch request and set the entity with Person object
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
-    request.entity =
-    [NSEntityDescription entityForName:@"Person"
-                inManagedObjectContext:self.context];
+    request.entity = [NSEntityDescription  entityForName:@"Person" inManagedObjectContext:context];
     
-    NSSortDescriptor *sort =
-    [NSSortDescriptor sortDescriptorWithKey:@"age" ascending:NO];
+    // 2、Set order
+    NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"age" ascending:NO];
     request.sortDescriptors = [NSArray arrayWithObject:sort];
     
-    NSPredicate *predicate =
-    [NSPredicate predicateWithFormat:@"name like %@", @"*Geek*"];
+    // 3、Set predicate to filter the name contain Al (Replace % with * in SQL)
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name like %@", @"*Al*"];
     request.predicate = predicate;
     
+    // 4、Execute request
     NSError *error = nil;
-    NSArray *objs = [self.context executeFetchRequest:request error:&error];
+    NSArray *objs = [context executeFetchRequest:request error:&error];
     if (error) {
-        [NSException raise:@"Failed to query"
-                    format:@"%@", [error localizedDescription]];
+        [NSException raise:@"Exception when query" format:@"%@", error.localizedDescription];
     }
+    
+    // 5、Iterate the result
     for (NSManagedObject *obj in objs) {
         NSLog(@"name=%@", [obj valueForKey:@"name"]);
-        
-        [self deleteData:obj];
     }
 }
 
-- (void)deleteData:(NSManagedObject *)managedObject {
-    [self.context deleteObject:managedObject];
+- (void)deleteOject:(NSManagedObject *)obj inContext:(NSManagedObjectContext *)context {
+    [context deleteObject:obj];
     NSError *error = nil;
-    [self.context save:&error];
+    [context save:&error];
     if (error) {
-        [NSException raise:@"Failed to delete"
-                    format:@"%@", [error localizedDescription]];
+        [NSException raise:@"Exception when delete" format:@"%@", error.localizedDescription];
     }
 }
 
