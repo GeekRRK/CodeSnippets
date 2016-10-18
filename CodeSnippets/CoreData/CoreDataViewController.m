@@ -13,8 +13,6 @@
 
 @interface CoreDataViewController ()
 
-@property (strong, nonatomic) NSManagedObjectContext *context;
-
 @end
 
 @implementation CoreDataViewController
@@ -22,8 +20,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // Turn on the output of SQL
+    // EditScheme-Arguemnts-ArgumentsPassed On Launch
+    // -com.apple.CoreData.SQLDebug
+    // 1
+    
     NSManagedObjectContext *context = [self setupCoreData];
+    
+    [self queryFromDatabase:context];
+    
     [self addData2Database:context];
+    [self addObjc2Database:context];
     [self queryFromDatabase:context];
 }
 
@@ -55,8 +62,8 @@
 - (void)addData2Database:(NSManagedObjectContext *)context {
     // 1、Create managed object person
     NSManagedObject *person = [NSEntityDescription insertNewObjectForEntityForName:@"Person" inManagedObjectContext:context];
-    [person setValue:@"GeekRRK" forKey:@"name"];
-    [person setValue:[NSNumber numberWithInt:27] forKey:@"age"];
+    [person setValue:@"Al" forKey:@"name"];
+    [person setValue:[NSNumber numberWithInt:24] forKey:@"age"];
     
     // 2、Create managed object card
     NSManagedObject *card = [NSEntityDescription insertNewObjectForEntityForName:@"Card" inManagedObjectContext:context];
@@ -82,8 +89,8 @@
     NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"age" ascending:NO];
     request.sortDescriptors = [NSArray arrayWithObject:sort];
     
-    // 3、Set predicate to filter the name contain GeekRRK (Replace % with * in SQL)
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name like %@", @"*GeekRRK*"];
+    // 3、Set predicate to filter the name contain Al (Replace % with * in SQL)
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name like %@", @"*Al*"];
     request.predicate = predicate;
     
     // 4、Execute request
@@ -96,7 +103,10 @@
     // 5、Iterate the result
     for (NSManagedObject *obj in objs) {
         NSLog(@"name=%@", [obj valueForKey:@"name"]);
+        [context deleteObject:obj];
     }
+    
+    [context save:nil];
 }
 
 - (void)deleteOject:(NSManagedObject *)obj inContext:(NSManagedObjectContext *)context {
@@ -108,25 +118,19 @@
     }
 }
 
-- (void)addSubManagedObject {
-    Person *person =
-    [NSEntityDescription insertNewObjectForEntityForName:@"Person"
-                                  inManagedObjectContext:self.context];
+- (void)addObjc2Database:(NSManagedObjectContext *)context {
+    Person *person = [NSEntityDescription insertNewObjectForEntityForName:@"Person" inManagedObjectContext:context];
     person.name = @"GeekRRK";
     person.age = [NSNumber numberWithInt:24];
     
-    Card *card =
-    [NSEntityDescription insertNewObjectForEntityForName:@"Card"
-                                  inManagedObjectContext:self.context];
-    card.no = @"0123456789";
-    
+    Card *card = [NSEntityDescription insertNewObjectForEntityForName:@"Card" inManagedObjectContext:context];
+    card.no = @"1234567890";
     person.card = card;
     
-    NSError *error = nil;
-    BOOL success = [self.context save:&error];
-    if (!success) {
-        [NSException raise:@"Failed to save context"
-                    format:@"%@", [error localizedDescription]];
+    NSError *error;
+    [context save:&error];
+    if (error) {
+        [NSException raise:@"Exception when add objecet to database" format:@"%@", error.localizedDescription];
     }
 }
 

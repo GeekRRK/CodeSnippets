@@ -7,10 +7,10 @@
 //
 
 #import "Card.h"
-#import "Person.h"
 
 @implementation Card
 
-// Insert code here to add functionality to your managed object subclass
+@dynamic no;
+@dynamic person;
 
 @end

@@ -11,14 +11,9 @@
 
 @class Person;
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface Card : NSManagedObject
 
-// Insert code here to declare functionality of your managed object subclass
+@property (copy, nonatomic) NSString *no;
+@property (strong, nonatomic) Person *person;
 
 @end
-
-NS_ASSUME_NONNULL_END
-
-#import "Card+CoreDataProperties.h"

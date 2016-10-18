@@ -34,9 +34,7 @@
 		7186A6741C7701D0009B5E7A /* AlIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7186A6731C7701D0009B5E7A /* AlIndicator.m */; };
 		7188A0A51C448C6400027977 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7188A0A31C448C6400027977 /* Model.xcdatamodeld */; };
 		7188A0A81C448E7700027977 /* CoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7188A0A71C448E7700027977 /* CoreDataViewController.m */; };
-		7188A0CB1C44975800027977 /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 7188A0C41C44975800027977 /* Person+CoreDataProperties.m */; };
 		7188A0CC1C44975800027977 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 7188A0C61C44975800027977 /* Person.m */; };
-		7188A0CD1C44975800027977 /* Card+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 7188A0C81C44975800027977 /* Card+CoreDataProperties.m */; };
 		7188A0CE1C44975800027977 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 7188A0CA1C44975800027977 /* Card.m */; };
 		71C765B41C43450200E6CA12 /* UINavigationBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C765B31C43450200E6CA12 /* UINavigationBarViewController.m */; };
 		71C765BB1C43481200E6CA12 /* nav_bg_ios7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71C765B91C43481200E6CA12 /* nav_bg_ios7@2x.png */; };
@@ -206,12 +204,8 @@
 		7188A0A41C448C6400027977 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		7188A0A61C448E7700027977 /* CoreDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataViewController.h; sourceTree = "<group>"; };
 		7188A0A71C448E7700027977 /* CoreDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataViewController.m; sourceTree = "<group>"; };
-		7188A0C31C44975800027977 /* Person+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataProperties.h"; sourceTree = "<group>"; };
-		7188A0C41C44975800027977 /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataProperties.m"; sourceTree = "<group>"; };
 		7188A0C51C44975800027977 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		7188A0C61C44975800027977 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
-		7188A0C71C44975800027977 /* Card+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Card+CoreDataProperties.h"; sourceTree = "<group>"; };
-		7188A0C81C44975800027977 /* Card+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Card+CoreDataProperties.m"; sourceTree = "<group>"; };
 		7188A0C91C44975800027977 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
 		7188A0CA1C44975800027977 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
 		71C765B21C43450200E6CA12 /* UINavigationBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINavigationBarViewController.h; sourceTree = "<group>"; };
@@ -527,12 +521,8 @@
 				7188A0A31C448C6400027977 /* Model.xcdatamodeld */,
 				7188A0A61C448E7700027977 /* CoreDataViewController.h */,
 				7188A0A71C448E7700027977 /* CoreDataViewController.m */,
-				7188A0C31C44975800027977 /* Person+CoreDataProperties.h */,
-				7188A0C41C44975800027977 /* Person+CoreDataProperties.m */,
 				7188A0C51C44975800027977 /* Person.h */,
 				7188A0C61C44975800027977 /* Person.m */,
-				7188A0C71C44975800027977 /* Card+CoreDataProperties.h */,
-				7188A0C81C44975800027977 /* Card+CoreDataProperties.m */,
 				7188A0C91C44975800027977 /* Card.h */,
 				7188A0CA1C44975800027977 /* Card.m */,
 			);
@@ -1284,7 +1274,6 @@
 				71D8F0361C46116C00DF7EB5 /* MailViewController.m in Sources */,
 				71D5D5B51C473D5C00904EA1 /* CALayerViewController.m in Sources */,
 				7188A0A51C448C6400027977 /* Model.xcdatamodeld in Sources */,
-				7188A0CB1C44975800027977 /* Person+CoreDataProperties.m in Sources */,
 				71CDD4C11C4DD03200C8B3DE /* DeepSettingViewController.swift in Sources */,
 				AE9027A11D59801800143A25 /* TSTableViewController.m in Sources */,
 				AE10F5B51D703DCE009E522C /* LaunchAd.m in Sources */,
@@ -1297,7 +1286,6 @@
 				AED74C0F1D2A6AD90003D19F /* DBUtils.m in Sources */,
 				AE31DF7D1D3E011100CA5B1E /* UIImage+scale.m in Sources */,
 				71EB0B521C3F50A800290797 /* InputAccessoryTableViewCell.m in Sources */,
-				7188A0CD1C44975800027977 /* Card+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
