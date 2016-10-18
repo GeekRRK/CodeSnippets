@@ -55,7 +55,7 @@
 - (void)addData2Database:(NSManagedObjectContext *)context {
     // 1、Create managed object person
     NSManagedObject *person = [NSEntityDescription insertNewObjectForEntityForName:@"Person" inManagedObjectContext:context];
-    [person setValue:@"Al" forKey:@"name"];
+    [person setValue:@"GeekRRK" forKey:@"name"];
     [person setValue:[NSNumber numberWithInt:27] forKey:@"age"];
     
     // 2、Create managed object card
@@ -82,8 +82,8 @@
     NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"age" ascending:NO];
     request.sortDescriptors = [NSArray arrayWithObject:sort];
     
-    // 3、Set predicate to filter the name contain Al (Replace % with * in SQL)
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name like %@", @"*Al*"];
+    // 3、Set predicate to filter the name contain GeekRRK (Replace % with * in SQL)
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name like %@", @"*GeekRRK*"];
     request.predicate = predicate;
     
     // 4、Execute request
