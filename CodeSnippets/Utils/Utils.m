@@ -694,4 +694,11 @@
     return [emailTest evaluateWithObject:checkString];
 }
 
++ (BOOL)checkUserIdCard: (NSString *)idCard {
+    NSString *pattern = @"(^[0-9]{15}$)|([0-9]{17}([0-9]|X)$)";
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", pattern];
+    BOOL isMatch = [pred evaluateWithObject:idCard];
+    return isMatch;
+}
+
 @end

@@ -91,4 +91,6 @@
 
 + (BOOL)isValidEmail:(NSString *)checkString;
 
++ (BOOL)checkUserIdCard: (NSString *)idCard;
+
 @end
