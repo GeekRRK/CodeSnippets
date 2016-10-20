@@ -151,6 +151,7 @@
 		AE9FF0171D014CA800493843 /* 21.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE9FF0071D014CA800493843 /* 21.jpg */; };
 		AE9FF0181D014CA800493843 /* 22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE9FF0081D014CA800493843 /* 22.jpg */; };
 		AE9FF01B1D014CD900493843 /* UICollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9FF01A1D014CD900493843 /* UICollectionVC.m */; };
+		AEAB6B761DB86F7D00B1B636 /* AlDiffModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AEAB6B751DB86F7D00B1B636 /* AlDiffModel.m */; };
 		AEBBD7CA1D585EF20028C898 /* UIView+Nib.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBBD7C91D585EF20028C898 /* UIView+Nib.m */; };
 		AECDA8F21D374BDE008CEECA /* ContactVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AECDA8EF1D374BDE008CEECA /* ContactVC.m */; };
 		AED09E101CE351B2006A9FA4 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED09E0F1CE351B2006A9FA4 /* SwiftViewController.swift */; };
@@ -377,6 +378,8 @@
 		AE9FF0081D014CA800493843 /* 22.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 22.jpg; sourceTree = "<group>"; };
 		AE9FF0191D014CD900493843 /* UICollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionVC.h; sourceTree = "<group>"; };
 		AE9FF01A1D014CD900493843 /* UICollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionVC.m; sourceTree = "<group>"; };
+		AEAB6B741DB86F7D00B1B636 /* AlDiffModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlDiffModel.h; sourceTree = "<group>"; };
+		AEAB6B751DB86F7D00B1B636 /* AlDiffModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlDiffModel.m; sourceTree = "<group>"; };
 		AEBBD7C81D585EF20028C898 /* UIView+Nib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Nib.h"; sourceTree = "<group>"; };
 		AEBBD7C91D585EF20028C898 /* UIView+Nib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Nib.m"; sourceTree = "<group>"; };
 		AECDA8EE1D374BDE008CEECA /* ContactVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactVC.h; sourceTree = "<group>"; };
@@ -844,6 +847,8 @@
 		AE23C37B1D9389D100F19351 /* UITableView */ = {
 			isa = PBXGroup;
 			children = (
+				AEAB6B741DB86F7D00B1B636 /* AlDiffModel.h */,
+				AEAB6B751DB86F7D00B1B636 /* AlDiffModel.m */,
 				AE23C37C1D9389ED00F19351 /* UITableViewVC.h */,
 				AE23C37D1D9389ED00F19351 /* UITableViewVC.m */,
 			);
@@ -1270,6 +1275,7 @@
 				AE2D975A1D2637DD00C2D3D5 /* VideoPlayerVC.m in Sources */,
 				AE39C00E1CC63A4F00AE80D1 /* NetworkInterface.m in Sources */,
 				7104A5B91C5064BA0080610C /* RuntimeClassVC.m in Sources */,
+				AEAB6B761DB86F7D00B1B636 /* AlDiffModel.m in Sources */,
 				71CF7D741C55F3DF008A30BE /* KCView.m in Sources */,
 				71D8F0361C46116C00DF7EB5 /* MailViewController.m in Sources */,
 				71D5D5B51C473D5C00904EA1 /* CALayerViewController.m in Sources */,

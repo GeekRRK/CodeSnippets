@@ -7,6 +7,7 @@
 //
 
 #import "UITableViewVC.h"
+#import "AlDiffModel.h"
 
 @interface UITableViewVC () <UITableViewDelegate, UITableViewDataSource>
 
@@ -45,17 +46,17 @@
     return 44;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *reusableCell = @"ReusableCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reusableCell];
-    if (cell == nil) {
-        cell = [[[NSBundle mainBundle] loadNibNamed:@"XXX" owner:nil options:nil] firstObject];
-    }
-    
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    
-    return cell;
-}
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    static NSString *reusableCell = @"ReusableCell";
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reusableCell];
+//    if (cell == nil) {
+//        cell = [[[NSBundle mainBundle] loadNibNamed:@"XXX" owner:nil options:nil] firstObject];
+//    }
+//    
+//    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+//    
+//    return cell;
+//}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
@@ -71,5 +72,24 @@
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
     }
 }
+
+/* Deal with different UI cells with different models
+- (void)registerCell {
+    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass([UITableViewCell class])];
+    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass([UITableViewCell class])];
+    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass([UITableViewCell class])];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    AlDiffModel *model = _models[indexPath.row];
+    UITableViewCell *cell;
+    NSString *cellIdentifier = model.cellIdentifier;
+    
+    cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    [cell setModel:model];
+    
+    return cell;
+}
+ */
 
 @end
