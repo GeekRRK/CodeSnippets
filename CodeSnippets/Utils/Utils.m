@@ -701,4 +701,29 @@
 //    return isMatch;
 //}
 
+#define START_LOGIN_DATE                            @"START_LOGIN_DATE"
+
++ (void)autoLoginIn7Days {
+    NSDate *startDate = [NSDate date];
+    [[NSUserDefaults standardUserDefaults] setObject:startDate forKey:START_LOGIN_DATE];
+}
+
++ (BOOL)IsloginInfoInvalid {
+    NSDate *startDate = [[NSUserDefaults standardUserDefaults] objectForKey:START_LOGIN_DATE];
+    
+    if (startDate == nil) {
+        return YES;
+    }
+    
+    NSDate *nowDate = [NSDate date];
+    NSTimeInterval diff = [nowDate timeIntervalSinceDate:startDate];
+    double day = diff / 60 / 60 / 24;
+    if (day > 7) {
+        [[NSUserDefaults standardUserDefaults] setObject:nil forKey:START_LOGIN_DATE];
+        return YES;
+    }
+    
+    return NO;
+}
+
 @end
