@@ -93,4 +93,6 @@
 
 + (BOOL)checkUserIdCard: (NSString *)idCard;
 
++ (NSString *)trimWhiteSpacing:(NSString *)str;
+    
 @end

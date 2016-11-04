@@ -726,4 +726,10 @@
     return NO;
 }
 
++ (NSString *)trimWhiteSpacing:(NSString *)str {
+    NSString *resStr = [[str componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] componentsJoinedByString:@""];
+    
+    return resStr;
+}
+
 @end
