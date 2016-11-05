@@ -31,7 +31,9 @@
     NSDictionary *configDict = [HookUtility dictionaryFromUserStatisticsConfigPlist];
     NSString *eventID = configDict[targetName][@"ControlEventIDs"][actionString];
     
-    NSLog(@"\n***Hook success.\n[1]action:%@\n[2]target:%@\n[3]event:%@", NSStringFromSelector(action), target, eventID);
+    if (eventID) {
+        NSLog(@"\n***Hook success.\n[1]action:%@\n[2]target:%@\n[3]event:%@", NSStringFromSelector(action), target, eventID);
+    }
 }
 
 @end
