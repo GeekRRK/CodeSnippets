@@ -102,7 +102,7 @@
         urlStr = [NSString stringWithFormat:@"%@&%@=%@", urlStr, key, encodedValue];
     }
     
-    urlStr = [urlStr substringFromIndex:1];
+    urlStr = [urlStr stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"&"]];
     
     return urlStr;
 }
