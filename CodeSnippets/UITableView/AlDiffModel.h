@@ -2,7 +2,7 @@
 //  AlDiffModel.h
 //  CodeSnippets
 //
-//  Created by UGOMEDIA on 16/10/20.
+//  Created by GeekRRK on 16/10/20.
 //  Copyright © 2016年 GeekRRK. All rights reserved.
 //
 
