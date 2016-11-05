@@ -21,12 +21,12 @@
     return URLSessionMgr;
 }
 
-+ (void)request:(NSString *)urlStr param:(NSDictionary *)paramDict orderedKeyArr:(NSArray *)orderedKeyArr success:(SuccessBlock)successBlock failure:(FailureBlock)failureBlock {
-    NSURL *URL = [NSURL URLWithString:urlStr];
++ (void)request:(NSString *)api param:(NSDictionary *)param success:(SuccessBlock)successBlock failure:(FailureBlock)failureBlock {
+    NSURL *URL = [NSURL URLWithString:api];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:URL];
     [request setHTTPMethod:@"POST"];
-    NSString *paramStr = [AFInterface convertDict2UrlStr:paramDict orderedKeyArr:(NSArray *)orderedKeyArr];
-    NSData *paramData = [paramStr dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
+    NSString *paramURL = [AFInterface convertParam2URL:param];
+    NSData *paramData = [paramURL dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
     [request setHTTPBody:paramData];
     
     [AFInterface shareURLSessionMgr].responseSerializer = [AFHTTPResponseSerializer serializer];
@@ -40,17 +40,37 @@
     [dataTask resume];
 }
 
-+ (void)request2UploadFile:(NSString *)urlStr filePath:(NSString *)path param:(NSDictionary *)paramDict success:(SuccessBlock)successBlock failure:(FailureBlock)failureBlock {
-    NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] multipartFormRequestWithMethod:@"POST" URLString:urlStr parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
-        for (id key in paramDict) {
-            [formData appendPartWithFormData:[paramDict[key] dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES] name:key];
++ (void)request2UploadFile:(NSString *)api files:(NSDictionary *)files param:(NSDictionary *)param success:(SuccessBlock)successBlock failure:(FailureBlock)failureBlock {
+    NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] multipartFormRequestWithMethod:@"POST" URLString:api parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+        
+        NSArray *sortedFileKeys = [files.allKeys sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+        for (int i = 0; i < files.count; ++i) {
+            NSString *key = sortedFileKeys[i];
+            NSString *value = files[key];
+            
+            NSString *fileName = [value lastPathComponent];
+            NSString *extension = [fileName pathExtension];
+            
+            NSString *mineType = @"";
+            if ([extension isEqualToString:@".jpg"]) {
+                mineType = @"image/jpeg";
+            } else if ([extension isEqualToString:@".png"]) {
+                mineType = @"image/png";
+            }
+            
+            [formData appendPartWithFileURL:[NSURL fileURLWithPath:value] name:key fileName:fileName mimeType:mineType error:nil];
         }
-        [formData appendPartWithFileURL:[NSURL fileURLWithPath:path] name:@"image" fileName:@"avatar.jpg" mimeType:@"image/jpeg" error:nil];
+        
+        NSArray *sortedParamKeys = [param.allKeys sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+        for (int i = 0; i < param.count; ++i) {
+            NSString *key = sortedParamKeys[i];
+            NSString *value = param[key];
+            
+            [formData appendPartWithFormData:[value dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES] name:key];
+        }
     } error:nil];
     
-    NSURLSessionUploadTask *uploadTask = [[AFInterface shareURLSessionMgr] uploadTaskWithStreamedRequest:request progress:^(NSProgress * _Nonnull uploadProgress) {
-        
-    } completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+    NSURLSessionUploadTask *uploadTask = [[AFInterface shareURLSessionMgr] uploadTaskWithStreamedRequest:request progress:nil completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
         if (error) {
             failureBlock(error);
         } else {
@@ -60,58 +80,31 @@
     [uploadTask resume];
 }
 
-+ (void)request2UploadFile:(NSString *)urlStr filePathArr:(NSMutableArray *)pathArr param:(NSDictionary *)paramDict success:(SuccessBlock)successBlock failure:(FailureBlock)failureBlock {
-    NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] multipartFormRequestWithMethod:@"POST" URLString:urlStr parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
-        for (id key in paramDict) {
-            [formData appendPartWithFormData:[paramDict[key] dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES] name:key];
-        }
-        
-        for (int i = 0; i < pathArr.count; ++i) {
-            [formData appendPartWithFileURL:[NSURL fileURLWithPath:pathArr[i]] name:@"image" fileName:@"avatar.jpg" mimeType:@"image/jpeg" error:nil];
-        }
-    } error:nil];
-    
-    NSURLSessionUploadTask *uploadTask = [[AFInterface shareURLSessionMgr] uploadTaskWithStreamedRequest:request progress:^(NSProgress * _Nonnull uploadProgress) {
-        
-    } completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
-        if (error) {
-            failureBlock(error);
-        } else {
-            successBlock(responseObject);
-        }
-    }];
-    [uploadTask resume];
-}
-
-+ (NSString *)convertDict2UrlStr:(NSDictionary *)dict orderedKeyArr:(NSArray *)orderedKeyArr{
-    NSString *md5Str = @"";
-    
++ (NSString *)convertParam2URL:(NSDictionary *)param {
     NSString *urlStr = @"";
-    for (int i = 0; i < orderedKeyArr.count; ++i) {
-        NSString *key = orderedKeyArr[i];
-        if ([dict[key] isEqualToString:@""]) {
+    
+    NSArray *sortedKyes = [param.allKeys sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+    
+    for (int i = 0; i < sortedKyes.count; ++i) {
+        NSString *key = sortedKyes[i];
+        if ([param[key] isEqualToString:@""]) {
             continue;
         }
         
-        urlStr = [NSString stringWithFormat:@"%@&%@=%@", urlStr, key, dict[key]];
+        NSString *value = param[key];
+        NSString *encodedValue = (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(
+                                                                                                       NULL,
+                                                                                                       (CFStringRef)value,
+                                                                                                       NULL,
+                                                                                                       (CFStringRef)@"!*'();:@&=+$,/?%#[]",
+                                                                                                       kCFStringEncodingUTF8 ));
         
-        md5Str = [md5Str stringByAppendingString:dict[key]];
+        urlStr = [NSString stringWithFormat:@"%@&%@=%@", urlStr, key, encodedValue];
     }
     
     urlStr = [urlStr substringFromIndex:1];
     
     return urlStr;
-}
-
-+ (NSMutableDictionary *)convertUrlStr2Dict:(NSString *)urlStr {
-    NSMutableDictionary *mutableDict = [[NSMutableDictionary alloc] init];
-    NSArray *keyValueArr = [urlStr componentsSeparatedByString:@"&"];
-    for (int i = 0; i < keyValueArr.count; ++i) {
-        NSArray *pairArr = [keyValueArr[i] componentsSeparatedByString:@"="];
-        [mutableDict setObject:pairArr[1] forKey:pairArr[0]];
-    }
-    
-    return mutableDict;
 }
 
 @end
