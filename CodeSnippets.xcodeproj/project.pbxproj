@@ -112,6 +112,7 @@
 		AE216E231CC9F23E0046FC6C /* HookUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = AE216E221CC9F23E0046FC6C /* HookUtility.m */; };
 		AE233D471D5B125700050272 /* UITextFieldVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AE233D461D5B125700050272 /* UITextFieldVC.m */; };
 		AE23C37E1D9389ED00F19351 /* UITableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AE23C37D1D9389ED00F19351 /* UITableViewVC.m */; };
+		AE2CBF381E1B4DC7009A8480 /* TBCircularSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2CBF371E1B4DC7009A8480 /* TBCircularSlider.m */; };
 		AE2D975A1D2637DD00C2D3D5 /* VideoPlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2D97581D2637DD00C2D3D5 /* VideoPlayerVC.m */; };
 		AE2D975B1D2637DD00C2D3D5 /* VideoPlayerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE2D97591D2637DD00C2D3D5 /* VideoPlayerVC.xib */; };
 		AE2D97611D26382100C2D3D5 /* video_back.png in Resources */ = {isa = PBXBuildFile; fileRef = AE2D975D1D26382100C2D3D5 /* video_back.png */; };
@@ -325,6 +326,8 @@
 		AE233D461D5B125700050272 /* UITextFieldVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldVC.m; sourceTree = "<group>"; };
 		AE23C37C1D9389ED00F19351 /* UITableViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableViewVC.h; sourceTree = "<group>"; };
 		AE23C37D1D9389ED00F19351 /* UITableViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableViewVC.m; sourceTree = "<group>"; };
+		AE2CBF361E1B4DC7009A8480 /* TBCircularSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCircularSlider.h; sourceTree = "<group>"; };
+		AE2CBF371E1B4DC7009A8480 /* TBCircularSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBCircularSlider.m; sourceTree = "<group>"; };
 		AE2D97571D2637DD00C2D3D5 /* VideoPlayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayerVC.h; sourceTree = "<group>"; };
 		AE2D97581D2637DD00C2D3D5 /* VideoPlayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerVC.m; sourceTree = "<group>"; };
 		AE2D97591D2637DD00C2D3D5 /* VideoPlayerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoPlayerVC.xib; sourceTree = "<group>"; };
@@ -664,6 +667,7 @@
 		71EB0B271C3F4DC000290797 /* CodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				AE2CBF351E1B4DAB009A8480 /* CustomControl */,
 				AE0EA9BD1DA204BB00C1EDC2 /* Masonry */,
 				AE23C37B1D9389D100F19351 /* UITableView */,
 				AE61BBF31D7FDA8500197865 /* UIButton */,
@@ -853,6 +857,15 @@
 				AE23C37D1D9389ED00F19351 /* UITableViewVC.m */,
 			);
 			path = UITableView;
+			sourceTree = "<group>";
+		};
+		AE2CBF351E1B4DAB009A8480 /* CustomControl */ = {
+			isa = PBXGroup;
+			children = (
+				AE2CBF361E1B4DC7009A8480 /* TBCircularSlider.h */,
+				AE2CBF371E1B4DC7009A8480 /* TBCircularSlider.m */,
+			);
+			path = CustomControl;
 			sourceTree = "<group>";
 		};
 		AE2D975C1D26382100C2D3D5 /* image */ = {
@@ -1216,6 +1229,7 @@
 				AE0EA9C01DA2053D00C1EDC2 /* MasonryVC.m in Sources */,
 				7188A0CC1C44975800027977 /* Person.m in Sources */,
 				AE0EA9CD1DA22AC700C1EDC2 /* CFUserCenterGridCell.m in Sources */,
+				AE2CBF381E1B4DC7009A8480 /* TBCircularSlider.m in Sources */,
 				AE121D511D5C8CBD00D5A84C /* JSONUtil.m in Sources */,
 				71131D351C40BF0D00E41DA5 /* DeleteCookieAndCacheViewController.m in Sources */,
 				7128D9601C4F516500DDED05 /* DView.m in Sources */,
