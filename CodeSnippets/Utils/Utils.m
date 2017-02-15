@@ -7,6 +7,9 @@
 //
 
 #import "Utils.h"
+#import <AVFoundation/AVFoundation.h>
+
+#define CACHE_DIR                 [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
 
 @implementation Utils
 
@@ -730,6 +733,36 @@
     NSString *resStr = [[str componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] componentsJoinedByString:@""];
     
     return resStr;
+}
+
++ (UIImage *)getVideoFirstImage:(NSString *)videoPath {
+    NSURL *videoURL;
+    
+    if ([videoPath hasPrefix:@"http"]) {
+        videoURL = [NSURL URLWithString:videoPath];
+    } else {
+        videoURL = [NSURL fileURLWithPath:[CACHE_DIR stringByAppendingPathComponent:videoPath]];
+    }
+    
+    AVURLAsset *asset = [[AVURLAsset alloc] initWithURL:videoURL options:nil];
+    NSParameterAssert(asset);
+    AVAssetImageGenerator *assetImageGenerator = [[AVAssetImageGenerator alloc] initWithAsset:asset];
+    assetImageGenerator.appliesPreferredTrackTransform = YES;
+    assetImageGenerator.apertureMode = AVAssetImageGeneratorApertureModeEncodedPixels;
+    
+    CGImageRef thumbnailImageRef = NULL;
+    CFTimeInterval thumbnailImageTime = 0;
+    NSError *thumbnailImageGenerationError = nil;
+    thumbnailImageRef = [assetImageGenerator copyCGImageAtTime:CMTimeMake(thumbnailImageTime, 15) actualTime:NULL error:&thumbnailImageGenerationError];
+    
+    if (!thumbnailImageRef)
+        NSLog(@"thumbnailImageGenerationError %@", thumbnailImageGenerationError);
+    
+    UIImage *thumbnailImage = thumbnailImageRef ? [[UIImage alloc] initWithCGImage:thumbnailImageRef] : nil;
+    //NSData *imageData = UIImagePNGRepresentation(thumbnailImage);
+    CGImageRelease(thumbnailImageRef);
+    
+    return thumbnailImage;
 }
 
 @end
