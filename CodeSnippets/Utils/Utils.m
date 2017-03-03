@@ -765,4 +765,24 @@
     return thumbnailImage;
 }
 
++ (UIImage *)snapshot {
+    if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)]) {
+        UIGraphicsBeginImageContextWithOptions(APPDELEGATE.window.bounds.size, NO, [UIScreen mainScreen].scale);
+    } else {
+        UIGraphicsBeginImageContext(APPDELEGATE.window.bounds.size);
+    }
+    
+    [APPDELEGATE.window.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    NSData *imageData = UIImagePNGRepresentation(image);
+    if (imageData) {
+        [imageData writeToFile:@"screenshot.png" atomically:YES];
+    } else {
+        NSLog(@"error while taking screenshot");
+    }
+    
+    return image;
+}
+
 @end
