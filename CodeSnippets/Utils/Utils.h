@@ -94,5 +94,7 @@
 + (BOOL)checkUserIdCard: (NSString *)idCard;
 
 + (NSString *)trimWhiteSpacing:(NSString *)str;
-    
+
++ (UIImage *)snapshot;
+
 @end
