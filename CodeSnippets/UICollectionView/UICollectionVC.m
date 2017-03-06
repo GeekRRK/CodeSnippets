@@ -56,4 +56,14 @@
     return cell;
 }
 
+- (void)setupHorizontalScroll {
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+    [layout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
+    layout.minimumLineSpacing = 0;
+    layout.minimumInteritemSpacing = 0;
+    [_emojiCollectionView registerNib:[UINib nibWithNibName:@"EmojiCell" bundle:nil] forCellWithReuseIdentifier:REUSABLE_EMOJI_CELL];
+    _emojiCollectionView.collectionViewLayout = layout;
+    _emojiCollectionView.pagingEnabled = YES;
+}
+
 @end
