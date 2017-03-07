@@ -97,4 +97,6 @@
 
 + (UIImage *)snapshot;
 
++ (void)blurView:(UIView *)view;
+
 @end
