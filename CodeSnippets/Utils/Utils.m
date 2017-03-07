@@ -785,4 +785,11 @@
     return image;
 }
 
++ (void)blurView:(UIView *)view {
+    UIBlurEffect *effect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
+    UIVisualEffectView *effectView = [[UIVisualEffectView alloc] initWithEffect:effect];
+    effectView.frame = view.bounds;
+    [view insertSubview:effectView atIndex:0];
+}
+
 @end
