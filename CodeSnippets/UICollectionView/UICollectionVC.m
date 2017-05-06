@@ -10,6 +10,8 @@
 #import "AlCollectionViewLayout.h"
 #import "AlCollectionCell.h"
 
+#define REUSABLE_EMOJI_CELL @"EMOJI_CELL"
+
 @interface UICollectionVC () <UICollectionViewDataSource>
 
 @property (strong, nonatomic) UICollectionView *collectionView;
@@ -61,9 +63,9 @@
     [layout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
     layout.minimumLineSpacing = 0;
     layout.minimumInteritemSpacing = 0;
-    [_emojiCollectionView registerNib:[UINib nibWithNibName:@"EmojiCell" bundle:nil] forCellWithReuseIdentifier:REUSABLE_EMOJI_CELL];
-    _emojiCollectionView.collectionViewLayout = layout;
-    _emojiCollectionView.pagingEnabled = YES;
+    [_collectionView registerNib:[UINib nibWithNibName:@"EmojiCell" bundle:nil] forCellWithReuseIdentifier:REUSABLE_EMOJI_CELL];
+    _collectionView.collectionViewLayout = layout;
+    _collectionView.pagingEnabled = YES;
 }
 
 @end

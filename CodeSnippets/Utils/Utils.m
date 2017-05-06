@@ -273,36 +273,29 @@
     return base64Str;
 }
 
-#define IMAGE_MAX_SIZE_WIDTH 640
-#define IMAGE_MAX_SIZE_GEIGHT 960
-+ (CGSize)fitsize:(CGSize)thisSize
-{
-    if(thisSize.width == 0 && thisSize.height ==0)
++ (CGSize)fitsize:(CGSize)thisSize byFixedSize:(CGSize)fixedSize {
+    if(thisSize.width == 0 && thisSize.height == 0) {
         return CGSizeMake(0, 0);
-    CGFloat wscale = thisSize.width/IMAGE_MAX_SIZE_WIDTH;
-    CGFloat hscale = thisSize.height/IMAGE_MAX_SIZE_GEIGHT;
-    CGFloat scale = (wscale>hscale)?wscale:hscale;
-    CGSize newSize = CGSizeMake(thisSize.width/scale, thisSize.height/scale);
+    }
+    
+    CGFloat wscale = thisSize.width / fixedSize.width;
+    CGFloat hscale = thisSize.height / fixedSize.height;
+    CGFloat scale = (wscale > hscale) ? wscale : hscale;
+    CGSize newSize = CGSizeMake(thisSize.width / scale, thisSize.height / scale);
+    
     return newSize;
 }
 
-+(UIImage *)fitSmallImage:(UIImage *)image
-{
-    if (nil == image)
-    {
-        return nil;
-    }
-    if (image.size.width<IMAGE_MAX_SIZE_WIDTH && image.size.height<IMAGE_MAX_SIZE_GEIGHT)
-    {
-        return image;
-    }
-    CGSize size = [Utils fitsize:image.size];
++ (UIImage *)originImage:(UIImage *)image scaleToSize:(CGSize)size {
     UIGraphicsBeginImageContext(size);
-    CGRect rect = CGRectMake(0, 0, size.width, size.height);
-    [image drawInRect:rect];
-    UIImage *newing = UIGraphicsGetImageFromCurrentImageContext();
+    
+    [image drawInRect:CGRectMake(0, 0, size.width, size.height)];
+    
+    UIImage* scaledImage = UIGraphicsGetImageFromCurrentImageContext();
+    
     UIGraphicsEndImageContext();
-    return newing;
+    
+    return scaledImage;
 }
 
 + (NSString *)md5:(NSString *)str

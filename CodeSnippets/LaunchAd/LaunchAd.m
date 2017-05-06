@@ -63,8 +63,7 @@
     
     NSString *APIAddr = SERVERADDR;
     NSDictionary *param = @{@"version":APIAddr};
-    NSArray *orderedKeyArr = @[@"version"];
-    [AFInterface request:APIAddr param:param orderedKeyArr:orderedKeyArr success:^(NSDictionary *responseObject) {
+    [AFInterface request:APIAddr param:param success:^(NSDictionary *responseObject) {
         if ([responseObject[@"errcode"] intValue] == 0) {
             _curAdDict = responseObject[@"info"];
             
