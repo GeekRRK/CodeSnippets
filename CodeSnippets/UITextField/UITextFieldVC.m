@@ -10,6 +10,8 @@
 
 @interface UITextFieldVC () <UITextFieldDelegate>
 
+@property (strong, nonatomic) UITextField *textField;
+
 @end
 
 @implementation UITextFieldVC
@@ -27,11 +29,12 @@
         return NO;
     }
     
-    if ([[[UITextInputMode currentInputMode ]primaryLanguage] isEqualToString:@"emoji"]) {
+    if ([[[_textField textInputMode] primaryLanguage] isEqualToString:@"emoji"]) {
         return NO;
     }
     
     NSUInteger newLength = [textField.text length] + [string length] - range.length;
+    
     return newLength <= 11;
 }
 

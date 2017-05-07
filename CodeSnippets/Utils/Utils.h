@@ -55,10 +55,6 @@
 
 + (NSString *)reduceImg:(UIImage *)img scale:(CGSize)size;
 
-+ (CGSize)fitsize:(CGSize)thisSize;
-
-+ (UIImage *)fitSmallImage:(UIImage *)image;
-
 + (NSString *)md5:(NSString *)str;
 
 + (UIImage *) imageCompressForSize:(UIImage *)sourceImage targetSize:(CGSize)size;
@@ -90,8 +86,6 @@
 + (void)deleteFileByName:(NSString *)fileName;
 
 + (BOOL)isValidEmail:(NSString *)checkString;
-
-+ (BOOL)checkUserIdCard: (NSString *)idCard;
 
 + (NSString *)trimWhiteSpacing:(NSString *)str;
 

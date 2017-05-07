@@ -501,8 +501,8 @@
 }
 
 + (NSInteger)getMinuteFromDate:(NSDate *)fDate toDate:(NSDate *)tDate {
-    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    unsigned int unitFlags = NSMinuteCalendarUnit;
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    unsigned int unitFlags = NSCalendarUnitMinute;
     NSDateComponents *comps = [gregorian components:unitFlags fromDate:fDate toDate:tDate options:0];
     NSInteger minute = [comps minute];
     

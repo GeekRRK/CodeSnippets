@@ -10,6 +10,4 @@
 
 @interface UITextFieldVC : UIViewController
 
-@property (strong, nonatomic) UITextField *textField;
-
 @end
